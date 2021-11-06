@@ -387,12 +387,15 @@ if (strtotime($data1) > strtotime($data2)) {
 </head>
 
 <body onload="inicializar();">
-  <div class="dialog-confirm" title="Atenção!">
-    <h4 style="font-weight:lighter; text-align:justify;">A abertura de turmas e a efetivação da matrícula, estão
-      vinculadas ao número mínimo de 35 (trinta e cinco) interessados ao final deste processo classificador (conforme
-      Resolução n° 4527/2011 - GS/SEED).</h4>
-    <!--<h4 style="font-weight:lighter; text-align:justify;">Você está se candidatando no cadastro de reserva será chamado apenas caso exista desistência de inscritos no primero processo.</h4>-->
-  </div>
+<!--        
+      <div class="dialog-confirm" title="Atenção!">
+        <h4 style="font-weight:lighter; text-align:justify;">A abertura de turmas e a efetivação da matrícula, estão
+          vinculadas ao número mínimo de 35 (trinta e cinco) interessados ao final deste processo classificador (conforme
+          Resolução n° 4527/2011 - GS/SEED).</h4>
+        <h4 style="font-weight:lighter; text-align:justify;">Você está se candidatando no cadastro de reserva será chamado apenas caso exista desistência de inscritos no primero processo.</h4>
+      </div>
+  -->
+  
   <div class="row justify-content-center mt-5">
     <div class="col-xl-8 col-12">
       <div class="card px-2">
