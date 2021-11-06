@@ -549,7 +549,7 @@ if ($a->__get('serial') == 1) {
     </select><br />';
 }?>
 
-
+<!-- Adicionado o campo hidden para esconder os elementos 05/11/2021 -->
                     <h2 hidden>Some a renda total da casa e divida pelo número de pessoas</h2>
                     <label hidden>Renda Média Familiar:</label>
                     <select hidden class="tfield form-control" name="renda" required onChange="">
