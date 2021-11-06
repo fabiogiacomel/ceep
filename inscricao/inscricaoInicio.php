@@ -253,7 +253,7 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso').options.length = 0;
         document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
         //document.getElementById('curso').options.add(new Option("Selecione um curso", "0"));
-        //document.getElementById('curso').options.add(new Option("Enfermagem", "4"));
+        document.getElementById('curso').options.add(new Option("Enfermagem", "4"));
         // document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
 
       }
@@ -345,7 +345,7 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso2').options.length = 0;
         //document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
         //document.getElementById('curso2').options.add(new Option("Selecione um curso", "0"));
-        document.getElementById('curso2').options.add(new Option("Enfermagem", "4"));
+        //document.getElementById('curso2').options.add(new Option("Enfermagem", "4"));
         // document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
 
       }
