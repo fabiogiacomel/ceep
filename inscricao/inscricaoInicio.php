@@ -429,11 +429,13 @@ if (strtotime($data1) > strtotime($data2)) {
 
                 <div class="form-group row">
                   <div class="col-md-12">
-                    <label> <p> Modalidade:</p></br> <p> Alunos que estão cursando o 9º ano devem escolher integrado. 
-                      Alunos que estão cursando a 3ª Serie do ensino médio ou concluíram o mesmo devem escolher subseqüente. </p></label>
+                     <p> Alunos que estão cursando o 9º ano devem escolher integrado. 
+                      Alunos que estão cursando a 3ª Serie do ensino médio ou concluíram o mesmo devem escolher subseqüente. </p>
+                      </br>
+                      <label> <p> Modalidade:</p></label>
                     <select name="serial" onChange="valida_curso();valida_curso2();" class="form-control" required>
                       <option value="0" selected="1">Selecione uma opção</option> 
-                      <option value="1">Integrado (Terminou o 9º Ano)</option>
+                      <option value="1">Integrado ( 9º Ano)</option>
                       <option value="2">Subsequente (Terminou o Ensino Médio)</option> 
                     </select>
                   </div>
