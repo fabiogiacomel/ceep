@@ -323,8 +323,8 @@ echo "<tr><td class='label' colspan='2'>Escola de origem:</td><td colspan='2'>" 
 
 echo "<tr><td class='label'>Modalidade:</td><td>" . $modalidades[$a->__get('serial')] . "</td></tr>";
 
-echo "<tr><td class='label'>Curso Opção 1:</td><td>" . $cursos[$a->__get('curso')] . "</td>";
-echo "<td class='label'>Período Opção 1:</td><td>" . $periodos[$a->__get('periodo')] . "</td></tr>";
+echo "<tr><td class='label'>Curso:</td><td>" . $cursos[$a->__get('curso')] . "</td>";
+echo "<td class='label'>Período:</td><td>" . $periodos[$a->__get('periodo')] . "</td></tr>";
 
 /* echo "<tr><td class='label'>Curso Opção 2:</td><td>" . $cursos[$a->__get('curso2')] . "</td>";
 echo "<td class='label'>Período Opção 2:</td><td>" . $periodos[$a->__get('periodo2')] . "</td></tr>"; */
