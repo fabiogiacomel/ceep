@@ -272,14 +272,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // document.form1.ensinofundamental.focus;
         return false;
       }
-
+/* Retirando a Renda Familiar 05/11/2021
       if (renda_familiar == 0) {
         document.getElementById('msg_erro').innerHTML =
           "<div id='erro' class='alert alert-danger'>Erro: Selecione sua Renda Familiar</div>";
         document.form1.renda.focus;
         return false;
       }
-
+*/
       if (abandono_curso == 0) {
         document.getElementById('msg_erro').innerHTML =
           "<div id='erro' class='alert alert-danger'>Erro: Selecione a informação sobre abandono de curso</div>";
