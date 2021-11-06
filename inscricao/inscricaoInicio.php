@@ -435,8 +435,8 @@ if (strtotime($data1) > strtotime($data2)) {
                       <label> <p> Modalidade:</p></label>
                     <select name="serial" onChange="valida_curso();valida_curso2();" class="form-control" required>
                       <option value="0" selected="1">Selecione uma opção</option> 
-                      <option value="1">Integrado ( 9º Ano)</option>
-                      <option value="2">Subsequente (Terminou o Ensino Médio)</option> 
+                      <option value="1">Integrado</option>
+                      <option value="2">Subsequente</option> 
                     </select>
                   </div>
                 </div>
