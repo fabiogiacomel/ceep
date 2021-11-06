@@ -276,7 +276,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               document.form1.renda.focus;
               return false;
             }
-      */
+      
       if (abandono_curso == 0) {
         document.getElementById('msg_erro').innerHTML =
           "<div id='erro' class='alert alert-danger'>Erro: Selecione a informação sobre abandono de curso</div>";
@@ -284,7 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         return false;
       }
 
-
+*/
       if (isNaN(parseFloat(document.getElementById('maiormat').value)) ||
         (parseFloat(document.getElementById('maiormat').value) < 50)) {
         document.getElementById('msg_erro').innerHTML =
