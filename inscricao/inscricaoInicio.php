@@ -466,10 +466,10 @@ if (strtotime($data1) > strtotime($data2)) {
                     <div class="col-md-12">
                       <label>Período:</label>
                       <select id="periodo2" name="periodo2" onChange="valida_curso2()" class="form-control" required>
-                        <!-- <option value="0" selected="1">Selecione um Período</option>
-                        <option value="1">Matutino</option> -->
+                        <option value="0" selected="1">Selecione um Período</option>
+                        <option value="1">Matutino</option> 
                         <option value="2">Vespertino</option>
-                        <!-- <option value="3">Noturno</option>--                      
+                         <option value="3">Noturno</option>                  
                       </select>
                     </div>
                   </div>
