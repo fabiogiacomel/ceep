@@ -29,8 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $a->__set('cpf', preg_replace("/[^0-9]/", "", $_POST['cpf']));
     $a->__set('ensinomedio', @$_POST['ensinomedio']);
     $a->__set('ensinofundamental', @$_POST['ensinofundamental']);
-    $a->__set('renda', $_POST['renda']);
-    $a->__set('comprovante_renda', $_POST['comprovante_renda']); //25/05/18
+    // $a->__set('renda', $_POST['renda']); 05/11/2021
+    // $a->__set('comprovante_renda', $_POST['comprovante_renda']); //25/05/18 desativado 05/11/2021
     $a->__set('abandono', $_POST['abandono']);
 
     $a->__set('media_portugues', $_POST['maiorport']);
@@ -558,18 +558,20 @@ if ($a->__get('serial') == 1) {
                       <option value="2">De meio a 1 (um) Salário Mínimos</option>
                       <option value="3">Acima de 1 (um) até 2 (dois) Salários Mínimos</option>
                       <option value="4">Acima de 2 (dois) Salários Mínimos</option>
-                    </select><br />
-                    <h2>Informe o documento comprobatório de renda</h2>
-                    <label>Comprovante de renda:</label>
-                    <select class="tfield form-control" name="comprovante_renda" required onChange="">
+                      <!-- </select><br /> -->  
+                    </select> <!-- sem br -->
+                    <h2 hidden>Informe o documento comprobatório de renda</h2>
+                    <label hidden>Comprovante de renda:</label>
+                    <select hidden class="tfield form-control" name="comprovante_renda" required onChange="">
                       <option value="0">Selecione uma opção</option>
                       <option value="1">Holerite</option>
                       <option value="2">Carteira de trabalho</option>
                       <option value="3">Declaração de Imposto de Renda</option>
                       <option value="4">Declaração de autonômo</option>
                       <option value="5">Autodeclaração</option>
-                    </select><br />
-                    <h2>Já desistiu de algum curso nesta Instituição?</h2>
+                      <!-- </select><br /> -->  
+                      </select> <!-- sem br -->
+                      <h2>Já desistiu de algum curso nesta Instituição?</h2>
                     <label>Abandono de Curso:</label>
                     <select class="tfield form-control" name="abandono" required onChange="">
                       <option value="0" selected="1">Responda</option>
