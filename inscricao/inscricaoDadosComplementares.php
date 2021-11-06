@@ -551,8 +551,8 @@ if ($a->__get('serial') == 1) {
 
 
                     <h2 hidden>Some a renda total da casa e divida pelo número de pessoas</h2>
-                    <label>Renda Média Familiar:</label>
-                    <select class="tfield form-control" name="renda" required onChange="">
+                    <label hidden>Renda Média Familiar:</label>
+                    <select hidden class="tfield form-control" name="renda" required onChange="">
                       <option value="0">Selecione uma opção</option>
                       <option value="1">R$ 0,00 até meio Salário Mínimo</option>
                       <option value="2">De meio a 1 (um) Salário Mínimos</option>
