@@ -550,7 +550,7 @@ if ($a->__get('serial') == 1) {
 }?>
 
 
-                    <h2>Some a renda total da casa e divida pelo número de pessoas</h2>
+                    <h2 hidden>Some a renda total da casa e divida pelo número de pessoas</h2>
                     <label>Renda Média Familiar:</label>
                     <select class="tfield form-control" name="renda" required onChange="">
                       <option value="0">Selecione uma opção</option>
