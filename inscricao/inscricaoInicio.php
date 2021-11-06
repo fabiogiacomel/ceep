@@ -494,8 +494,10 @@ if (strtotime($data1) > strtotime($data2)) {
 
                 <div class="form-group row">
                   <div class="col-md-12">
+                    </br>
                     <p> A abertura de turmas e a efetivação da matrícula, estão vinculadas ao número mínimo de 35 (trinta e cinco) 
                         interessados ao final deste processo classificador (conforme Resolução n° 4527/2011 - GS/SEED). </p>
+                    </br>
                     <input type="submit" class="btn btn-success" value="Avançar" />
                     <!-- <input type="reset" class="btn btn-secondary" value="Apagar dados" /> -->
                     <!-- <a href="orientacao.pdf" class="float-right">Orientação Conjunta 10/2020</a> -->
