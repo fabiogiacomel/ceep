@@ -314,7 +314,8 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST['nome'])) {
             }
 
             if (serial == 1) {//integrado
-                if (cgm.length == 0 || cgm == "0" || cgm == "" || cgm == " ") {
+                if (cgm.length == 0 || cgm == "0") {
+                //if (cgm.length == 0 || cgm == "0" || cgm == "" || cgm == " ") {
                     document.getElementById('msg_erro').innerHTML =
                         "<div id='erro' class='alert alert-danger'>Erro: CGM Inválido</div>";
                     return false;
