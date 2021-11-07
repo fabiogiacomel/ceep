@@ -560,7 +560,7 @@ if ($curso == 10) {
                                 <div class="form-group row">
                                     <div class="col-md-12">
                                         <label>Data de nascimento *</label>
-                                        <input type="date" id="datanasc" class="form-control" name="datanasc"
+                                        <input type="text" id="datanasc" class="form-control" name="datanasc"
                                             value="<?php echo $a->__get('datanasc'); ?>" required />
                                     </div>
                                 </div>
