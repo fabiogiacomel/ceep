@@ -133,7 +133,7 @@ class Aluno
                     $this->rg = $obj->rg;
                     $this->rg_data_expedicao = $obj->rg_data_expedicao;
                     $this->cpf = $obj->cpf;
-                    $this->datanasc = $obj->datanasc;
+                    $this->datanasc = date("d/m/Y", strtotime($obj->datanasc));
                     $this->email = $obj->email;
                     $this->fone_casa = $obj->fonecasa;
                     $this->cidade = $obj->cidade;
