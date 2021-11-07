@@ -251,8 +251,8 @@ if (strtotime($data1) > strtotime($data2)) {
       if (serial == 2 && periodo == 1) {
         document.getElementById('curso').length = 0;
         document.getElementById('curso').options.length = 0;
-        document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
-        //document.getElementById('curso').options.add(new Option("Selecione um curso", "0"));
+        //document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
+        document.getElementById('curso').options.add(new Option("Selecione um curso", "0"));
         document.getElementById('curso').options.add(new Option("Enfermagem", "4"));
         // document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
 
