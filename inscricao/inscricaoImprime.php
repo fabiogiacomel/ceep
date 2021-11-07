@@ -198,6 +198,7 @@ if ($a->__get('serial') == 2) { //subsequente
     } else {
         $pontuacao = $pontuacao + (($a->__get('media_portugues') + $a->__get('media_matematica')) / 2);
 }
+}
 
 
 /* $pontuacao = $pontuacao +
