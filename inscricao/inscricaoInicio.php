@@ -1,4 +1,5 @@
 <?php
+
 date_default_timezone_set('America/Sao_Paulo');
 
 $data1 = Date("Y-m-d"); //'2013-05-21' hoje;
