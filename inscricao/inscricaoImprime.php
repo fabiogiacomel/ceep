@@ -123,7 +123,7 @@ if (isset($_GET['cpf'])) {
 if ($a->__get('curso') < 12) {
     $a->carregar();
 } else {
-    $a->carregarCelem();
+   // $a->carregarCelem();
 }
 
 $pontuacao = 0;
@@ -379,8 +379,8 @@ $a->salvarPontuacao();
                 echo "<td class='label'>CGM:</td><td>" . $a->__get('cgm') . "</td></tr>";
                 echo "<tr><td class='label' >Nome:</td><td>" . $a->__get('nome') . "</td>";
                 echo "<td class='label' >Nome da mãe:</td><td>" . $a->__get('nome_mae') . "</td></tr>";
-                echo "<tr><td class='label'>Data de Nascimento:</td><td>" . date_format(date_create($a->__get('datanasc')), 'd/m/Y') . "</td>";
-                //echo "<tr><td class='label'>Data de Nascimento:</td><td>" . $a->__get('datanasc'). "</td>";
+                //echo "<tr><td class='label'>Data de Nascimento:</td><td>" . date_format(date_create($a->__get('datanasc')), 'd/m/Y') . "</td>";
+                echo "<tr><td class='label'>Data de Nascimento:</td><td>" . $a->__get('datanasc'). "</td>";
                 echo "<td class='label'>CPF:</td><td>" . $a->__get('cpf') . "</td></tr>";
                 echo "<tr><td class='label'>RG:</td><td>" . $a->__get('rg') . "</td><td class='label'>Expedição:</td><td> " . date_format(date_create($a->__get('rg_data_expedicao')), 'd/m/Y') . "</td></tr>";
                 echo "<tr>";
