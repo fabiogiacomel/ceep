@@ -293,7 +293,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // document.form1.mat6.focus;
         return false;
       }
-
       if (isNaN(parseFloat(document.getElementById('maiorport').value)) ||
         (parseFloat(document.getElementById('maiorport').value) < 50)) {
 
@@ -728,8 +727,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     }
 
                     // echo "O serial é: ".$a->__get('serial');
-                    //if ($a->__get('serial') == 1 && ($curso <> 17) && ($curso <> 18)) { //integrado
-                      if ($a->__get('serial') == 1){ 
+                    if ($a->__get('serial') == 1 && ($curso <> 17) && ($curso <> 18)) { //integrado
                       campos_matematica_integrado();
                       // echo "campos_matematica_integrado";
                     }
