@@ -162,7 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       //     alert('Palestra esclarecedora sobre currículo e perfil profissional no dia 12/11/2017. Para os cursos de Enfermagem e Segurança do Trabalho');
       // }
 
-      alert('A abertura de turmas e a efetivação da matrícula, estão vinculadas ao número de 35 (trinta e cinco) interessados ao final deste processo classificador (conforme Resolução n° 4527/2011 - GS/SEED).');
+      //alert('A abertura de turmas e a efetivação da matrícula, estão vinculadas ao número de 35 (trinta e cinco) interessados ao final deste processo classificador (conforme Resolução n° 4527/2011 - GS/SEED).');
     }
   </script>
   <style>
