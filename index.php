@@ -224,7 +224,7 @@
       <div class="container" data-aos="zoom-out">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">Mais informações da secretária</h3>
+            <h3 class="cta-title">Mais informações da secretaria</h3>
             <p class="cta-text">Acesse a página da secretaria para mais informações.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
