@@ -874,7 +874,7 @@ function campos_portugues_especializacao_enfermagem()
 function campos_quimica_sub()
 {
   echo '<div class="row">
-            <!--<div class="col-md-4">
+            <div class="col-md-4">
               <label class="" col-md-4">1° Ano.:</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Qui()" id="virtqui" name="qui1" value="" type="text" OnKeyPress="">
             </div>
@@ -882,7 +882,6 @@ function campos_quimica_sub()
               <label class="" col-md-4">2° Ano.:</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Qui()" id="virtqui2" name="qui2" value="" type="text" OnKeyPress="">
             </div>
-            -->
             <div class="col-md-4">
               <label class="" col-md-4">Informe a média das notas em Química do 3ª ou 4ª Serie:</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Qui()" id="virtqui3" name="qui3" value="" type="text" OnKeyPress="">
@@ -893,7 +892,7 @@ function campos_quimica_sub()
 function campos_biologia_sub()
 {
   echo '<div class="row">
-            <!--<div class="col-md-4">
+            <div class="col-md-4">
               <label class="" col-md-4">1° Ano.:</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Bio()" id="virtbio" name="bio1" value="" type="text" OnKeyPress="">
             </div>
@@ -902,8 +901,7 @@ function campos_biologia_sub()
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Bio()" id="virtbio2" name="bio2" value="" type="text" OnKeyPress="">
             </div>
 
-            -->
-            <div class="col-md-4"> 
+              <div class="col-md-4"> 
               <label class="" col-md-4">Informe a média das notas em Biologia do 3ª ou 4ª Serie::</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Bio()" id="virtbio3" name="bio3" value="" type="text" OnKeyPress="">
             </div>
