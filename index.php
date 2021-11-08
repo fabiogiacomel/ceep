@@ -92,6 +92,11 @@
     <div class="hero-content" data-aos="fade-up">
       <h2>Cursos técnicos <span>Gratuitos</span> de qualidade!<br></h2>
       <h3>Inscrições <span>de 08/11 até 26/11</span> aguarde!<br></h3>
+      <div class="alert alert-danger">
+        <strong>INSCRIÇÕES!</strong> A inscrição para os cursos do CEEP ainda não começou
+        enquanto isso acesse o edital e já vai preparando a documentação!!!
+        <a href="https://www.ceepcascavel.com.br/inscricao/Edital.pdf" class="alert-link">Edital</a>.
+    </div>
     </div>
 
     <div class="hero-slider swiper">
