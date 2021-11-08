@@ -415,7 +415,7 @@ echo "<td class='label'>Período Opção 2:</td><td>" . $periodos[$a->__get('per
                     echo "Não (0 Pontos)</td></tr>";
                 }
 
-                if ($a->__get('curso') < 12) {
+                if ($a->__get('curso') < 20) { // Se der erro voltar para 12
                     if ($a->__get('curso') == 10) {
                         echo "<tr><td class='label' colspan='2'>Pontos das notas:</td><td colspan='2'>" . $a->__get('media_portugues') . "</td></tr>";
                     } else {
