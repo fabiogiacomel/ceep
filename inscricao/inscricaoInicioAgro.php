@@ -218,7 +218,7 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso').length = 0;
         //document.getElementById('curso').options.add(new Option("Nenhum curso para esta Modalidade e Período", "0"));
         // document.getElementById('curso').options.length = 0;
-        // document.getElementById('curso').options.add(new Option("Selecione um curso", "0"));
+        document.getElementById('curso').options.add(new Option("Selecione um curso", "0"));
         // document.getElementById('curso').options.add(new Option("Administração  ", "1"));
         // document.getElementById('curso').options.add(new Option("Edificações  ", "9"));
         // document.getElementById('curso').options.add(new Option("Eletrônica  ", "2"));
