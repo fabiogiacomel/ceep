@@ -377,7 +377,7 @@ class Aluno
             $con->bindValue(":p3", $this->rg);
             $con->bindValue(":p4", $this->cpf);
             //Convertendo a data para salvar no banco
-            $con->bindValue(":p5", $this->datanasc;
+            $con->bindValue(":p5", $this->datanasc);
             //$con->bindValue(":p5", date("Y-m-d", strtotime($this->datanasc)));
             $con->bindValue(":p6", $this->email);
             $con->bindValue(":p7", $this->fone_casa);
