@@ -228,7 +228,7 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST['nome'])) {
             var telefone = document.form1.fone_casa.value;
 
 
-            var idadealuno = idade(new Date(datanasc), new Date());
+           // var idadealuno = idade(new Date(datanasc), new Date());
             // alert (idadealuno);
 
             //Aluno maior de 18 no integrado

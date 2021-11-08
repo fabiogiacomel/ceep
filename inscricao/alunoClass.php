@@ -134,7 +134,9 @@ class Aluno
                     $this->rg_data_expedicao = $obj->rg_data_expedicao;
                     $this->cpf = $obj->cpf;
                     //Alterado entrada da data para funcionar em celulares 07/11/2021
-                    $this->datanasc = date("d/m/Y", strtotime($obj->datanasc));
+                    //$this->datanasc = date("d/m/Y", strtotime($obj->datanasc));
+
+                    $this->datanasc = $obj->datanasc;
                     $this->email = $obj->email;
                     $this->fone_casa = $obj->fonecasa;
                     $this->cidade = $obj->cidade;
@@ -375,7 +377,8 @@ class Aluno
             $con->bindValue(":p3", $this->rg);
             $con->bindValue(":p4", $this->cpf);
             //Convertendo a data para salvar no banco
-            $con->bindValue(":p5", date("Y-m-d", strtotime($this->datanasc)));
+            $con->bindValue(":p5", $this->datanasc;
+            //$con->bindValue(":p5", date("Y-m-d", strtotime($this->datanasc)));
             $con->bindValue(":p6", $this->email);
             $con->bindValue(":p7", $this->fone_casa);
             $con->bindValue(":p8", $this->cidade);
