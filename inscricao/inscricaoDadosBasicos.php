@@ -346,12 +346,12 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST['nome'])) {
             }
 
             //Aqui estou verificando se o campo data foi prrenchido
-            if (datanasc == "dd/mm/aaaa") {
+/*             if (datanasc == "dd/mm/aaaa") {
                 document.getElementById('msg_erro').innerHTML =
                     "<div id='erro' class='alert alert-danger'>Erro: Data Inválida.</div>";
                 return false;
             }
-
+ */
 
             if (email == "" || email.indexOf('@') == -1 || email.indexOf('.') == -1) {
                 document.getElementById('msg_erro').innerHTML =

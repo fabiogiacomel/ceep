@@ -43,10 +43,11 @@
     <input class="tfield" onKeyUp="numerocpf(this)" maxlength="12" name="cpf" value="" type="text"  OnKeyPress="">
     CPF deverá ser do próprio candidato Obrigatoriamente<br />
 
-
+<!--
     <label>Data de Nasc: </label>
     <input class="tfield" onKeyPress="mascaranasc(event, this)" maxlength="10" name="datanasc" value="" type="text" OnKeyPress="">
     DD/MM/AAAA<br />
+-->
 
 
     <label>Email:</label>

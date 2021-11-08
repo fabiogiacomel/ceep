@@ -370,7 +370,8 @@ class Aluno
         try {
             $sql = "insert into inscricoesnovas (cgm, nome, rg, cpf,datanasc, email, fonecasa, cidade, fonecelular,bairro, rua, num_casa, curso, curso2, periodo, periodo2, serial, datainsc, horainsc, nome_mae, escola_origem, escola_origem_cidade, escola_origem_estado, rg_data_expedicao)values (:p1,:p2,:p3,:p4,:p5,:p6,:p7,:p8,:p9,:pA,:pB,:pC,:pD,:pD2,:pE,:pE2,:pF,:pG,:pH,:pI,:pJ,:pK,:pL,:pM)";
 
-            $con = $c = new Conexao();        $con = $c->prepare($sql);
+            $con = $c = new Conexao();        
+            $con = $c->prepare($sql);
 
             $con->bindValue(":p1", $this->cgm);
             $con->bindValue(":p2", $this->nome);
