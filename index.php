@@ -91,7 +91,7 @@
 
     <div class="hero-content" data-aos="fade-up">
       <h2>Cursos técnicos <span>Gratuitos</span> de qualidade!<br></h2>
-      <h3>Inscrições <span>de 08/11 até 26/11</span> aguarde!<br></h3>
+      <h3>Inscrições <span>de 08/11 até 26/11</span><br></h3>
       <div class="alert alert-primary alert-dismissible">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         <strong>INSCRIÇÕES!</strong> As inscrições para 2022 estão abertas!
