@@ -225,6 +225,8 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso').options.add(new Option("Eletromecânica  ", "3"));
         document.getElementById('curso').options.add(new Option("Desenvolvimento de Sistemas  ", "19"));
         document.getElementById('curso').options.add(new Option("Meio Ambiente  ", "6"));
+        document.getElementById('curso').options.add(new Option("TÉCNICO EM AGRONEGÓCIOS  ", "17"));
+        document.getElementById('curso').options.add(new Option("TÉCNICO AGRÍCOLA  ", "18"));
       }
 
       //Integrado tarde

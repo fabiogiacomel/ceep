@@ -727,7 +727,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     }
 
                     // echo "O serial é: ".$a->__get('serial');
-                    if ($a->__get('serial') == 1) { //integrado
+                    if ($a->__get('serial') == 1 && ($curso <> 17) && ($curso <> 18)) { //integrado
                       campos_matematica_integrado();
                       // echo "campos_matematica_integrado";
                     }
@@ -747,7 +747,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                       <br>
                     <?php
                     }
-                    if ($curso == 4 || $curso2 == 4) { //Sub Enfermagem
+                    //if ($curso == 4 || $curso2 == 4) { //Sub Enfermagem
+
+                    if ($curso == 4 || $curso == 17 || $curso == 18) { //Sub Enfermagem
                     ?>
                       <hr />
 
