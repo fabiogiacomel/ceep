@@ -223,7 +223,7 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso').options.add(new Option("Edificações  ", "9"));
         document.getElementById('curso').options.add(new Option("Eletrônica  ", "2"));
         document.getElementById('curso').options.add(new Option("Eletromecânica  ", "3"));
-        document.getElementById('curso').options.add(new Option("Desenvolvimento de Sistemas  ", "5"));
+        document.getElementById('curso').options.add(new Option("Desenvolvimento de Sistemas  ", "19"));
         document.getElementById('curso').options.add(new Option("Meio Ambiente  ", "6"));
       }
 
@@ -236,7 +236,7 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso').options.add(new Option("Edificações  ", "9"));
         document.getElementById('curso').options.add(new Option("Eletrônica  ", "2"));
         document.getElementById('curso').options.add(new Option("Eletromecânica  ", "3"));
-        document.getElementById('curso').options.add(new Option("Desenvolvimento de Sistemas  ", "5"));
+        document.getElementById('curso').options.add(new Option("Desenvolvimento de Sistemas  ", "19"));
         document.getElementById('curso').options.add(new Option("Meio Ambiente  ", "6"));
       }
 
@@ -328,7 +328,7 @@ if (strtotime($data1) > strtotime($data2)) {
         document.getElementById('curso2').options.add(new Option("Edificações  ", "9"));
         document.getElementById('curso2').options.add(new Option("Eletrônica  ", "2"));
         document.getElementById('curso2').options.add(new Option("Eletromecânica  ", "3"));
-        document.getElementById('curso2').options.add(new Option("Desenvolvimento de Sistemas  ", "5"));
+        document.getElementById('curso2').options.add(new Option("Desenvolvimento de Sistemas  ", "19"));
         document.getElementById('curso2').options.add(new Option("Meio Ambiente  ", "6"));
       }
 
