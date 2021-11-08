@@ -62,7 +62,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto " href="https://www.ceepcascavel.com.br/inscricao/">Inscrições</a></li>
+
+           <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
           </li>
           <li><a href="adm.html">Administração</a></li>
