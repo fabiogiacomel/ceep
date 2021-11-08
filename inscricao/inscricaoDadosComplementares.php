@@ -321,12 +321,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       var curso = document.form1.curso.value;
 
       if (serial == 1) { //integrado
-        /*  media = (
+        media = (
            parseFloat(document.form1.mat6.value) +
            parseFloat(document.form1.mat7.value) +
            parseFloat(document.form1.mat8.value) +
            parseFloat(document.form1.mat9.value)) / 4;//agora so soma */
-        media = (parseFloat(document.form1.mat9.value)); //agora so soma
+        //media = (parseFloat(document.form1.mat9.value)); //agora so soma
       }
 
       if (serial == 2) { //Subsequente
@@ -353,7 +353,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         document.getElementById('maiormat').value = media.toFixed(2);
       }
     }
-
 
     function Calc_Med_Bio() {
       var media = 0.00;
@@ -405,6 +404,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
     }
 
+
     function Calc_Med_Pt() {
       //document.getElementById('$portugues').value=document.getElementById('$portugues').value + 1;
 
@@ -413,12 +413,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       var curso = document.form1.curso.value;
 
       if (serial == 1) { //integrado
-        /* media = (
+        media = (
           parseFloat(document.form1.port6.value) +
           parseFloat(document.form1.port7.value) +
           parseFloat(document.form1.port8.value) +
-          parseFloat(document.form1.port9.value)) / 4; */
-        media = (parseFloat(document.form1.port9.value));
+          parseFloat(document.form1.port9.value)) / 4;
+        //media = (parseFloat(document.form1.port9.value));
       }
 
       if (serial == 2) { //Subsequente
@@ -443,8 +443,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       if (media > 0) {
         document.getElementById('maiorport').value = media.toFixed(2);
       }
-    }
-  </script>
+    }  </script>
 </head>
 
 <body onload="inicializar()">
@@ -819,20 +818,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 function campos_matematica_integrado()
 {
   echo '<div class="row">
-            <!--<div class="col-md-3">
-              <label>5a Série / 6° Ano..:</label>
+            <div class="col-md-3">
+              <label>6° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Mt()" id="virtmat6" name="mat6" value="" type="text" OnKeyPress="">
             </div>
             <div class="col-md-3">
-              <label>6a Série / 7° Ano..:</label>
+              <label>7° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Mt()" id="virtmat7" name="mat7" value="" type="text" OnKeyPress="">
             </div>
             <div class="col-md-3">
-              <label>7a Série / 8° Ano..:</label>
+              <label>8° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Mt()" id="virtmat8" name="mat8" value="" type="text" OnKeyPress="">
-            </div>-->
+            </div>
             <div class="col-md-3">
-              <label>Informe a média das notas de Matemática do 9° Ano:</label>
+              <label>9° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Mt()" id="virtmat0" name="mat9" value="" type="text" OnKeyPress="">
             </div>
           </div>';
@@ -841,20 +840,20 @@ function campos_matematica_integrado()
 function campos_portugues_integrado()
 {
   echo '<div class="row">
-            <!--<div class="col-md-3">
-              <label>5a Série / 6° Ano..:</label>
+            <div class="col-md-3">
+              <label> 6° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100" onChange="Calc_Med_Pt()" id="virtport6" name="port6" value="" type="text" OnKeyPress="">
             </div>
             <div class="col-md-3">
-              <label>6a Série / 7° Ano..:</label>
+              <label> 7° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100" onChange="Calc_Med_Pt()" id="virtport7" name="port7" value="" type="text" OnKeyPress="">
             </div>
             <div class="col-md-3">
-              <label>7a Série / 8° Ano..:</label>
+              <label> 8° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100" onChange="Calc_Med_Pt()" id="virtport8" name="port8" value="" type="text" OnKeyPress="">
-            </div>-->
+            </div>
             <div class="col-md-3">
-              <label>Informe a média das notas de Português do 9° Ano:</label>
+              <label> 9° Ano</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100" onChange="Calc_Med_Pt()" id="virtport0" name="port9" value="" type="text" OnKeyPress="">
             </div>
           </div>';
