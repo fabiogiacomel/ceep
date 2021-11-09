@@ -62,10 +62,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="https://www.ceepcascavel.com.br/inscricao/">Inscrições</a></li>
+          
 
-           <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
-          </li>
+           <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a></li>
           <li><a href="adm.html">Administração</a></li>
           <li><a href="edf.html">Edificações</a></li>
           <li><a href="elm.html">Eletromecânica</a></li>
@@ -77,8 +76,9 @@
 
         </ul>
         </li>
+        <li><a class="nav-link scrollto " href="https://www.ceepcascavel.com.br/inscricao/">Inscrições</a></li>
         <li><a class="nav-link scrollto " href="#portfolio">Destaques</a></li>
-
+  
         <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
