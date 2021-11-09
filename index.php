@@ -92,7 +92,7 @@
     <div class="hero-content" data-aos="fade-up">
       <h2>Cursos técnicos <span>Gratuitos</span> de qualidade!<br></h2>
       <h3>Inscrições <span>de 08/11 até 26/11</span></br></h3>
-      <a href="/inscricao/" class="btn btn-success"><span> PARA FAZER A INSCRIÇÃO!!!<span></a>
+      <a href="/inscricao/" class="btn btn-success"><span>CLIQUE PARA FAZER A INSCRIÇÃO!!!<span></a>
     </div>
 
     <div class="hero-slider swiper">
