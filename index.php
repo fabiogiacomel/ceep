@@ -54,11 +54,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between">
-      <a href="index.php">
+      
       <div id="logo">
-        <h1>CEE<span>P</span></br> </h1><h6>CASCAVEL</h6>
+        <h1><a href="index.php">CEE<span>P</span></br> </h1><h6>CASCAVEL</h6></a>
         <!-- Uncomment below if you prefer to use an image logo -->
-      </div></a>
+      </div>
 
       <nav id="navbar" class="navbar">
         <ul>
