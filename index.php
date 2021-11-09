@@ -93,7 +93,7 @@
       <h2>Cursos técnicos <span>Gratuitos</span> de qualidade!<br></h2>
       <h3>Inscrições <span>de 08/11 até 26/11</span></br></h3>
       <button type="button" class="btn btn-primary btn-lg">
-      <a href="/inscricao/">Inscriva-se aqui</a>
+      <a href="/inscricao/">Inscrições On-Line</a>
       </button>
     </div>
 
