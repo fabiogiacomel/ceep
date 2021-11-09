@@ -547,7 +547,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <option value="2">Parcial na Rede Pública (Máximo 1 ano Rede Particular)</option>
       <option value="3">Parcial na Rede Pública (Máximo 2 anos Rede Particular)</option>
       <option value="4">Parcial na Rede Pública (Máximo 3 anos Rede Particular)</option>
-    </select><br />';
+      <option value="6">Integralmente em rede particular</option>
+
+      </select><br />';
                     } ?>
 
                     <!-- Adicionado o campo hidden para esconder os elementos 05/11/2021 -->
