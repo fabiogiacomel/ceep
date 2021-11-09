@@ -531,7 +531,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <option value="1">Integralmente em rede pública ou bolsista integral da rede particular</option>
       <option value="2">Parcial na Rede Pública (Máximo 1 ano Rede Particular)</option>
       <option value="3">Parcial na Rede Pública (Máximo 2 ano Rede Particular)</option>
-    </select><br />';
+      <option value="6">Integralmente em rede particular</option>
+
+      </select><br />';
                     }
                     ?>
 
