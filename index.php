@@ -56,7 +56,7 @@
     <div class="container d-flex justify-content-between">
       
       <div id="logo">
-        <h1><a href="index.php">CEE<span>P</span></a></h1><h6>CASCAVEL</h6>
+        <h1><a href="index.php">CEE<span>P</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
