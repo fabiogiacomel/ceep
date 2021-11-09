@@ -62,24 +62,23 @@
 
       <nav id="navbar" class="navbar">
         <ul>
+          <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              </li>
+              <li><a href="adm.html">Administração</a></li>
+              <li><a href="edf.html">Edificações</a></li>
+              <li><a href="elm.html">Eletromecânica</a></li>
+              <li><a href="elt.html">Eletrônica</a></li>
+              <li><a href="enf.html">Enfermagem</a></li>
+              <li><a href="inf.html">Desenvolvimen. Sistemas</a></li>
+              <li><a href="amb.html">Meio Ambiente</a></li>
+              <li><a href="seg.html">Segurança do trabalho</a></li>
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="#portfolio">Destaques</a></li>
           
-
-           <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a></li>
-          <li><a href="adm.html">Administração</a></li>
-          <li><a href="edf.html">Edificações</a></li>
-          <li><a href="elm.html">Eletromecânica</a></li>
-          <li><a href="elt.html">Eletrônica</a></li>
-          <li><a href="enf.html">Enfermagem</a></li>
-          <li><a href="inf.html">Desenvolvimen. Sistemas</a></li>
-          <li><a href="amb.html">Meio Ambiente</a></li>
-          <li><a href="seg.html">Segurança do trabalho</a></li>
-
-        </ul>
-        </li>
-        <li><a class="nav-link scrollto " href="https://www.ceepcascavel.com.br/inscricao/">Inscrições</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">Destaques</a></li>
-  
-        <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -92,12 +91,10 @@
 
     <div class="hero-content" data-aos="fade-up">
       <h2>Cursos técnicos <span>Gratuitos</span> de qualidade!<br></h2>
-      <h3>Inscrições <span>de 08/11 até 26/11</span><br></h3>
-      <div class="alert alert-primary alert-dismissible">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <strong>INSCRIÇÕES!</strong> As inscrições para 2022 estão abertas!
-        <a href="https://www.ceepcascavel.com.br/inscricao/" class="alert-link">Inscreva-se aqui!!!</a>.
-      </div>
+      <h3>Inscrições <span>de 08/11 até 26/11</span></br></h3>
+      <button type="button" class="btn btn-primary btn-lg">
+      <a href="/inscricao/">Inscriva-se aqui</a>
+      </button>
     </div>
 
     <div class="hero-slider swiper">
@@ -114,20 +111,20 @@
 
   <main id="main">
 
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action">
-      <div class="container" data-aos="zoom-out">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">EXPOCEEP - 2021</h3>
-            <p class="cta-text">Acesse a página da EXPOCEEP/SEMINÁRIO para mais informações.</p>
+      <!-- ======= Call To Action Section ======= -->
+        <section id="call-to-action">
+          <div class="container" data-aos="zoom-out">
+            <div class="row">
+              <div class="col-lg-9 text-center text-lg-start">
+                <h3 class="cta-title">EXPOCEEP - 2021</h3>
+                <p class="cta-text">Acesse a página da EXPOCEEP/SEMINÁRIO para mais informações.</p>
+              </div>
+              <div class="col-lg-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="expo.html">Página da EXPOCEEP</a>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="expo.html">Página da EXPOCEEP</a>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Call To Action Section -->
+        </section><!-- End Call To Action Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -152,7 +149,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-cur">
             <img src="assets/img/adm/adm1.jpg" class="img-fluid" alt="">
-
+            
             <div class="portfolio-info">
               <h4><a href="adm.html" class="details-link">ADMINISTRAÇÃO</a></h4>
             </div>
@@ -218,14 +215,14 @@
 
       </div>
     </section>
-
+   
 
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action">
       <div class="container" data-aos="zoom-out">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">Mais informações da secretaria</h3>
+            <h3 class="cta-title">Mais informações da secretária</h3>
             <p class="cta-text">Acesse a página da secretaria para mais informações.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
@@ -235,14 +232,14 @@
       </div>
     </section><!-- End Call To Action Section -->
 
+   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
+      </div>
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -283,8 +280,10 @@
 
         </div>
       </div>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14470.426133186565!2d-53.49120782529779!3d-24.94547056987913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d153b5d484d1%3A0x5647507dd574586e!2sCentro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Pedro+Boaretto+Neto!5e0!3m2!1spt-BR!2sbr!4v1534965228719" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14470.426133186565!2d-53.49120782529779!3d-24.94547056987913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d153b5d484d1%3A0x5647507dd574586e!2sCentro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Pedro+Boaretto+Neto!5e0!3m2!1spt-BR!2sbr!4v1534965228719"
+        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -309,7 +308,6 @@
 
   <!-- Vendor JS Files -->
   <!--<script src="assets/vendor/aos/aos.js"></script>-->
-
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!--<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
