@@ -42,6 +42,7 @@ $ensino_medio = array(
     1 => "Integralmente em rede pública ou bolsista integral da rede particular",
     2 => "Parcial na Rede Pública (Máximo 1 ano Rede Particular)",
     3 => "Parcial na Rede Pública (Máximo 2 ano Rede Particular)",
+    6 => "Integralmente em rede particular",
     //4 => "Opção inválida",
     //5 => "Opção inválida",
 );
@@ -52,6 +53,8 @@ $ensino_fundamental = array(
     2 => "Parcial na Rede Pública (Máximo 1 ano Rede Particular)",
     3 => "Parcial na Rede Pública (Máximo 2 anos Rede Particular)",
     4 => "Parcial na Rede Pública (Máximo 3 anos Rede Particular)",
+    6 => "Integralmente em rede particular",
+
 );
 
 $rendas = array(
@@ -227,6 +230,11 @@ if ($a->__get('ensinomedio') == 5) {
     $pontuacao_curso2 = $pontuacao_curso2 + 50;
 }
 
+if ($a->__get('ensinomedio') == 6) {
+    $pontuacao = $pontuacao + 50; //3;
+    $pontuacao_curso2 = $pontuacao_curso2 + 50;
+}
+
 /* if ($a->__get('ensinomedio') == 4) {
     $pontuacao = $pontuacao + 15; //2;
     $pontuacao_curso2 = $pontuacao_curso2 +15;
@@ -253,6 +261,11 @@ if ($a->__get('ensinofundamental') == 3) {
 }
 
 if ($a->__get('ensinofundamental') == 4) {
+    $pontuacao = $pontuacao + 30; //3;
+    $pontuacao_curso2 = $pontuacao_curso2 + 30;
+}
+
+if ($a->__get('ensinofundamental') == 6) {
     $pontuacao = $pontuacao + 30; //3;
     $pontuacao_curso2 = $pontuacao_curso2 + 30;
 }
@@ -443,6 +456,10 @@ echo "<td class='label'>Período Opção 2:</td><td>" . $periodos[$a->__get('per
                             echo "(50 Pontos)"; //3; //No máximo 1 ano em rede particular
                         }
 
+                        if ($a->__get('ensinomedio') == 6) {
+                            echo "(50 Pontos)"; //3; //No máximo 1 ano em rede particular
+                        }
+
                         /*  if ($a->__get('ensinomedio') == 4) {
             echo "(15 Pontos)"; //3; //No máximo 2 ano em rede particular
         }
@@ -467,6 +484,10 @@ echo "<td class='label'>Período Opção 2:</td><td>" . $periodos[$a->__get('per
                         }
 
                         if ($a->__get('ensinofundamental') == 4) {
+                            echo "(30 Pontos)"; //3;
+                        }
+
+                        if ($a->__get('ensinofundamental') == 6) {
                             echo "(30 Pontos)"; //3;
                         }
 
