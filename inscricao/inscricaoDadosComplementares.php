@@ -874,7 +874,7 @@ function campos_portugues_especializacao_enfermagem()
 function campos_quimica_sub()
 {
   echo '<div class="row">
-           <-- <div class="col-md-4">
+           <!-- <div class="col-md-4">
               <label class="" col-md-4">1° Ano.:</label>
               <input type="text" placeholder="Exemplo: 60" class="tfield form-control  nota" maxlength="3" pattern="[0-9]{2}|[1][0]{2}" title="Informe a nota com 2 dígitos de 00 a 100"  onChange="Calc_Med_Qui()" id="virtqui" name="qui1" value="" type="text" OnKeyPress="">
             </div>
