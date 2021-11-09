@@ -58,7 +58,7 @@
       <div id="logo">
         <h1><a href="index.php">CEE<span>P</span></a></h1>
       </div>
-
+      <div>
       <nav id="navbar" class="navbar">
         <ul>
           <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
@@ -81,7 +81,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
+      </div>
     </div>
   </header><!-- End Header -->
 
