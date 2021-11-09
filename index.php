@@ -53,7 +53,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex justify-content-between align-items-center">
       
       <div id="logo">
         <h1><a href="index.php">CEE<span>P</span></a></h1>
