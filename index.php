@@ -92,6 +92,10 @@
       <h2>Cursos técnicos <span>Gratuitos</span> de qualidade!<br></h2>
       <h3>Inscrições <span>de 08/11 até 26/11</span></br></h3>
       <a href="/inscricao/" class="btn btn-success"><span>CLIQUE PARA FAZER A INSCRIÇÃO!!!<span></a>
+      <div class="alert alert-danger">
+        <strong>IMPORTANTE!</strong> AGUARDANDO AUTORIZAÇÃO PARA ABERTURA DA TURMA DO TURNO MATUTINO DO CURSO TÉCNICO EM ENFERMAGEM. 
+TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
+      </div>
     </div>
 
     <div class="hero-slider swiper">
