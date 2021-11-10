@@ -12,8 +12,7 @@
 <body>
 
     <div class="container mt-3">
-        <h2>Relatórios das Inscrições</h2>
-        <p>Quantidade total de Inscritos.</p>
+        <h2>Quantidade Total por Curso.</h2>
         <?php
         echo '<table class="table">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -70,7 +69,7 @@
 
 
 
-        <p>Quantidade total de Inscritos Integrado.</p>
+        <h2>Quantidade total de Inscritos Integrado.</h2>
         <?php
         echo '<table class="table">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
