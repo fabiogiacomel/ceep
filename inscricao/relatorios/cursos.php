@@ -14,7 +14,7 @@
   <p>Quantidade total de Inscritos.</p>       
 <?php
 echo '<table class="table">';
- echo "<tr><th>Curso</th><th>Inscritos</th></tr>";
+ echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead>";
 
 class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
@@ -22,7 +22,7 @@ class TableRows extends RecursiveIteratorIterator {
     }
 
     function current() {
-        return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
+        return "<td>" . parent::current(). "</td>";
     }
 
     function beginChildren() {
