@@ -70,6 +70,7 @@
 
         <!--*************************************************************************************-->
        <h2>Quantidade Total por Curso.</h2>
+       <p> Incluida as invalidas</p>
         <?php
         echo '<table class="table">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -97,6 +98,7 @@
         <!--*************************************************************************************-->
 
         <h2>Quantidade total de Inscritos Integrado.</h2>
+        <p> Incluida as invalidas</p>
         <?php
         echo '<table class="table">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -128,6 +130,7 @@
 
 
         <h2>Quantidade total de Inscritos Subsequente.</h2>
+        <p> Incluida as invalidas</p>
         <?php
         echo '<table class="table">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -150,34 +153,6 @@
         $conn = null;
         echo "</tbody></table>";
         ?>
-
-        <!--*************************************************************************************-->
-
-        <h2>Total de Inscrições válidas</h2>
-        <?php
-        echo '<table class="table">';
-        echo "<thead> <tr><th>Quantidade</th></thead><tbody>";
-
-        try {
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT COUNT(*) FROM TotalCPF");
-            $stmt->execute();
-
-            // set the resulting array to associative
-            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-
-            foreach (new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
-                echo $v;
-            }
-        } catch (PDOException $e) {
-            echo "Error: " . $e->getMessage();
-        }
-        $conn = null;
-        echo "</tbody></table>";
-        ?>
-
-        <!--*************************************************************************************-->
 
     </div>
 </body>
