@@ -1,33 +1,3 @@
-<?php
-      class TableRows extends RecursiveIteratorIterator
-      {
-          function __construct($it)
-          {
-              parent::__construct($it, self::LEAVES_ONLY);
-          }
-
-          function current()
-          {
-              return "<td>" . parent::current() . "</td>";
-          }
-
-          function beginChildren()
-          {
-              echo "<tr>";
-          }
-
-          function endChildren()
-          {
-              echo "</tr>" . "\n";
-          }
-      }
-
-      $servername = "localhost";
-      $username = "u224722929_ceep";
-      $password = "UmhNWJ3AvJ4+H]Kr";
-      $dbname = "u224722929_ceep";
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -47,7 +17,33 @@
         echo '<table class="table">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
 
-  
+        class TableRows extends RecursiveIteratorIterator
+        {
+            function __construct($it)
+            {
+                parent::__construct($it, self::LEAVES_ONLY);
+            }
+
+            function current()
+            {
+                return "<td>" . parent::current() . "</td>";
+            }
+
+            function beginChildren()
+            {
+                echo "<tr>";
+            }
+
+            function endChildren()
+            {
+                echo "</tr>" . "\n";
+            }
+        }
+
+        $servername = "localhost";
+        $username = "u224722929_ceep";
+        $password = "UmhNWJ3AvJ4+H]Kr";
+        $dbname = "u224722929_ceep";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
