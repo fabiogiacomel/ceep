@@ -126,10 +126,10 @@
 
         <!--*************************************************************************************-->
 
-        <h2>Quantidade de CPFs cadastrados no sistema</h2>
+        <h2>Total de Inscrições válidas</h2>
         <?php
         echo '<table class="table">';
-        echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
+        echo "<thead> <tr><th>Quantidade</th></thead><tbody>";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
