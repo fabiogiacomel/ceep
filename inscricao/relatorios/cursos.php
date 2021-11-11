@@ -44,15 +44,15 @@
     <div class="container mt-3">
         <!--*************************************************************************************-->
 
-        <h2>Total de Inscrições válidas</h2>
+        <h2>Total de Inscrições</h2>
         <?php
         echo '<table class="table">';
-        echo "<thead> <tr><th>Quantidade</th></thead><tbody>";
+        echo "<thead> <tr><th>Total de Inscrições</th><th>Inscrições Válidas</th></tr></thead><tbody>";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT COUNT(*) FROM TotalCPF");
+            $stmt = $conn->prepare("SELECT COUNT(inscricoesnovas.cpf) AS Todas, COUNT(DISTINCT inscricoesnovas.cpf) AS Validas FROM inscricoesnovas");
             $stmt->execute();
 
             // set the resulting array to associative
