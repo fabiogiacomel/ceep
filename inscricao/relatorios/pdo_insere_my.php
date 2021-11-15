@@ -19,7 +19,7 @@ try
 
     $sql = "INSERT INTO  inscricoesValidas  (nome) VALUES ($dados->nome);";
 
-    for($i=1;$i<=1400;$i++){
+    for($i=1;$i>=10;$i++){
         $conn->exec($sql);
     }
     
