@@ -17,7 +17,22 @@ try
         array('id' => '0','nome' => 'DIEIME VIEIRA','nome_mae' => 'DIONE APARECIDA DE CARVAHO VIEIRA','escola_origem' => 'COLÉGIO ESTADUAL SANTA TEREZA DO OESTE','escola_origem_cidade' => 'SANTA TEREZA DO OESTE','escola_origem_estado' => 'PR','pontuacao' => '169','rg' => '94370817','fonecasa' => '(45) 99817-4635','fonecelular' => '(45) 99817-4635','fonecomercial' => NULL,'fonerecado' => NULL,'email' => 'vieiradieime@gmail.com','bairro' => 'CENTRO','cidade' => 'santa tereza do oeste ','curso' => '4','curso2' => NULL,'periodo' => '3','periodo2' => NULL,'serial' => '2','ensinofundamental' => NULL,'ensinomedio' => '1','cpf' => '04652036981','datainsc' => '2021-11-08','dataalteracao' => NULL,'horainsc' => '13:44:05','abandono' => '0','medio1' => NULL,'medio2' => NULL,'medio3' => NULL,'maiorport' => '90.00','maiormat' => '78.00','maiorqui' => '85.00','maiorbio' => '83.00','renda' => NULL,'comprovante_renda' => NULL,'tentativas' => NULL,'cursosfeitos' => NULL,'auxiliarenf' => NULL,'trabalhaarea' => NULL,'uf' => NULL,'dddcasa' => NULL,'dddcelular' => NULL,'dddcomercial' => NULL,'dddrecado' => NULL,'nomerecado' => NULL,'datanasc' => '30/07/1983','rua' => 'JOAO VARGAS','num_casa' => '266','cgm' => '','concordo' => '0','instituicao_formacao' => '0','trabalha_area' => NULL,'tipo_necessidade' => '0','bolsa_familia' => '2','matematica_n1' => NULL,'matematica_n2' => NULL,'matematica_n3' => NULL,'matematica_n4' => NULL,'portugues_n1' => NULL,'portugues_n2' => NULL,'portugues_n3' => NULL,'portugues_n4' => NULL,'quimica_n1' => NULL,'quimica_n2' => NULL,'quimica_n3' => NULL,'quimica_n4' => NULL,'biologia_n1' => NULL,'biologia_n2' => NULL,'biologia_n3' => NULL,'biologia_n4' => NULL,'nis' => NULL,'rg_data_expedicao' => '2001-11-22','pontuacao_curso2' => '85','valida' => '0')
       );
 
-    $sql = "INSERT INTO  inscricoesValidas (id, nome) VALUES ('', $dados[1]);";
+
+      $sql = "INSERT INTO  inscricoesValidas  (nome, nome_mae, escola_origem, escola_origem_cidade, escola_origem_estado,
+      pontuacao, rg, fonecasa, fonecelular, fonecomercial, fonerecado, email, bairro, cidade, curso, curso2, periodo,
+      periodo2, 'serial', ensinofundamental, ensinomedio, cpf, datainsc, dataalteracao, horainsc, abandono,  
+      medio1, medio2, medio3, maiorport, maiormat, maiorqui, maiorbio, renda, comprovante_renda, tentativas,
+      cursosfeitos, auxiliarenf, trabalhaarea, uf, dddcasa, dddcelular, dddcomercial, dddrecado, nomerecado,
+      datanasc, rua, num_casa, cgm, concordo, instituicao_formacao,  trabalha_area,  tipo_necessidade, bolsa_familia,
+      matematica_n1, matematica_n2, matematica_n3, matematica_n4, portugues_n1, portugues_n2, portugues_n3,
+      portugues_n4, quimica_n1, quimica_n2, quimica_n3, quimica_n4, biologia_n1, biologia_n2, biologia_n3,
+      biologia_n4, nis, rg_data_expedicao, pontuacao_curso2, valida)
+      VALUES ($dados[1][1], '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 
+        '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 
+        '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 
+        '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 
+        '0', '0', '0', '0', '0');";
+      
     
     $conn->exec($sql);
 
