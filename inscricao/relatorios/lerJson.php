@@ -6,7 +6,7 @@ $arr = json_decode($json, true);
 $inscrito = $arr->inscricoes;
 
 foreach($inscrito as $key => $value) {
-        echo $key . " => " . $value . "<br>";
-}
+    echo $key . " => " . $value . "<br>";
+  }
 
 ?>
