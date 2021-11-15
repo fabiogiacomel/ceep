@@ -72,7 +72,7 @@
        <h2>Quantidade Total por Curso.</h2>
        <p> Incluida as invalidas</p>
         <?php
-        echo '<table class="table">';
+        echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
 
         try {
@@ -100,7 +100,7 @@
         <h2>Quantidade total de Inscritos Integrado.</h2>
         <p> Incluida as invalidas</p>
         <?php
-        echo '<table class="table">';
+        echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
 
         try {
@@ -132,7 +132,7 @@
         <h2>Quantidade total de Inscritos Subsequente.</h2>
         <p> Incluida as invalidas</p>
         <?php
-        echo '<table class="table">';
+        echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
 
         try {
