@@ -5,7 +5,7 @@ $arr = json_decode($json, true);
 
 foreach($arr as $key => $value) {
     foreach($value as $inscrito => $campo)
-        echo $value . " => " . $campo . "<br>";
+        echo $inscrito . " => " . $campo . "<br>";
 }
 
 ?>
