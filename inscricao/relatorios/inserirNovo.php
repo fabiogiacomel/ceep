@@ -15,7 +15,7 @@ try {
     foreach ($inscricoes as $i) {
         $sql = "INSERT INTO inscricoesValidas (id, nome, nome_mae, escola_origem, escola_origem_cidade, escola_origem_estado,
         pontuacao, rg, fonecasa, fonecelular, fonecomercial, fonerecado, email, bairro, cidade, curso, curso2, periodo,
-        periodo2, 'serial', ensinofundamental, ensinomedio, cpf, datainsc, dataalteracao, horainsc, abandono,  
+        periodo2, serial, ensinofundamental, ensinomedio, cpf, datainsc, dataalteracao, horainsc, abandono,  
         medio1, medio2, medio3, maiorport, maiormat, maiorqui, maiorbio, renda, comprovante_renda, tentativas,
         cursosfeitos, auxiliarenf, trabalhaarea, uf, dddcasa, dddcelular, dddcomercial, dddrecado, nomerecado,
         datanasc, rua, num_casa, cgm, concordo, instituicao_formacao,  trabalha_area,  tipo_necessidade, bolsa_familia,
