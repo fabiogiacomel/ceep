@@ -13,7 +13,7 @@ try {
 
     //navega pelos elementos do array, imprimindo cada posição
     foreach ($inscricoes as $i) {
-        $sql = "INSERT INTO inscricoesValidas (id, nome) VALUES (NULL, $i->nome)";
+        $sql = "INSERT INTO inscricoesValidas (id, nome) VALUES (NULL, \'$i->nome\')";
         // use exec() because no results are returned
         $conn->exec($sql);
         //echo "nome: $i->nome - idade: $i->cpf - sexo: $i->curso<br>";
