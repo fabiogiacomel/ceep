@@ -141,9 +141,6 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
                   <p class="cta-text"> Aulas 2 X na semana. Duração de 1 ano (com certificado) e possibilidade de 2º ano (com certificado) se houver número mínimo de alunos. </p>
 
               </div>
-              <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle" href="expo.html">Mais Informações</a>
-              </div>
             </div>
           </div>
         </section><!-- End Call To Action Section -->
