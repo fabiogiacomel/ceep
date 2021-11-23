@@ -121,24 +121,24 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
                 <h3 class="cta-title">CELEM 2022 com pré-inscrições abertas no CEEP!!</h3>
                 <h4 class="cta-title">Até 24/11 as 14:00</h4>
                 <p class="cta-text">Contato: fernanda.erzinger@escola.pr.gov.br 3226-2369 Ramal 202</p>
-                <p class="cta-text">Vagas (Instrução Nº 24/2017 - SUED/SEED)
-                  Italiano 1 turma tarde
+                <p class="cta-text">Vagas (Instrução Nº 24/2017 - SUED/SEED)</p>
+                <p class="cta-text">Italiano 1 turma tarde</p>
                   <ul class="cta-text">
                   <li> 20 vagas para alunos da rede estadual</li>
                   <li> 4 vagas para comunidade</li>
                   <li> 2 vagas para professores e funcionários</li>
                   </ul>
                   </p>
-                  Espanhol 1 turma tarde
-                  20 vagas para alunos da rede estadual
-                  4 vagas para comunidade
-                  2 vagas para professores e funcionários
+                  <p class="cta-text"> Espanhol 1 turma tarde </p>
+                  <li> 20 vagas para alunos da rede estadual </li>
+                  <li> 4 vagas para comunidade </li>
+                  <li> 2 vagas para professores e funcionários </li>
 
-                  Documentos: Cópia RG, CPF, Certidão Civil, Comp. Endereço, Histórico Escolar/Declaração Matrícula
+                  <p class="cta-text">Documentos: Cópia RG, CPF, Certidão Civil, Comp. Endereço, Histórico Escolar/Declaração Matrícula</p>
 
-                  Requisito: Mínimo 11 anos.
+                  <p class="cta-text">Requisito: Mínimo 11 anos.</p>
 
-                  Aulas 2 X na semana. Duração de 1 ano (com certificado) e possibilidade de 2º ano (com certificado) se houver número mínimo de alunos. </p>
+                  <p class="cta-text"> Aulas 2 X na semana. Duração de 1 ano (com certificado) e possibilidade de 2º ano (com certificado) se houver número mínimo de alunos. </p>
 
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
