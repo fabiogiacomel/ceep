@@ -60,10 +60,7 @@
       </div>
       <div>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-            </li>
+          <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a></li>
               <li><a href="adm.html">Administração</a></li>
               <li><a href="edf.html">Edificações</a></li>
               <li><a href="elm.html">Eletromecânica</a></li>
@@ -72,13 +69,8 @@
               <li><a href="inf.html">Desenvolvimen. Sistemas</a></li>
               <li><a href="amb.html">Meio Ambiente</a></li>
               <li><a href="seg.html">Segurança do trabalho</a></li>
-
-            </ul>
-          </li>
           <li><a class="nav-link scrollto " href="#portfolio">Destaques</a></li>
-          
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
-        </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       </div>
