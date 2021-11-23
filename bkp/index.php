@@ -118,11 +118,11 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
           <div class="container" data-aos="zoom-out">
             <div class="row">
               <div class="col-lg-9 text-center text-lg-start">
-                <h3 class="cta-title">CELEM - 2022</h3>
-                <p class="cta-text">Contato: fernanda.erzinger@escola.pr.gov.br 3226-2369 Ramal 202</p>
+                <h3 class="cta-title">EXPOCEEP - 2021</h3>
+                <p class="cta-text">Acesse a página da EXPOCEEP/SEMINÁRIO para mais informações.</p>
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle" href="expo.html">Mais Informações</a>
+                <a class="cta-btn align-middle" href="expo.html">Página da EXPOCEEP</a>
               </div>
             </div>
           </div>
