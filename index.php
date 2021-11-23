@@ -119,13 +119,15 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
             <div class="row">
               <div class="col-lg-9 text-center text-lg-start">
                 <h3 class="cta-title">CELEM 2022 com pré-inscrições abertas no CEEP!!</h3>
-                <h4 class="cta-title">Inscrições até 24/11 as 14:00</h4>
+                <h4 class="cta-title">Até 24/11 as 14:00</h4>
                 <p class="cta-text">Contato: fernanda.erzinger@escola.pr.gov.br 3226-2369 Ramal 202</p>
-                <p class="cta-text">Vagas (Instrução Nº 24/2017 - SUED/SEED)
+                <p class="cta-text">Vagas (Instrução Nº 24/2017 - SUED/SEED)</p>
                   Italiano 1 turma tarde
-                  20 vagas para alunos da rede estadual
-                  4 vagas para comunidade
-                  2 vagas para professores e funcionários
+                  <ul>
+                  <li> 20 vagas para alunos da rede estadual</li>
+                  <li> 4 vagas para comunidade</li>
+                  <li> 2 vagas para professores e funcionários</li>
+                  </ul>
 
                   Espanhol 1 turma tarde
                   20 vagas para alunos da rede estadual
