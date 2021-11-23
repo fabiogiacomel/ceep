@@ -57,9 +57,7 @@
       
       <div id="logo">
         <h1><a href="index.php">CEE<span>P</span></a></h1>
-      </div>
-      <div>
-      <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar">
           <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a></li>
               <li><a href="adm.html">Administração</a></li>
               <li><a href="edf.html">Edificações</a></li>
