@@ -128,11 +128,12 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
                   <li> 2 vagas para professores e funcionários</li>
                   </ul>
                   </p>
+                  <ul class="cta-text">
                   <p class="cta-text"> Espanhol 1 turma tarde </p>
                   <li> 20 vagas para alunos da rede estadual </li>
                   <li> 4 vagas para comunidade </li>
                   <li> 2 vagas para professores e funcionários </li>
-
+                  </ul>                    
                   <p class="cta-text">Documentos: Cópia RG, CPF, Certidão Civil, Comp. Endereço, Histórico Escolar/Declaração Matrícula</p>
 
                   <p class="cta-text">Requisito: Mínimo 11 anos.</p>
