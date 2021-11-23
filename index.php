@@ -123,7 +123,7 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
                 <p class="cta-text">Contato: fernanda.erzinger@escola.pr.gov.br 3226-2369 Ramal 202</p>
                 <p class="cta-text">Vagas (Instrução Nº 24/2017 - SUED/SEED)
                   Italiano 1 turma tarde
-                  <ul>
+                  <ul class="cta-text">
                   <li> 20 vagas para alunos da rede estadual</li>
                   <li> 4 vagas para comunidade</li>
                   <li> 2 vagas para professores e funcionários</li>
