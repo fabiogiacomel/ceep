@@ -21,7 +21,7 @@ try
                                 echo $row->id . " : ";
                                 echo $row->cpf . " : "; 
                                 echo $row->total . "</br>";
-    
+                                $r2 = $conn->query("UPDATE inscricoesValidas SET valida=0 WHERE id=$row->id");
                             }
                         }
                 }
