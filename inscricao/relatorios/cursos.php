@@ -148,7 +148,7 @@
 
         <!--*************************************************************************************-->
 
-        <h2>Quantidade total de Inscritos Subsequente.</h2>
+        <h2>Quantidade total de Inscritos Subsequente MANHÃ.</h2>
         <?php
         echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -156,7 +156,7 @@
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT * FROM InscritosSub");
+            $stmt = $conn->prepare("SELECT * FROM InscritosSubM");
             $stmt->execute();
 
             // set the resulting array to associative
@@ -171,6 +171,33 @@
         $conn = null;
         echo "</tbody></table>";
         ?>
+
+        <!--*************************************************************************************-->
+
+        <h2>Quantidade total de Inscritos Subsequente NOITE</h2>
+        <?php
+        echo '<table class="table table-striped">';
+        echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
+
+        try {
+            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $stmt = $conn->prepare("SELECT * FROM InscritosSubM");
+            $stmt->execute();
+
+            // set the resulting array to associative
+            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+            foreach (new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
+                echo $v;
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        $conn = null;
+        echo "</tbody></table>";
+        ?>
+        
         <!--*************************************************************************************-->
 
     </div>

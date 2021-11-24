@@ -68,3 +68,17 @@ SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCurso
 View = InscritosIntegradoT
 
 SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 AND inscricoesValidas.serial=1 AND inscricoesValidas.periodo=2 GROUP by inscricoesValidas.curso
+
+=================================================================================
+
+View = InscritosSubM
+
+SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 AND inscricoesValidas.serial=2 AND inscricoesValidas.periodo=1 GROUP by inscricoesValidas.curso
+
+=================================================================================
+
+View = InscritosSubN
+
+SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 AND inscricoesValidas.serial=2 AND inscricoesValidas.periodo=3 GROUP by inscricoesValidas.curso
+
+=================================================================================
