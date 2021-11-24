@@ -12,11 +12,12 @@ try
         while ($row = $result->fetch(PDO::FETCH_OBJ))
         {
         
-            $r2 = $conn->query("SELECT DISTINCT COUNT(cpf) AS total FROM inscricoesValidas WHERE cpf=$row->cpf");
+            $r2 = $conn->query("SELECT DISTINCT id, COUNT(cpf) AS total FROM inscricoesValidas WHERE cpf=$row->cpf");
             if ($r2)
                 {
                     while ($row = $r2->fetch(PDO::FETCH_OBJ))
                         {
+                            echo $row->id . " : "; 
                             echo $row->total . "</br>";
                         }
                 }
