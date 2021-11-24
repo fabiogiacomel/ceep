@@ -17,9 +17,12 @@ try
                 {
                     while ($row = $r2->fetch(PDO::FETCH_OBJ))
                         {
-                            echo $row->id . " : ";
-                            echo $row->cpf . " : "; 
-                            echo $row->total . "</br>";
+                            if($row->total>1){
+                                echo $row->id . " : ";
+                                echo $row->cpf . " : "; 
+                                echo $row->total . "</br>";
+    
+                            }
                         }
                 }
         }
