@@ -44,7 +44,6 @@
     <div class="container mt-3">
         <!--*************************************************************************************-->
 
-        <h2>Total de Inscrições</h2>
         <?php
         echo '<table class="table">';
         echo "<thead> <tr><th>Total de Inscrições</th><th>Inscrições Válidas</th></tr></thead><tbody>";
@@ -70,7 +69,6 @@
 
         <!--*************************************************************************************-->
        <h2>Quantidade Total por Curso.</h2>
-       <p> Incluida as invalidas</p>
         <?php
         echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -97,8 +95,7 @@
 
         <!--*************************************************************************************-->
 
-        <h2>Quantidade total de Inscritos Integrado.</h2>
-        <p> Incluida as invalidas</p>
+        <h2>Quantidade total de Inscritos Integrado MANHA.</h2>
         <?php
         echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -106,7 +103,34 @@
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT * FROM InscritosIntegrado");
+            $stmt = $conn->prepare("SELECT * FROM InscritosIntegradoM");
+            $stmt->execute();
+
+            // set the resulting array to associative
+            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+            foreach (new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
+                echo $v;
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        $conn = null;
+        echo "</tbody></table>";
+        ?>
+
+
+        <!--*************************************************************************************-->
+
+        <h2>Quantidade total de Inscritos Integrado TARDE.</h2>
+        <?php
+        echo '<table class="table table-striped">';
+        echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
+
+        try {
+            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $stmt = $conn->prepare("SELECT * FROM InscritosIntegradoT");
             $stmt->execute();
 
             // set the resulting array to associative
@@ -124,13 +148,7 @@
 
         <!--*************************************************************************************-->
 
-
-        <!--*************************************************************************************-->
-
-
-
         <h2>Quantidade total de Inscritos Subsequente.</h2>
-        <p> Incluida as invalidas</p>
         <?php
         echo '<table class="table table-striped">';
         echo "<thead> <tr><th>Curso</th><th>Inscritos</th></tr></thead><tbody>";
@@ -153,6 +171,7 @@
         $conn = null;
         echo "</tbody></table>";
         ?>
+        <!--*************************************************************************************-->
 
     </div>
 </body>

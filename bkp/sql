@@ -1,0 +1,70 @@
+INSERT INTO `tbCursos` (`curso`) VALUES ('Administração'), (INSERT INTO `tbCursos` (`id`, `curso`) VALUES (NULL, 'Administração'), (NULL, 'Eletrônica'), (NULL, 'Eletromecânica'), (NULL, 'Enfermagem'), (NULL, 'Informática'), (NULL, 'Meio Ambiente'), (NULL, 'Segurança do Trabalho'), (NULL, 'Guia de Turismo Regional'), (NULL, 'Edificações'), (NULL, 'Especialização Técnica em Enfermagem do Trabalho'), (NULL, 'Móveis'), (NULL, 'CELEM ALEMÃO'), (NULL, 'CELEM ESPANHOL'), (NULL, 'CELEM INGLÊS'), (NULL, 'CELEM ITELIANO'), (NULL, 'CELEM MANDARIN'), (NULL, 'TÉCNICO EM AGRONEGÓCIOS'), (NULL, 'TÉCNICO AGRÍCOLA'), (NULL, 'DESENVOLVIMENTO DE SISTEMAS');NULL, 'Eletrônica'), (NULL, 'Eletromecânica'), (NULL, 'Enfermagem'), (NULL, 'Informática'), (NULL, 'Meio Ambiente'), (NULL, 'Segurança do Trabalho'), (NULL, 'Guia de Turismo Regional'), (NULL, 'Edificações'), (NULL, 'Especialização Técnica em Enfermagem do Trabalho'), (NULL, 'Móveis'), (NULL, 'CELEM ALEMÃO');
+
+SELECT inscricoesnovas.curso, tbCursos.curso FROM tbCursos, inscricoesnovas WHERE tbCursos.id=inscricoesnovas.curso GROUP by inscricoesnovas.curso
+
+
+SELECT  tbCursos.curso, COUNT(inscricoesnovas.curso) AS Inscritos FROM tbCursos, inscricoesnovas WHERE tbCursos.id=inscricoesnovas.curso GROUP by inscricoesnovas.curso
+
+SELECT DISTINCT tbCursos.curso, COUNT(inscricoesnovas.curso) AS Inscritos FROM tbCursos, inscricoesnovas WHERE (tbCursos.id=inscricoesnovas.curso) GROUP by inscricoesnovas.curso, inscricoesnovas.cpf
+
+Select inscricoesnovas.nome, inscricoesnovas.fonecelular FROM inscricoesnovas WHERE inscricoesnovas.curso = 17
+
+SELECT DISTINCT  FROM inscricoesnovas ORDER BY inscricoesnovas.nome
+
+SELECT inscricoesnovas.cpf FROM inscricoesnovas
+SELECT DISTINCT inscricoesnovas.cpf FROM inscricoesnovas
+
+SELECT COUNT(inscricoesnovas.cpf) AS Todas, COUNT(DISTINCT inscricoesnovas.cpf) AS Validas FROM inscricoesnovas
+
+SELECT * FROM inscricoesnovas WHERE inscricoesnovas.cpf IN (SELECT inscricoesnovas.cpf FROM inscricoesnovas GROUP BY inscricoesnovas.cpf)
+
+
+
+SELECT cpf, datainsc, dataalteracao FROM `inscricoesValidas`
+
+SELECT cpf, datainsc, horainsc, dataalteracao  FROM inscricoesValidas GROUP BY CPF ORDER BY cpf, datainsc, horainsc, dataalteracao
+
+
+#SQL QUE FUNCIONOU CLASSIFICA PELA MAIOR DATA E PELA MAIOR HORA
+
+SELECT cpf, datainsc, horainsc, dataalteracao  FROM inscricoesValidas GROUP BY CPF ORDER BY cpf, datainsc DESC, horainsc DESC, dataalteracao
+
+
+SELECT id, cpf, datainsc, horainsc, dataalteracao  FROM inscricoesValidas ORDER BY id DESC
+
+
+SELECT COUNT(*) FROM inscricoesValidas WHERE inscricoesValidas.valida=1
+
+EXECUTAR O UPDATE PARA DEIXAR TODAS AS INSCRIÇÕES VALIDAS
+UPDATE inscricoesValidas SET inscricoesValidas.valida=1
+
+
+
+
+
+
+
+=================================================================================
+Inscrições VALIDAS
+
+View = InscritosCurso
+
+SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 GROUP by inscricoesValidas.curso
+
+=================================================================================
+
+View = InscritosIntegrado
+
+SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 AND inscricoesValidas.serial=1 GROUP by inscricoesValidas.curso
+
+=================================================================================
+
+View = InscritosIntegradoM
+
+SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 AND inscricoesValidas.serial=1 AND inscricoesValidas.periodo=1 GROUP by inscricoesValidas.curso
+
+=================================================================================
+
+View = InscritosIntegradoT
+
+SELECT  tbCursos.curso, COUNT(inscricoesValidas.curso) AS Inscritos FROM tbCursos, inscricoesValidas WHERE tbCursos.id=inscricoesValidas.curso AND inscricoesValidas.valida=1 AND inscricoesValidas.serial=1 AND inscricoesValidas.periodo=2 GROUP by inscricoesValidas.curso
