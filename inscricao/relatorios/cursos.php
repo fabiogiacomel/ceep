@@ -67,7 +67,39 @@
         echo "</tbody></table>";
         ?>
 
+
         <!--*************************************************************************************-->
+
+        <h2>Inscrições por dia</h2>
+        <?php
+        $sql1 = 'SELECT DATE_FORMAT(inscricoesValidas.datainsc,\'%d/%m/%Y\') AS Data, COUNT(inscricoesValidas.cpf) as Quantidade FROM inscricoesValidas GROUP BY inscricoesValidas.datainsc';
+
+        echo '<table class="table table-striped">';
+        echo "<thead> <tr><th>Data</th><th>Quantidade</th></tr></thead><tbody>";
+
+        try {
+            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $stmt = $conn->prepare($sql1);
+            $stmt->execute();
+
+            // set the resulting array to associative
+            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+            foreach (new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
+                echo $v;
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        $conn = null;
+        echo "</tbody></table>";
+        ?>
+
+        <!--*************************************************************************************-->
+
+
+<!--*************************************************************************************-->
        <h2>Quantidade Total por Curso.</h2>
         <?php
         echo '<table class="table table-striped">';
@@ -199,6 +231,7 @@
         ?>
 
         <!--*************************************************************************************-->
+
 
     </div>
 </body>
