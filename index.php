@@ -118,7 +118,7 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
             <h3 class="cta-title"><strong><u>Cronograma De Rematr&iacute;culas 2022 - Continuidade dos Cursos</u></strong></h3>
-            <table class="cta-title">
+            <table class="cta-text">
               <tbody>
                 <tr>
                   <td colspan="5" >
