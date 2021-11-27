@@ -116,70 +116,7 @@
     <section id="call-to-action">
       <div class="container" data-aos="zoom-out">
         <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title"><strong><u>Cronograma De Rematr&iacute;culas 2022 - Continuidade dos Cursos</u></strong></h3>
-            <table class="cta-text">
-              <tbody>
-                <tr>
-                  <td colspan="5" >
-                    <p></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Segunda-Feira</strong></p>
-                    <p><strong>(29-11)</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Ter&ccedil;a-Feira</strong></p>
-                    <p><strong>(30-11)</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Quarta-Feira</strong></p>
-                    <p><strong>(01/12)</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Quinta-feira</strong></p>
-                    <p><strong>(02/12)</strong></p>
-                  </td>
-                  <td>
-                    <p><strong>Sexta-Feira</strong></p>
-                    <p><strong>(03/12)</strong></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><strong>Administra&ccedil;&atilde;o</strong></p>
-                    <p>Integrado(Manh&atilde;/Tarde)</p>
-                    <p>Subsequente(Noite)</p>
-                  </td>
-                  <td>
-                    <p><strong>Edifica&ccedil;&otilde;es</strong></p>
-                    <p><strong>Inform&aacute;tica</strong></p>
-                    <p>Integrado(Manh&atilde;/Tarde)</p>
-                    <p>Subsequente(Noite)</p>
-                  </td>
-                  <td>
-                    <p><strong>Eletromec&acirc;nica</strong></p>
-                    <p>Integrado(Manh&atilde;/Tarde)</p>
-                    <p>Subsequente(Noite)</p>
-                  </td>
-                  <td>
-                    <p><strong>Enfermagem</strong></p>
-                    <p>Subsequente(Manh&atilde;/Noite)</p>
-                    <p><strong>Seguran&ccedil;a do Trabalho</strong></p>
-                    <p>Subsequente(Noite)</p>
-                  </td>
-                  <td>
-                    <p><strong>Eletr&ocirc;nica</strong></p>
-                    <p><strong>Meio Ambiente</strong></p>
-                    <p>Integrado(Manh&atilde;)</p>
-                    <p>Subsequente(Noite)</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <img src="img\01.png" class="rounded">
         </div>
       </div>
     </section><!-- End Call To Action Section -->
