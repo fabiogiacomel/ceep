@@ -53,33 +53,33 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between align-items-center">
-      
+
       <div id="logo">
         <h1><a href="index.php">CEE<span>P</span></a></h1>
       </div>
       <div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
             </li>
-              <li><a href="adm.html">Administração</a></li>
-              <li><a href="edf.html">Edificações</a></li>
-              <li><a href="elm.html">Eletromecânica</a></li>
-              <li><a href="elt.html">Eletrônica</a></li>
-              <li><a href="enf.html">Enfermagem</a></li>
-              <li><a href="inf.html">Desenvolvimen. Sistemas</a></li>
-              <li><a href="amb.html">Meio Ambiente</a></li>
-              <li><a href="seg.html">Segurança do trabalho</a></li>
+            <li><a href="adm.html">Administração</a></li>
+            <li><a href="edf.html">Edificações</a></li>
+            <li><a href="elm.html">Eletromecânica</a></li>
+            <li><a href="elt.html">Eletrônica</a></li>
+            <li><a href="enf.html">Enfermagem</a></li>
+            <li><a href="inf.html">Desenvolvimen. Sistemas</a></li>
+            <li><a href="amb.html">Meio Ambiente</a></li>
+            <li><a href="seg.html">Segurança do trabalho</a></li>
 
-            </ul>
+          </ul>
           </li>
           <li><a class="nav-link scrollto " href="#portfolio">Destaques</a></li>
-          
+
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
       </div>
     </div>
   </header><!-- End Header -->
@@ -93,8 +93,8 @@
       <a href="/inscricao/" class="btn btn-success"><span>CLIQUE PARA FAZER A INSCRIÇÃO!!!<span></a>
       </br>
       <div class="alert alert-danger">
-        <strong>IMPORTANTE!</strong> AGUARDANDO AUTORIZAÇÃO PARA ABERTURA DA TURMA DO TURNO MATUTINO DO CURSO TÉCNICO EM ENFERMAGEM. 
-TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
+        <strong>IMPORTANTE!</strong> AGUARDANDO AUTORIZAÇÃO PARA ABERTURA DA TURMA DO TURNO MATUTINO DO CURSO TÉCNICO EM ENFERMAGEM.
+        TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
       </div>
     </div>
 
@@ -112,38 +112,77 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
 
   <main id="main">
 
-      <!-- ======= Call To Action Section ======= -->
-        <section id="call-to-action">
-          <div class="container" data-aos="zoom-out">
-            <div class="row">
-              <div class="col-lg-9 text-center text-lg-start">
-                <h3 class="cta-title">CELEM 2022 com pré-inscrições abertas no CEEP!!</h3>
-                <h4 class="cta-title">Até 24/11 as 14:00</h4>
-                <p class="cta-text">Contato: fernanda.erzinger@escola.pr.gov.br 3226-2369 Ramal 202</p>
-                <p class="cta-text">Vagas (Instrução Nº 24/2017 - SUED/SEED)</p>
-                <p class="cta-text">Italiano 1 turma tarde</p>
-                  <ul class="cta-text">
-                  <li> 20 vagas para alunos da rede estadual</li>
-                  <li> 4 vagas para comunidade</li>
-                  <li> 2 vagas para professores e funcionários</li>
-                  </ul>
-                  </p>
-                  <ul class="cta-text">
-                  <p class="cta-text"> Espanhol 1 turma tarde </p>
-                  <li> 20 vagas para alunos da rede estadual </li>
-                  <li> 4 vagas para comunidade </li>
-                  <li> 2 vagas para professores e funcionários </li>
-                  </ul>                    
-                  <p class="cta-text">Documentos: Cópia RG, CPF, Certidão Civil, Comp. Endereço, Histórico Escolar/Declaração Matrícula</p>
-
-                  <p class="cta-text">Requisito: Mínimo 11 anos.</p>
-
-                  <p class="cta-text"> Aulas 2 X na semana. Duração de 1 ano (com certificado) e possibilidade de 2º ano (com certificado) se houver número mínimo de alunos. </p>
-
-              </div>
-            </div>
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">CELEM 2022 com pré-inscrições abertas no CEEP!!</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td colspan="5" width="1205">
+                    <p><strong><u>Cronograma De Rematr&iacute;culas 2022 - Continuidade dos Cursos</u></strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="248">
+                    <p><strong>Segunda-Feira</strong></p>
+                    <p><strong>(29-11)</strong></p>
+                  </td>
+                  <td width="248">
+                    <p><strong>Ter&ccedil;a-Feira</strong></p>
+                    <p><strong>(30-11)</strong></p>
+                  </td>
+                  <td width="236">
+                    <p><strong>Quarta-Feira</strong></p>
+                    <p><strong>(01/12)</strong></p>
+                  </td>
+                  <td width="272">
+                    <p><strong>Quinta-feira</strong></p>
+                    <p><strong>(02/12)</strong></p>
+                  </td>
+                  <td width="201">
+                    <p><strong>Sexta-Feira</strong></p>
+                    <p><strong>(03/12)</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="248">
+                    <p><strong>Administra&ccedil;&atilde;o</strong></p>
+                    <p>Integrado(Manh&atilde;/Tarde)</p>
+                    <p>Subsequente(Noite)</p>
+                  </td>
+                  <td width="248">
+                    <p><strong>Edifica&ccedil;&otilde;es</strong></p>
+                    <p><strong>Inform&aacute;tica</strong></p>
+                    <p>Integrado(Manh&atilde;/Tarde)</p>
+                    <p>Subsequente(Noite)</p>
+                  </td>
+                  <td width="236">
+                    <p><strong>Eletromec&acirc;nica</strong></p>
+                    <p>Integrado(Manh&atilde;/Tarde)</p>
+                    <p>Subsequente(Noite)</p>
+                  </td>
+                  <td width="272">
+                    <p><strong>Enfermagem</strong></p>
+                    <p>Subsequente(Manh&atilde;/Noite)</p>
+                    <p><strong>Seguran&ccedil;a do Trabalho</strong></p>
+                    <p>Subsequente(Noite)</p>
+                  </td>
+                  <td width="201">
+                    <p><strong>Eletr&ocirc;nica</strong></p>
+                    <p><strong>Meio Ambiente</strong></p>
+                    <p>Integrado(Manh&atilde;)</p>
+                    <p>Subsequente(Noite)</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </section><!-- End Call To Action Section -->
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -168,7 +207,7 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-cur">
             <img src="assets/img/adm/adm1.jpg" class="img-fluid" alt="">
-            
+
             <div class="portfolio-info">
               <h4><a href="adm.html" class="details-link">ADMINISTRAÇÃO</a></h4>
             </div>
@@ -234,7 +273,7 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
 
       </div>
     </section>
-   
+
 
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action">
@@ -251,14 +290,14 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
       </div>
     </section><!-- End Call To Action Section -->
 
-   
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -299,10 +338,8 @@ TURMA DO TURNO NOTURNO JÁ ESTÁ AUTORIZADA PELA SEED.
 
         </div>
       </div>
-      
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14470.426133186565!2d-53.49120782529779!3d-24.94547056987913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d153b5d484d1%3A0x5647507dd574586e!2sCentro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Pedro+Boaretto+Neto!5e0!3m2!1spt-BR!2sbr!4v1534965228719"
-        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14470.426133186565!2d-53.49120782529779!3d-24.94547056987913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d153b5d484d1%3A0x5647507dd574586e!2sCentro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Pedro+Boaretto+Neto!5e0!3m2!1spt-BR!2sbr!4v1534965228719" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
