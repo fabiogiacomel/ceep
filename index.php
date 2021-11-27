@@ -117,12 +117,12 @@
       <div class="container" data-aos="zoom-out">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">CELEM 2022 com pré-inscrições abertas no CEEP!!</h3>
+            <h3 class="cta-title"><strong><u>Cronograma De Rematr&iacute;culas 2022 - Continuidade dos Cursos</u></strong></h3>
             <table class="cta-title">
               <tbody>
                 <tr>
                   <td colspan="5" >
-                    <p><strong><u>Cronograma De Rematr&iacute;culas 2022 - Continuidade dos Cursos</u></strong></p>
+                    <p></p>
                   </td>
                 </tr>
                 <tr>
