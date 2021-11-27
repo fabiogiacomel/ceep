@@ -118,7 +118,7 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
             <h3 class="cta-title">CELEM 2022 com pré-inscrições abertas no CEEP!!</h3>
-            <table>
+            <table class="cta-title">
               <tbody>
                 <tr>
                   <td colspan="5" width="1205">
