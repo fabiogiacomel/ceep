@@ -121,56 +121,56 @@
             <table class="cta-title">
               <tbody>
                 <tr>
-                  <td colspan="5" width="1205">
+                  <td colspan="5" >
                     <p><strong><u>Cronograma De Rematr&iacute;culas 2022 - Continuidade dos Cursos</u></strong></p>
                   </td>
                 </tr>
                 <tr>
-                  <td width="248">
+                  <td>
                     <p><strong>Segunda-Feira</strong></p>
                     <p><strong>(29-11)</strong></p>
                   </td>
-                  <td width="248">
+                  <td>
                     <p><strong>Ter&ccedil;a-Feira</strong></p>
                     <p><strong>(30-11)</strong></p>
                   </td>
-                  <td width="236">
+                  <td>
                     <p><strong>Quarta-Feira</strong></p>
                     <p><strong>(01/12)</strong></p>
                   </td>
-                  <td width="272">
+                  <td>
                     <p><strong>Quinta-feira</strong></p>
                     <p><strong>(02/12)</strong></p>
                   </td>
-                  <td width="201">
+                  <td>
                     <p><strong>Sexta-Feira</strong></p>
                     <p><strong>(03/12)</strong></p>
                   </td>
                 </tr>
                 <tr>
-                  <td width="248">
+                  <td>
                     <p><strong>Administra&ccedil;&atilde;o</strong></p>
                     <p>Integrado(Manh&atilde;/Tarde)</p>
                     <p>Subsequente(Noite)</p>
                   </td>
-                  <td width="248">
+                  <td>
                     <p><strong>Edifica&ccedil;&otilde;es</strong></p>
                     <p><strong>Inform&aacute;tica</strong></p>
                     <p>Integrado(Manh&atilde;/Tarde)</p>
                     <p>Subsequente(Noite)</p>
                   </td>
-                  <td width="236">
+                  <td>
                     <p><strong>Eletromec&acirc;nica</strong></p>
                     <p>Integrado(Manh&atilde;/Tarde)</p>
                     <p>Subsequente(Noite)</p>
                   </td>
-                  <td width="272">
+                  <td>
                     <p><strong>Enfermagem</strong></p>
                     <p>Subsequente(Manh&atilde;/Noite)</p>
                     <p><strong>Seguran&ccedil;a do Trabalho</strong></p>
                     <p>Subsequente(Noite)</p>
                   </td>
-                  <td width="201">
+                  <td>
                     <p><strong>Eletr&ocirc;nica</strong></p>
                     <p><strong>Meio Ambiente</strong></p>
                     <p>Integrado(Manh&atilde;)</p>
