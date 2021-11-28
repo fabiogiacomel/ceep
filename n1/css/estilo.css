@@ -1,0 +1,35 @@
+@charset "utf-8";
+.l1
+{
+  font-family : Verdana;
+  font-weight : bold;
+  font-size : 19px;
+  color : #1B1464;
+  color : rgb(27, 20, 100);
+}
+.l2
+{
+  font-family : Verdana;
+  font-weight : bold;
+  font-size : 19px;
+  color : #006837;
+  color : rgb(0, 104, 55);
+}
+
+.l3
+{
+  font-family : Verdana;
+  font-weight : bold;
+  color : #1B1464;
+  color : rgb(27, 20, 100);
+}
+.l4
+{
+  font-family : Verdana;
+  font-weight : bold;
+  color : #006837;
+  color : rgb(0, 104, 55);
+}
+
+
+
