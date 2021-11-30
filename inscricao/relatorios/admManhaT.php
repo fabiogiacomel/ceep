@@ -34,8 +34,8 @@
             // set the resulting array to associative
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
-            foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                echo $v["nome"];
+            foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {               
+                echo "<tr><td>$i</td><td>".$v["nome"]."</td><td>".$v["pontuacao"]."</td></tr>";
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
