@@ -19,7 +19,7 @@
 <body>
 
     <div class="container mt-3">
-        <img src="https://www.ceepcascavel.com.br/img/ceep.jpg" class="rounded" width="10vw" height="10vw"> 
+        <img src="https://www.ceepcascavel.com.br/img/ceep.jpg" class="rounded" width="30vw" height="30vw"> 
         <h1 class="text-center"> Administração - Manhã </h1>
         <?php
         echo '<table class="table table-striped">';
