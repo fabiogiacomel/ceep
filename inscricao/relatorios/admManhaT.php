@@ -35,7 +35,7 @@
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
             foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                echo $v;
+                echo $v[0];
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
