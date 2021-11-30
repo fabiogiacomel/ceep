@@ -35,7 +35,7 @@
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $i=1;
             foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {               
-                echo "<tr><td>$i</td><td class=\"text-capitalize\">".$v["nome"]."</td><td>".$v["pontuacao"]."</td></tr>";
+                echo "<tr><td>$i</td><td class=\"text-uppercase\">".$v["nome"]."</td><td>".$v["pontuacao"]."</td></tr>";
                 $i++;
             }
         } catch (PDOException $e) {
