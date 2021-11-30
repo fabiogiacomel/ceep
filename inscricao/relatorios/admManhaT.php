@@ -23,7 +23,8 @@ $dbname = "u224722929_ceep";
                 <img src="https://www.ceepcascavel.com.br/img/ceep_menor.jpg" class="img-fluid rounded"> 
             </div>
             <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10">
-                <h3 class="text-left"> Administração - Manhã </h3>
+                <h3 class="text-left"> Lista de Classificados</h3>
+                <h4 class="text-left"> Curso: Administração Periodo: Manhã </h4>
             </div>
         </div>
         </div>
