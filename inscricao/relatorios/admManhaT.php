@@ -20,7 +20,7 @@
 
     <div class="container mt-3">
         <!--*************************************************************************************-->
-
+        <h1> Administração - Manhã </h1>
         <?php
         echo '<table class="table table-striped">';
         echo "<thead> <tr> <th>Classificação</th><th>Nome</th><th>Pontuação</th></tr></thead><tbody>";
