@@ -20,7 +20,7 @@ $dbname = "u224722929_ceep";
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-            <img src="https://www.ceepcascavel.com.br/img/ceep.jpg" class="img-fluid rounded"> 
+            <img src="https://www.ceepcascavel.com.br/img/ceep_menor.jpg" class="img-fluid rounded"> 
         </div>
             <div class="col-sm-8">
             <h1 class="text-left"> Administração - Manhã </h1>
