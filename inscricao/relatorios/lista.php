@@ -6,7 +6,9 @@
 try
 {
     $conn = new PDO('mysql:dbname=u224722929_ceep;user=u224722929_ceep;password=UmhNWJ3AvJ4+H]Kr;host=localhost');
-    $result = $conn->query("SELECT DISTINCT cpf FROM inscricoesValidas");
+//    $result = $conn->query("SELECT DISTINCT cpf FROM inscricoesValidas");
+    $result = $conn->query("SELECT DISTINCT cpf, COUNT(cpf) FROM inscricoesValidas GROUP by cpf");
+
     if ($result)
     {
         while ($row = $result->fetch(PDO::FETCH_OBJ))
@@ -17,7 +19,7 @@ try
                 {
                     while ($row = $r2->fetch(PDO::FETCH_OBJ))
                         {
-                            if($row->total>1){
+                            if($row->total){
                                 echo $row->id . " : ";
                                 echo $row->cpf . " : "; 
                                 echo $row->total . "</br>";
