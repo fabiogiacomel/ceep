@@ -23,7 +23,7 @@
 
         <?php
         echo '<table class="table table-striped">';
-        echo "<thead> <tr><th>Nome</th><th>Pontuação</th></tr></thead><tbody>";
+        echo "<thead> <tr> <th>Classificação</th><th>Nome</th><th>Pontuação</th></tr></thead><tbody>";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -33,9 +33,10 @@
 
             // set the resulting array to associative
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-
+            $i=0;
             foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {               
                 echo "<tr><td>$i</td><td>".$v["nome"]."</td><td>".$v["pontuacao"]."</td></tr>";
+                $i++;
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
