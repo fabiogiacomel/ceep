@@ -41,7 +41,7 @@ $dbname = "u224722929_ceep";
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao FROM inscricoesValidas WHERE valida=1 AND curso=3 AND periodo = 1 ORDER by pontuacao DESC LIMIT 80");
+                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao FROM inscricoesValidas WHERE valida=1 AND curso=3 AND periodo = 1 ORDER by pontuacao DESC");
                 $stmt->execute();
 
                 // set the resulting array to associative
