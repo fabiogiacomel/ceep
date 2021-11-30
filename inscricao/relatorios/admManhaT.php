@@ -33,7 +33,7 @@
 
             // set the resulting array to associative
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-            $i=0;
+            $i=1;
             foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {               
                 echo "<tr><td>$i</td><td>".$v["nome"]."</td><td>".$v["pontuacao"]."</td></tr>";
                 $i++;
