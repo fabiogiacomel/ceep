@@ -19,11 +19,11 @@ try
                 {
                     while ($row = $r2->fetch(PDO::FETCH_OBJ))
                         {
-                            if($row->total){
+                            if($row->total==1){
                                 echo $row->id . " : ";
                                 echo $row->cpf . " : "; 
                                 echo $row->total . "</br>";
-                                $r3 = $conn->query("UPDATE inscricoesValidas SET inscricoesValidas.valida=0 WHERE inscricoesValidas.id=$row->id");
+                                $r3 = $conn->query("UPDATE inscricoesValidas SET inscricoesValidas.valida=1 WHERE inscricoesValidas.id=$row->id");
                             }
                         }
                 }
