@@ -12,3 +12,14 @@ INSERT INTO  inscricoesValidas  ( id ,  nome ,  nome_mae ,  escola_origem ,  esc
     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 
     '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 
     '0', '0', '0', '0', '0');
+
+
+
+
+    SELECT InscricoesInvalidas.nome, InscricoesInvalidas.cpf FROM `InscricoesInvalidas` ORDER BY InscricoesInvalidas.nome
+
+
+    SELECT * FROM `InscricoesInvalidas` ORDER BY InscricoesInvalidas.cpf, InscricoesInvalidas.id DESC
+    
+
+
