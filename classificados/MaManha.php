@@ -24,7 +24,7 @@ $dbname = "u224722929_ceep";
             </div>
             <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10">
                 <h3 class="text-left"> Lista de Classificados</h3>
-                <h4 class="text-left"> Curso: Meio Ambiente</h4>
+                <h4 class="text-left"> Curso: Técnico em Meio Ambiente</h4>
                 <h4 class="text-left"> Periodo: Manhã (Integrado)</h4>
             </div>
         </div>

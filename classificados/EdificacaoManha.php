@@ -24,8 +24,8 @@ $dbname = "u224722929_ceep";
             </div>
             <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10">
                 <h3 class="text-left"> Lista de Classificados</h3>
-                <h4 class="text-left"> Curso: Técnico em Eletrômecanica</h4>
-                <h4 class="text-left"> Periodo: Noturno (Subsequente)</h4>
+                <h4 class="text-left"> Curso: Técnico em Edificações</h4>
+                <h4 class="text-left"> Periodo: Manhã (Integrado)</h4>
             </div>
         </div>
         </div>
@@ -41,7 +41,7 @@ $dbname = "u224722929_ceep";
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao FROM inscricoesValidas WHERE valida=1 AND curso=3 AND periodo = 3 ORDER by pontuacao DESC LIMIT 80");
+                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao FROM inscricoesValidas WHERE valida=1 AND curso=9 AND periodo = 1 ORDER by pontuacao DESC LIMIT 80");
                 $stmt->execute();
 
                 // set the resulting array to associative
