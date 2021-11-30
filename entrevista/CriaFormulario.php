@@ -37,7 +37,10 @@ $Perguntas = '{"P1":"Cite sua maior facilidade e a sua maior dificuldade nos est
 
 $perguntas = json_decode($Perguntas);
 
-echo $perguntas->P1;
+
+foreach($perguntas as $key => $value) {
+  echo $key . " => " . $value . "<br>";
+}
 
 /*
 <form>
