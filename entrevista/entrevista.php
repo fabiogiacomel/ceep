@@ -45,8 +45,39 @@ try {
                 echo "Error: " . $e->getMessage();
             }
             $conn = null;
-            echo "</tbody></table>";
-            ?>
+
+
+switch ($curso) {
+  case 1:
+    $cursoNome = "Admistração";
+    break;
+  case 2:
+    $cursoNome = "Eletrônica";
+    break;
+  case 3:
+    $cursoNome = "Eletromecânica";
+    break;
+  case 4:
+    $cursoNome = "Enfermagem";
+    break;
+  case 6:
+    $cursoNome = "Meio Ambiente";
+    break;
+  case 7:
+    $cursoNome = "Segurança do Trabalho";
+    break;		
+  case 9:
+    $cursoNome = "Edificações";
+    break;
+  case 19:
+    $cursoNome = "DESENVOLVIMENTO DE SISTEMAS";
+    break;
+	default:
+		    $cursoNome = "Sem Curso";
+
+}
+
+?>
 
 
 <!doctype html>
@@ -97,7 +128,7 @@ try {
 		}else{
 			echo '<p class="lead">' .$cpf. '</p>';
 			echo '<p class="lead">' .$nome. '</p>';
-			echo '<p class="lead">' .$curso. '</p>';
+			echo '<p class="lead">' .$cursoNome. '</p>';
 			echo '<p class="lead">' .$periodo. '</p>';
 		}
   		?>
