@@ -11,8 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $cpfErr = "Precisa digitar o CPF";
   } else {
     $tmp_cpf = test_input($_GET["cpf"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[0-9]+$/",$tmp_cpf)) {
+	if (!preg_match("/^[0-9]+$/",$tmp_cpf)) {
       $cpfErr = "Digite apenas numeros";
     }
   }
@@ -87,25 +86,23 @@ try {
     <h1 class="display-4"><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
 	<div class="container">
 	<div class="alert alert-success">
-		<form action="https://www.ceepcascavel.com.br/entrevista/entrevista.php">
+		<?php 
+		if (empty($tmp_cpf=="")){
+		echo'<form action="https://www.ceepcascavel.com.br/entrevista/entrevista.php">
   		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong></label><br><br>
-  		<!--  CPF DO CANDIDATO <span class="badge badge-pill badge-danger">Somente números</span></label>
-  		<br>
-		-->
   		<input class="form-control" type="number" id="cpf" name="cpf" placeholder="Digite o CPF"><br>
   		<button type="submit" class="btn btn-primary">Começar</button>
-		</form>
-  		
+		</form>';
+
+		}else{
+			echo '<p class="lead">' .$cpf. '</p>';
+			echo '<p class="lead">' .$nome. '</p>';
+			echo '<p class="lead">' .$curso. '</p>';
+			echo '<p class="lead">' .$periodo. '</p>';
+		}
+  		?>
 	</div>
-	<hr class="my-4">
-		
-		
-	<p class="lead"><?php echo $cpf; ?>
-	<p class="lead"><?php echo $nome; ?>
-	<p class="lead"><?php echo $curso; ?>
-	<p class="lead"><?php echo $periodo; ?>
 	
-	<span class="badge badge-pill badge-success">01/12/2021 18:00</span></p>
 		
    	</div>
 	</div>
