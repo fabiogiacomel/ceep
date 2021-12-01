@@ -48,7 +48,6 @@ try {
 
 $conn = null;
 
-/*
 switch ($curso) {
   case 1:
     $cursoNome = "Admistração";
@@ -78,7 +77,7 @@ switch ($curso) {
 		    $cursoNome = "Sem Curso";
 
 }
-*/
+
 ?>
 
 
