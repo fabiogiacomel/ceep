@@ -77,5 +77,5 @@
     <textarea class="form-control" id="P10" rows="3"></textarea>
   </div>
 	
-	<button type="submit" class="btn btn-primary">SALVAR</button>
+	<button type="submit" class="btn btn-primary">SALVAR </button>
 </form>	
