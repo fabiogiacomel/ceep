@@ -139,4 +139,32 @@ $dbname = "u224722929_ceep";
 }
 $conn = null;
 
+echo "Dados Digitados <br>";
+echo $nome;
+echo "<br>";
+echo $cpf;
+echo "<br>";
+echo $p1;
+echo "<br>";
+echo $p2;
+echo "<br>";
+echo $p3;
+echo "<br>";
+echo $p4;
+echo "<br>";
+echo $p5;
+echo "<br>";
+echo $p6;
+echo "<br>";
+echo $p7;
+echo "<br>";
+echo $p8;
+echo "<br>";
+echo $p9;
+echo "<br>";
+echo $p10;
+echo "<br>";
+echo $p11;
+
+
 ?>
