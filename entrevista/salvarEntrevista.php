@@ -142,14 +142,12 @@ $dbname = "u224722929_ceep";
 		$stmt->execute();
 
   echo "--------------------------<br>";
-  echo "A sua inscrição foi salva!<br>";
-  echo "<br>";
-  echo "Recibo de respostas! <br>";
+  echo "A suas Respostas foram salvas!<br>";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
 $conn = null;
-echo "ID: " . $idInscricao . "Nome: " . $nome;
+echo "ID: " . $idInscricao . " Nome: " . $nome;
 echo "<br>";
 echo "CPF: " .$cpf;
 echo "<br>";
