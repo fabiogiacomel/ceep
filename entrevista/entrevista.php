@@ -7,10 +7,10 @@ $dbname = "u224722929_ceep";
 $tmp_cpf = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_POST["cpf"])) {
+  if (empty($_GET["cpf"])) {
     $cpfErr = "Precisa digitar o CPF";
   } else {
-    $tmp_cpf = test_input($_POST["cpf"]);
+    $tmp_cpf = test_input($_GET["cpf"]);
     // check if name only contains letters and whitespace
     if (!preg_match("/^[0-9]+$/",$tmp_cpf)) {
       $cpfErr = "Digite apenas numeros";
