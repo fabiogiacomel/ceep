@@ -142,7 +142,7 @@ $dbname = "u224722929_ceep";
 		$stmt->execute();
 
   echo "--------------------------<br>";
-  echo "As Respostas foram salvas!<br>";
+  echo "Entrevista finalizada!<br> Não é necessario vir ao CEEP!";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
@@ -177,7 +177,7 @@ echo "<br>";
 echo "Resposta 11: " .$p11;
 echo "<br>";
 echo "------------------------------<br>";
-echo "Não Se esqueça de imprimir essa página <br>" .$data. " - ". $hora;
+echo " de imprimir essa página <br>" .$data. " - ". $hora;
 
 
 ?>
