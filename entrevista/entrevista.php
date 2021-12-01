@@ -128,10 +128,10 @@ switch ($curso) {
 	<section>
   <div class="jumbotron text-center">
     <h1 class="display-4"><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
-	<div class="container">
-	<div class="alert alert-success">
+
 		<?php 
 		if (empty($tmp_cpf)){
+			echo '<div class="container"><div class="alert alert-success">';
 		echo'<form action="https://www.ceepcascavel.com.br/entrevista/entrevista.php">
   		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong></label><br><br>
   		<input class="form-control" type="number" id="cpf" name="cpf" placeholder="Digite o CPF"><br>
