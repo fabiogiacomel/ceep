@@ -36,8 +36,11 @@ try {
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    $cpf =  $v["cpf"];
-                
+                    $id 	=  $v["id"];
+					$cpf 	=  $v["cpf"];
+					$nome 	=  $v["nome"];
+                	$curso  =  $v["curso"];
+					$periodo=  $v["periodo"];
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
@@ -97,7 +100,12 @@ try {
 	<hr class="my-4">
 		
 		
-	<p class="lead"><?php echo $cpf; ?><span class="badge badge-pill badge-success">01/12/2021 18:00</span></p>
+	<p class="lead"><?php echo $cpf; ?>
+	<p class="lead"><?php echo $nome; ?>
+	<p class="lead"><?php echo $curso; ?>
+	<p class="lead"><?php echo $periodo; ?>
+	
+	<span class="badge badge-pill badge-success">01/12/2021 18:00</span></p>
 		
    	</div>
 	</div>
