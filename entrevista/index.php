@@ -89,7 +89,7 @@ switch ($curso) {
     $cursoNome = "DESENVOLVIMENTO DE SISTEMAS";
     break;
 	default:
-		$cursoNome = "Sem Curso";
+		$cursoNome = "Erro no CPF entre em contato pelo Whatapp 9 9862-0115";
 
 }
 
