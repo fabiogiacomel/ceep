@@ -2,7 +2,7 @@
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Nome</label>
     <div class="col-sm-10">
-	<input type="text" readonly class="form-control-plaintext" name="idInscricao" id="idInscricao" value="<?php echo $id;?>">
+	<input type="text" readonly class="form-control-plaintext" name="idInscricao" id="idInscricao" value="<?php echo $idInscricao;?>">
       <input type="text" readonly class="form-control-plaintext" name="nome" id="nome" value="<?php echo $nome;?>">
     </div>
   </div>
