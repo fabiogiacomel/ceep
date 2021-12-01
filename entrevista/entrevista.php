@@ -4,13 +4,29 @@ $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
 
-$tmp_cpf = $_GET["cpf"]
-?>
+$tmp_cpf = "";
 
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_POST["cpf"])) {
+    $cpfErr = "Precisa digitar o CPF";
+  } else {
+    $tmp_cpf = test_input($_POST["cpf"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[0-9]+$/",$tmp_cpf)) {
+      $cpfErr = "Digite apenas numeros";
+    }
+  }
 
-            <?php
-			
-            try {
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE cpf LIKE $tmp_cpf AND valida=1");
