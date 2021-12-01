@@ -155,7 +155,12 @@ switch ($curso) {
 
 	include 'FormEntrevista.php';
 
-}?>	
+}else{
+	echo '<div class="alert alert-danger">
+    <strong>ERRO!</strong> CPF INVALIDO! <br> Mande uma mensagem de Whatapp para 99862-0115
+	</div>'
+}
+	?>	
 
 </section>
 <script src="../js/jquery-3.4.1.min.js"></script>
