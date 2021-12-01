@@ -137,31 +137,31 @@ $dbname = "u224722929_ceep";
 $conn = null;
 
 echo "Dados Digitados <br>";
-echo $nome;
+echo "Nome: " . $nome;
 echo "<br>";
-echo $cpf;
+echo "CPF: " .$cpf;
 echo "<br>";
-echo $p1;
+echo "Resposta 1: " .$p1;
 echo "<br>";
-echo $p2;
+echo "Resposta 2: " .$p2;
 echo "<br>";
-echo $p3;
+echo "Resposta 3: " .$p3;
 echo "<br>";
-echo $p4;
+echo "Resposta 4: " .$p4;
 echo "<br>";
-echo $p5;
+echo "Resposta 5: " .$p5;
 echo "<br>";
-echo $p6;
+echo "Resposta 6: " .$p6;
 echo "<br>";
-echo $p7;
+echo "Resposta 7: " .$p7;
 echo "<br>";
-echo $p8;
+echo "Resposta 8: " .$p8;
 echo "<br>";
-echo $p9;
+echo "Resposta 9: " .$p9;
 echo "<br>";
-echo $p10;
+echo "Resposta 10: " .$p10;
 echo "<br>";
-echo $p11;
+echo "Resposta 11: " .$p11;
 
 
 ?>
