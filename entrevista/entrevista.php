@@ -139,10 +139,10 @@ switch ($curso) {
 		</form>';
 
 		}else{
-			echo '<p class="lead">' .$cpf. '</p>';
-			echo '<p class="lead">' .$nome. '</p>';
-			echo '<p class="lead">' .$cursoNome. '</p>';
-			echo '<p class="lead">' .$periodoNome. '</p>';
+			echo '<p class="lead">CPF: ' .$cpf. '</p>';
+			echo '<p class="lead">Nome: ' .$nome. '</p>';
+			echo '<p class="lead">Curso Técnico em ' .$cursoNome. '</p>';
+			echo '<p class="lead">Peridodo ' .$periodoNome. '</p>';
 		}
   		?>
 	</div>
