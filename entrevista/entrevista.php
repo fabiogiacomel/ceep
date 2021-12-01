@@ -35,11 +35,11 @@ if (!empty($tmp_cpf)){
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    $id 	=  $v["id"];
-					$cpf 	=  $v["cpf"];
-					$nome 	=  $v["nome"];
-                	$curso  =  $v["curso"];
-					$periodo=  $v["periodo"];
+                    $idInscricao 	=  $v["id"];
+					$cpf 			=  $v["cpf"];
+					$nome 			=  $v["nome"];
+                	$curso  		=  $v["curso"];
+					$periodo		=  $v["periodo"];
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();

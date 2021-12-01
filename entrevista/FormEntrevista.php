@@ -2,6 +2,7 @@
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Nome</label>
     <div class="col-sm-10">
+	<input type="text" readonly class="form-control-plaintext" name="idInscricao" id="idInscricao" value="<?php echo $id;?>">
       <input type="text" readonly class="form-control-plaintext" name="nome" id="nome" value="<?php echo $nome;?>">
     </div>
   </div>
@@ -77,7 +78,7 @@
     <textarea class="form-control" name="P10" id="P10" rows="3"></textarea>
   </div>
 	
-	  <div class="form-group">
+	<div class="form-group">
     <label for="P11">(SOMENTE PARA ENFERMAGEM) O curso de Enfermagem tem estágio obrigatório não remunerado. Você terá disponibilidade de horário no contra turno para realizá-lo?</label>
     <textarea class="form-control" name="P11" id="P11" rows="3"></textarea>
   </div>

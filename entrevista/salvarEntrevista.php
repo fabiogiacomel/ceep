@@ -130,17 +130,23 @@ $dbname = "u224722929_ceep";
   		//$cpf = "123456789";
   		$stmt->execute();
 
-  //echo "New records created successfully";
+  echo "**************************<br>";
+  echo "A sua inscrição foi salva!<br>";
+  echo "**************************<br>";
+  echo "Recibo de respostas! <br>";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
 $conn = null;
-
+echo "**************************<br>";
 echo "Dados Digitados <br>";
 echo "Nome: " . $nome;
 echo "<br>";
 echo "CPF: " .$cpf;
 echo "<br>";
+echo "CURSO: " .$curso . "Periodo: " .$periodo;
+echo "<br>";
+echo "**************************<br>";
 echo "Resposta 1: " .$p1;
 echo "<br>";
 echo "Resposta 2: " .$p2;
@@ -162,6 +168,8 @@ echo "<br>";
 echo "Resposta 10: " .$p10;
 echo "<br>";
 echo "Resposta 11: " .$p11;
+echo "<br>";
+echo "Não Se esqueça de imprimir essa página" .$p11;
 
 
 ?>
