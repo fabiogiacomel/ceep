@@ -111,23 +111,24 @@ $dbname = "u224722929_ceep";
          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		// prepare sql and bind parameters
-  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo, p1, p2, p3, p4, p5, p6, p7, p8, p8, p9, p10, p11) VALUES (:id, :cpf, :nome, :curso, :periodo, :p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10, :p11)");
+  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo, p1) 
+		VALUES (:id, :cpf, :nome, :curso, :periodo, :p1)");
   		$stmt->bindParam(':id', $id);
   		$stmt->bindParam(':cpf', $cpf);
 		$stmt->bindParam(':nome', $nome);
 		$stmt->bindParam(':curso', $curso);
 		$stmt->bindParam(':periodo', $periodo);
   		$stmt->bindParam(':p1', $p1);
-  		$stmt->bindParam(':p2', $p2);
-  		$stmt->bindParam(':p3', $p3);
-  		$stmt->bindParam(':p4', $p4);
-  		$stmt->bindParam(':p5', $p5);
-  		$stmt->bindParam(':p6', $p6);
-  		$stmt->bindParam(':p7', $p7);
-  		$stmt->bindParam(':p8', $p8);
-  		$stmt->bindParam(':p9', $p9);
-  		$stmt->bindParam(':p10', $p10);
-		$stmt->bindParam(':p11', $p11);
+  		//$stmt->bindParam(':p2', $p2);
+  		//$stmt->bindParam(':p3', $p3);
+  		//$stmt->bindParam(':p4', $p4);
+  		//$stmt->bindParam(':p5', $p5);
+  		//$stmt->bindParam(':p6', $p6);
+  		//$stmt->bindParam(':p7', $p7);
+  		//$stmt->bindParam(':p8', $p8);
+  		//$stmt->bindParam(':p9', $p9);
+  		//$stmt->bindParam(':p10', $p10);
+		//$stmt->bindParam(':p11', $p11);
 		//$id = "123456789";
   		//$cpf = "123456789";
   		$stmt->execute();
