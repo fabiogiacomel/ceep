@@ -29,7 +29,7 @@
 	
 <div class="form-group">
     <label for="P1">Cite sua maior facilidade e a sua maior dificuldade nos estudos e justifique.</label>
-    <textarea class="form-control" id="P1" rows="3"></textarea>
+    <textarea class="form-control" name="P1" id="P1" rows="3"></textarea>
   </div>
 <div class="form-group">
     <label for="P2">Cite em ordem de preferência três profissões que você deseja exercer no futuro.</label>
