@@ -35,9 +35,12 @@
     <h1 class="display-4"><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
 	<div class="container">
 	<div class="alert alert-success">
-  		<strong>Para começar a entrevista digite o CPF:</strong><br><br>CPF DO CANDIDATO:
-		<br><br>
-		<a href="RetificacaoEdital.pdf" class="btn btn-warning" role="button">Começar a Entrevista</a>
+		<form action="/action_page.php">
+  		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong><br><br>CPF DO CANDIDATO:</label><br>
+  		<input type="number" id="cpf" name="cpf">
+  		<input type="submit">
+		</form>
+  		
 	</div>
 		    <hr class="my-4">
 	<p class="lead">Inicio das entrevistas <span class="badge badge-pill badge-success">01/12/2021 18:00</span></p>
