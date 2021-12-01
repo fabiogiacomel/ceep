@@ -9,21 +9,21 @@
    <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">CPF</label>
     <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="cpf" value="<?php echo $tmp_cpf;?>">
+      <input type="text" readonly class="form-control-plaintext" name="cpf" id="cpf" value="<?php echo $tmp_cpf;?>">
     </div>
   </div>
 
    <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Curso</label>
     <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="curso" value="<?php echo $cursoNome;?>">
+      <input type="text" readonly class="form-control-plaintext" name="curso" id="curso" value="<?php echo $cursoNome;?>">
     </div>
   </div>
 	
    <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Periodo</label>
     <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="periodo" value="<?php echo $periodoNome;?>">
+      <input type="text" readonly class="form-control-plaintext" name="periodo" id="periodo" value="<?php echo $periodoNome;?>">
     </div>
   </div>
 	
