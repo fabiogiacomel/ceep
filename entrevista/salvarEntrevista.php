@@ -142,7 +142,7 @@ $dbname = "u224722929_ceep";
 		$stmt->execute();
 
   echo "--------------------------<br>";
-  echo "A suas Respostas foram salvas!<br>";
+  echo "As Respostas foram salvas!<br>";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
