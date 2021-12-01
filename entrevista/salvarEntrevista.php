@@ -149,13 +149,11 @@ $dbname = "u224722929_ceep";
   echo "Error: " . $e->getMessage();
 }
 $conn = null;
-echo "<br>";
-echo "Dados Digitados <br>";
-echo "Nome: " . $nome;
+echo "ID: " . $idInscricao . "Nome: " . $nome;
 echo "<br>";
 echo "CPF: " .$cpf;
 echo "<br>";
-echo "CURSO: " .$curso . "Periodo: " .$periodo;
+echo "CURSO: " .$curso . " Periodo: " .$periodo;
 echo "<br>";
 echo "------------------------------<br>";
 echo "Resposta 1: " .$p1;
