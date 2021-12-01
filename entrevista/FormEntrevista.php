@@ -72,7 +72,7 @@
     <textarea class="form-control" id="P9" rows="3"></textarea>
   </div>
 	
-		<div class="form-group">
+  <div class="form-group">
     <label for="P10">Diga o que você pretende fazer após término do curso técnico.</label>
     <textarea class="form-control" id="P10" rows="3"></textarea>
   </div>
