@@ -151,7 +151,7 @@ echo "ID: " . $idInscricao . " Nome: " . $nome;
 echo "<br>";
 echo "CPF: " .$cpf;
 echo "<br>";
-echo "CURSO: " .$curso . " Periodo: " .$periodo;
+echo "Curso Técnico em " .$curso . " Periodo: " .$periodo;
 echo "<br>";
 echo "------------------------------<br>";
 echo "Resposta 1: " .$p1;
