@@ -78,7 +78,7 @@
   </div>
 	
 	  <div class="form-group">
-    <label for="P11">(SOMENTE PARA ENFERMAGEM: O curso de Enfermagem tem estágio obrigatório não remunerado. Você terá disponibilidade de horário no contra turno para realizá-lo?</label>
+    <label for="P11">(SOMENTE PARA ENFERMAGEM) O curso de Enfermagem tem estágio obrigatório não remunerado. Você terá disponibilidade de horário no contra turno para realizá-lo?</label>
     <textarea class="form-control" name="P11" id="P11" rows="3"></textarea>
   </div>
 	<div class="form-group">

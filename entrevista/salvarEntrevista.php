@@ -25,67 +25,67 @@ if (empty($_POST["periodo"])) {
 
 
   if (empty($_POST["P1"])) {
-    $p1 = "";
+    $p1 = "Não Respondeu";
   } else {
     $p1 = test_input($_POST["P1"]);
   }
 
   if (empty($_POST["P2"])) {
-    $p2 = "";
+    $p2 = "Não Respondeu";
   } else {
     $p2 = test_input($_POST["P2"]);
   }
 
   if (empty($_POST["P3"])) {
-    $p3 = "";
+    $p3 = "Não Respondeu";
   } else {
     $p3 = test_input($_POST["P3"]);
   }
 
   if (empty($_POST["P4"])) {
-    $p4 = "";
+    $p4 = "Não Respondeu";
   } else {
     $p4 = test_input($_POST["P4"]);
   }
 
   if (empty($_POST["P5"])) {
-    $p5 = "";
+    $p5 = "Não Respondeu";
   } else {
     $p5 = test_input($_POST["P5"]);
   }
 
   if (empty($_POST["P6"])) {
-    $p6 = "";
+    $p6 = "Não Respondeu";
   } else {
     $p6 = test_input($_POST["P6"]);
   }
 
   if (empty($_POST["P7"])) {
-    $p7 = "";
+    $p7 = "Não Respondeu";
   } else {
     $p7 = test_input($_POST["P7"]);
   }
 
   if (empty($_POST["P8"])) {
-    $p8 = "";
+    $p8 = "Não Respondeu";
   } else {
     $p8 = test_input($_POST["P8"]);
   }
 
   if (empty($_POST["P9"])) {
-    $p9 = "";
+    $p9 = "Não Respondeu";
   } else {
     $p9 = test_input($_POST["P9"]);
   }
 
   if (empty($_POST["P10"])) {
-    $p10 = "";
+    $p10 = "Não Respondeu";
   } else {
     $p10 = test_input($_POST["P10"]);
   }
 
   if (empty($_POST["P11"])) {
-    $p11 = "";
+    $p11 = "Não Respondeu";
   } else {
     $p11 = test_input($_POST["P11"]);
   }
