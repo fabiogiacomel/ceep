@@ -132,7 +132,7 @@ switch ($curso) {
     <h1><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
 
 		<?php 
-		if (empty($tmp_cpf)|| ($valida=="0")){
+		if (empty($tmp_cpf)){
 			echo '<div class="container"><div class="alert alert-success">';
 		echo'<form action="https://www.ceepcascavel.com.br/entrevista/">
   		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong></label><br><br>
@@ -151,15 +151,9 @@ switch ($curso) {
 <section>
 
 	
-<?php if (!empty($tmp_cpf) && ($valida=="1")){
-
-	include 'FormEntrevista.php';
-
-}else{
-	echo '<div class="alert alert-danger"><strong>ERRO!</strong> CPF INVALIDO! <br> Mande uma mensagem de Whatapp para 99862-0115
-	</div>';
-}
-	?>	
+<?php if (!empty($tmp_cpf)){
+			include 'FormEntrevista.php';
+}?>	
 
 </section>
 <script src="../js/jquery-3.4.1.min.js"></script>
