@@ -44,9 +44,11 @@ try {
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
             }
-            $conn = null;
+            
 
+$conn = null;
 
+/*
 switch ($curso) {
   case 1:
     $cursoNome = "Admistração";
@@ -76,7 +78,7 @@ switch ($curso) {
 		    $cursoNome = "Sem Curso";
 
 }
-
+*/
 ?>
 
 
