@@ -133,7 +133,7 @@ $dbname = "u224722929_ceep";
   		//$cpf = "123456789";
   		$stmt->execute();
 
-  echo "New records created successfully";
+  //echo "New records created successfully";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
