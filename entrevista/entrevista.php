@@ -127,7 +127,7 @@ switch ($curso) {
 
 	<section>
   <div class="jumbotron text-center">
-    <h1 class="display-4"><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
+    <h1><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
 
 		<?php 
 		if (empty($tmp_cpf)){
