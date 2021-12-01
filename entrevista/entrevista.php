@@ -48,6 +48,18 @@ try {
 
 $conn = null;
 
+switch ($periodo) {
+  case '1':
+    $periodoNome = "Manhã";
+    break;
+  case '2':
+    $periodoNome = "Vespertino";
+    break;
+  case '3':
+    $periodoNome = "Noturno";
+    break;
+}
+
 switch ($curso) {
   case '1':
     $cursoNome = "Admistração";
@@ -74,7 +86,7 @@ switch ($curso) {
     $cursoNome = "DESENVOLVIMENTO DE SISTEMAS";
     break;
 	default:
-		    $cursoNome = "Sem Curso";
+		$cursoNome = "Sem Curso";
 
 }
 
@@ -130,7 +142,7 @@ switch ($curso) {
 			echo '<p class="lead">' .$cpf. '</p>';
 			echo '<p class="lead">' .$nome. '</p>';
 			echo '<p class="lead">' .$cursoNome. '</p>';
-			echo '<p class="lead">' .$periodo. '</p>';
+			echo '<p class="lead">' .$periodoNome. '</p>';
 		}
   		?>
 	</div>
