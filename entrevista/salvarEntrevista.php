@@ -1,4 +1,9 @@
 <?php
+  if (empty($_POST["cpf"])) {
+    $cpf = "";
+  } else {
+    $cpf = test_input($_POST["cpf"]);
+  }
 
   if (empty($_POST["P1"])) {
     $p1 = "";
