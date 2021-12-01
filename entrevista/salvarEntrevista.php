@@ -111,15 +111,15 @@ $dbname = "u224722929_ceep";
          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		// prepare sql and bind parameters
-  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo, p1) 
-		VALUES (:id, :cpf, :nome, :curso, :periodo, :p1)");
+  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo, p1, p2) 
+		VALUES (:id, :cpf, :nome, :curso, :periodo, :p1, :p2)");
   		$stmt->bindParam(':id', $id);
   		$stmt->bindParam(':cpf', $cpf);
 		$stmt->bindParam(':nome', $nome);
 		$stmt->bindParam(':curso', $curso);
 		$stmt->bindParam(':periodo', $periodo);
   		$stmt->bindParam(':p1', $p1);
-  		//$stmt->bindParam(':p2', $p2);
+  		$stmt->bindParam(':p2', $p2);
   		//$stmt->bindParam(':p3', $p3);
   		//$stmt->bindParam(':p4', $p4);
   		//$stmt->bindParam(':p5', $p5);
