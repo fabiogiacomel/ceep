@@ -40,6 +40,7 @@ if (!empty($tmp_cpf)){
 					$nome 			=  $v["nome"];
                 	$curso  		=  $v["curso"];
 					$periodo		=  $v["periodo"];
+					$valida			=  $v["valida"];
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
@@ -58,6 +59,8 @@ switch ($periodo) {
   case '3':
     $periodoNome = "Noturno";
     break;
+  default:
+		$periodoNome = "Sem Periodo";
 }
 
 switch ($curso) {
@@ -129,7 +132,7 @@ switch ($curso) {
     <h1><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
 
 		<?php 
-		if (empty($tmp_cpf)){
+		if (empty($tmp_cpf)|| ($valida=="0")){
 			echo '<div class="container"><div class="alert alert-success">';
 		echo'<form action="https://www.ceepcascavel.com.br/entrevista/">
   		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong></label><br><br>
@@ -148,7 +151,7 @@ switch ($curso) {
 <section>
 
 	
-<?php if (!empty($tmp_cpf)){
+<?php if (!empty($tmp_cpf) && ($valida=="1")){
 
 	include 'FormEntrevista.php';
 
