@@ -131,7 +131,7 @@ switch ($curso) {
 		<?php 
 		if (empty($tmp_cpf)){
 			echo '<div class="container"><div class="alert alert-success">';
-		echo'<form action="https://www.ceepcascavel.com.br/entrevista/entrevista.php">
+		echo'<form action="https://www.ceepcascavel.com.br/entrevista/">
   		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong></label><br><br>
   		<input class="form-control" type="number" id="cpf" name="cpf" placeholder="Digite o CPF"><br>
   		<button type="submit" class="btn btn-primary">Começar</button>
