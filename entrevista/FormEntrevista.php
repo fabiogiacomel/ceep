@@ -1,4 +1,3 @@
-<form>
   <div class="form-group">
     <label for="P1">Cite sua maior facilidade e a sua maior dificuldade nos estudos e justifique.</label>
     <textarea class="form-control" id="P1" rows="3"></textarea>
