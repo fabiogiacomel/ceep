@@ -1,4 +1,5 @@
 <?php
+
   if (empty($_POST["P1"])) {
     $p1 = "";
   } else {
@@ -74,4 +75,32 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
+
+$servername = "localhost";
+$username = "u224722929_ceep";
+$password = "UmhNWJ3AvJ4+H]Kr";
+$dbname = "u224722929_ceep";
+
+	try {
+         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+		// prepare sql and bind parameters
+  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, p1)
+  		VALUES (:id, :cpf, :p1)");
+  		$stmt->bindParam(':id', $id);
+  		$stmt->bindParam(':cpf', $cpf);
+  		$stmt->bindParam(':p1', $p1);
+
+		//$id = "123456789";
+  		$cpf = "123456789";
+  		$stmt->execute();
+
+  echo "New records created successfully";
+} catch(PDOException $e) {
+  echo "Error: " . $e->getMessage();
+}
+$conn = null;
+
 ?>
