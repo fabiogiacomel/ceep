@@ -142,7 +142,7 @@ $dbname = "u224722929_ceep";
 		$stmt->execute();
 
   echo "--------------------------<br>";
-  echo "Entrevista finalizada!<br> Não é necessario vir ao CEEP!";
+  echo "Entrevista finalizada!<br> Não é necessario vir ao CEEP!<br>";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
