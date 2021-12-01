@@ -5,6 +5,25 @@
     $cpf = test_input($_POST["cpf"]);
   }
 
+if (empty($_POST["nome"])) {
+    $nome = "";
+  } else {
+    $nome = test_input($_POST["nome"]);
+  }
+
+if (empty($_POST["curso"])) {
+    $curso = "";
+  } else {
+    $curso = test_input($_POST["curso"]);
+  }
+
+if (empty($_POST["periodo"])) {
+    $periodo = "";
+  } else {
+    $periodo = test_input($_POST["periodo"]);
+  }
+
+
   if (empty($_POST["P1"])) {
     $p1 = "";
   } else {
@@ -92,10 +111,13 @@ $dbname = "u224722929_ceep";
          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		// prepare sql and bind parameters
-  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, p1)
+  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo, p1)
   		VALUES (:id, :cpf, :p1)");
   		$stmt->bindParam(':id', $id);
   		$stmt->bindParam(':cpf', $cpf);
+		$stmt->bindParam(':nome', $nome);
+		$stmt->bindParam(':curso', $curso);
+		$stmt->bindParam(':periodo', $periodo);
   		$stmt->bindParam(':p1', $p1);
 
 		//$id = "123456789";
