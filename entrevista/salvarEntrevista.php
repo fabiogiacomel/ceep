@@ -112,7 +112,7 @@ $dbname = "u224722929_ceep";
 
 		// prepare sql and bind parameters
   		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo, p1)
-  		VALUES (:id, :cpf, :p1)");
+  		VALUES (:id, :cpf, :nome, :curso, :periodo, :p1)");
   		$stmt->bindParam(':id', $id);
   		$stmt->bindParam(':cpf', $cpf);
 		$stmt->bindParam(':nome', $nome);
