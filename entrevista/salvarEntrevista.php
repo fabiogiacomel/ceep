@@ -176,7 +176,7 @@ echo "Resposta 10: " .$p10;
 echo "<br>";
 echo "Resposta 11: " .$p11;
 echo "<br>";
-echo "Não Se esqueça de imprimir essa página" .$data. " - ". $hora;
+echo "Não Se esqueça de imprimir essa página <br>" .$data. " - ". $hora;
 
 
 ?>
