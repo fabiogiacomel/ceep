@@ -33,48 +33,48 @@
   </div>
 <div class="form-group">
     <label for="P2">Cite em ordem de preferência três profissões que você deseja exercer no futuro.</label>
-    <textarea class="form-control" id="P2" rows="3"></textarea>
+    <textarea class="form-control" name="P2" id="P2" rows="3"></textarea>
   </div>
 	<div class="form-group">
     <label for="P3">Cite o principal motivo de escolha deste curso.</label>
-    <textarea class="form-control" id="P3" rows="3"></textarea>
+    <textarea class="form-control" name="P3" id="P3" rows="3"></textarea>
   </div>
 	
 		<div class="form-group">
     <label for="P4">Comente se há campo de trabalho na sua região para atuação profissional de acordo com o curso escolhido.</label>
-    <textarea class="form-control" id="P4" rows="3"></textarea>
+    <textarea class="form-control" name="P4" id="P4" rows="3"></textarea>
   </div>
 	
 		<div class="form-group">
     <label for="P5">Cite uma empresa localizada na sua região/cidade que contrata profissionais formados na área do curso que você escolheu.</label>
-    <textarea class="form-control" id="P5" rows="3"></textarea>
+    <textarea class="form-control" name="P5" id="P5" rows="3"></textarea>
   </div>
 	
 		<div class="form-group">
     <label for="P6">Você já conversou com algum profissional que atua na área do curso que você escolheu para saber como são as atividades desenvolvidas no dia a dia?
 </label>
-    <textarea class="form-control" id="P6" rows="3"></textarea>
+    <textarea class="form-control" name="P6" id="P6" rows="3"></textarea>
   </div>
 	
 		<div class="form-group">
     <label for="P7">O que você espera do ensino técnico para a sua formação profissional?
 </label>
-    <textarea class="form-control" id="P7" rows="3"></textarea>
+    <textarea class="form-control" name="P7" id="P7" rows="3"></textarea>
   </div>
 	
 	<div class="form-group">
     <label for="P8">Cite três contribuições que o curso escolhido poderá trazer à sua comunidade/região/cidade.</label>
-    <textarea class="form-control" id="P8" rows="3"></textarea>
+    <textarea class="form-control" name="P8" id="P8" rows="3"></textarea>
   </div>
 	
 		<div class="form-group">
     <label for="P9">Cite as principais habilidades que você possui que poderão auxiliá-lo(a) ao longo do curso escolhido.</label>
-    <textarea class="form-control" id="P9" rows="3"></textarea>
+    <textarea class="form-control" name="P9" id="P9" rows="3"></textarea>
   </div>
 	
   <div class="form-group">
     <label for="P10">Diga o que você pretende fazer após término do curso técnico.</label>
-    <textarea class="form-control" id="P10" rows="3"></textarea>
+    <textarea class="form-control" name="P10" id="P10" rows="3"></textarea>
   </div>
 	<div class="form-group">
 	<button type="submit" class="btn btn-primary">SALVAR </button>
