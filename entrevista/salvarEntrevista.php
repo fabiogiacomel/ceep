@@ -1,5 +1,11 @@
 <?php
-  if (empty($_POST["cpf"])) {
+  if (empty($_POST["idInscricao"])) {
+    $idInscricao = "";
+  } else {
+    $idInscricao = test_input($_POST["idInscricao"]);
+  }
+
+if (empty($_POST["cpf"])) {
     $cpf = "";
   } else {
     $cpf = test_input($_POST["cpf"]);
@@ -108,9 +114,10 @@ $dbname = "u224722929_ceep";
          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		// prepare sql and bind parameters
-  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, cpf, nome, curso, periodo,data,hora, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) 
-		VALUES (:id, :cpf, :nome, :curso, :periodo, :data, :hora, :p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10, :p11)");
+  		$stmt = $conn->prepare("INSERT INTO tbEntrevistaRespostas (id, idInscricao, cpf, nome, curso, periodo,data,hora, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11) 
+		VALUES (:id, :idInscricao, :cpf, :nome, :curso, :periodo, :data, :hora, :p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10, :p11)");
   		$stmt->bindParam(':id', $id);
+		$stmt->bindParam(':idInscricao', $idInscricao);
   		$stmt->bindParam(':cpf', $cpf);
 		$stmt->bindParam(':nome', $nome);
 		$stmt->bindParam(':curso', $curso);
@@ -134,15 +141,15 @@ $dbname = "u224722929_ceep";
 		$hora = date("H:i:s"); 
 		$stmt->execute();
 
-  echo "**************************<br>";
+  echo "--------------------------<br>";
   echo "A sua inscrição foi salva!<br>";
-  echo "**************************<br>";
+  echo "<br>";
   echo "Recibo de respostas! <br>";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
 $conn = null;
-echo "**************************<br>";
+echo "<br>";
 echo "Dados Digitados <br>";
 echo "Nome: " . $nome;
 echo "<br>";
@@ -150,7 +157,7 @@ echo "CPF: " .$cpf;
 echo "<br>";
 echo "CURSO: " .$curso . "Periodo: " .$periodo;
 echo "<br>";
-echo "**************************<br>";
+echo "------------------------------<br>";
 echo "Resposta 1: " .$p1;
 echo "<br>";
 echo "Resposta 2: " .$p2;
@@ -173,7 +180,7 @@ echo "Resposta 10: " .$p10;
 echo "<br>";
 echo "Resposta 11: " .$p11;
 echo "<br>";
-echo "Não Se esqueça de imprimir essa página" .$p11;
+echo "Não Se esqueça de imprimir essa página" .$data. " - ". $hora;
 
 
 ?>
