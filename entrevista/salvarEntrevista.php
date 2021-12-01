@@ -90,9 +90,6 @@ if (empty($_POST["periodo"])) {
     $p11 = test_input($_POST["P11"]);
   }
 
-echo $p1;
-echo $p2;
-
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
