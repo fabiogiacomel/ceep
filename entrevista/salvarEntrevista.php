@@ -129,8 +129,8 @@ $dbname = "u224722929_ceep";
   		$stmt->bindParam(':p9', $p9);
   		$stmt->bindParam(':p10', $p10);
 		$stmt->bindParam(':p11', $p11);
-		$id = "123456789";
-  		$cpf = "123456789";
+		//$id = "123456789";
+  		//$cpf = "123456789";
   		$stmt->execute();
 
   echo "New records created successfully";
