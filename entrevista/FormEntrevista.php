@@ -1,4 +1,4 @@
-<form action="/salvarEntrevista.php">
+<form action="salvarEntrevista.php">
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Nome</label>
     <div class="col-sm-10">
