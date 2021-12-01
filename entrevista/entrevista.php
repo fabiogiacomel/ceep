@@ -3,15 +3,17 @@ $servername = "localhost";
 $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
+
+$tmp_cpf = $_GET["cpf"]
 ?>
 
 
             <?php
-
+			
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE cpf LIKE '10902851918' AND valida=1");
+                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE cpf LIKE $tmp_cpf AND valida=1");
                 $stmt->execute();
 
                 // set the resulting array to associative
