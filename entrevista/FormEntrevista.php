@@ -76,6 +76,7 @@
     <label for="P10">Diga o que você pretende fazer após término do curso técnico.</label>
     <textarea class="form-control" id="P10" rows="3"></textarea>
   </div>
-	
+	<div class="form-group">
 	<button type="submit" class="btn btn-primary">SALVAR </button>
+		</div>
 </form>	
