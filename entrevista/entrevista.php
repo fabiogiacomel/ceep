@@ -49,28 +49,28 @@ try {
 $conn = null;
 
 switch ($curso) {
-  case 1:
+  case '1':
     $cursoNome = "Admistração";
     break;
-  case 2:
+  case '2':
     $cursoNome = "Eletrônica";
     break;
-  case 3:
+  case '3':
     $cursoNome = "Eletromecânica";
     break;
-  case 4:
+  case '4':
     $cursoNome = "Enfermagem";
     break;
-  case 6:
+  case '6':
     $cursoNome = "Meio Ambiente";
     break;
-  case 7:
+  case '7':
     $cursoNome = "Segurança do Trabalho";
     break;		
-  case 9:
+  case '9':
     $cursoNome = "Edificações";
     break;
-  case 19:
+  case '19':
     $cursoNome = "DESENVOLVIMENTO DE SISTEMAS";
     break;
 	default:
