@@ -1,3 +1,34 @@
+<?php
+$servername = "localhost";
+$username = "u224722929_ceep";
+$password = "UmhNWJ3AvJ4+H]Kr";
+$dbname = "u224722929_ceep";
+?>
+
+
+            <?php
+
+            try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE cpf LIKE '10902851918' AND valida=1");
+                $stmt->execute();
+
+                // set the resulting array to associative
+                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                
+                foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
+                    $cpf =  $v["cpf"];
+                
+                }
+            } catch (PDOException $e) {
+                echo "Error: " . $e->getMessage();
+            }
+            $conn = null;
+            echo "</tbody></table>";
+            ?>
+
+
 <!doctype html>
 <html>
 <head>
@@ -45,8 +76,10 @@
 		</form>
   		
 	</div>
-		    <hr class="my-4">
-	<p class="lead">Inicio das entrevistas <span class="badge badge-pill badge-success">01/12/2021 18:00</span></p>
+	<hr class="my-4">
+		
+		
+	<p class="lead"><?php echo $cpf; ?><span class="badge badge-pill badge-success">01/12/2021 18:00</span></p>
 		
    	</div>
 	</div>
