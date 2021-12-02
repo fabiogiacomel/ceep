@@ -42,34 +42,11 @@
 
 	
 	<form action="salvarEntrevista.php" method="post">
-  <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Nome</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control-plaintext" name="nome" id="nome">
-    </div>
+<div class="form-group">
+    <label for="nome">Nome</label>
+    <input class="form-control" name="nome" id="nome"></input>
   </div>
-
-   <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">CPF</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control-plaintext" name="cpf" id="cpf">
-    </div>
-  </div>
-
-   <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Curso</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control-plaintext" name="curso" id="curso">
-    </div>
-  </div>
-	
-   <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Periodo</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control-plaintext" name="periodo" id="periodo">
-    </div>
-  </div>
-	
+		
 <div class="form-group">
     <label for="P1">Cite sua maior facilidade e a sua maior dificuldade nos estudos e justifique.</label>
     <textarea class="form-control" name="P1" id="P1" rows="3"></textarea>
