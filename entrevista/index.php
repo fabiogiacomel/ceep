@@ -28,7 +28,7 @@ if (!empty($tmp_cpf)){
 	try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE cpf LIKE $tmp_cpf AND valida=1");
+                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE cpf LIKE %$tmp_cpf% AND valida=1");
                 $stmt->execute();
 
                 // set the resulting array to associative
@@ -60,7 +60,7 @@ switch ($periodo) {
     $periodoNome = "Noturno";
     break;
   default:
-		$periodoNome = "Sem Periodo";
+		$periodoNome = "ERRO";
 }
 
 switch ($curso) {
@@ -152,7 +152,9 @@ switch ($curso) {
 
 	
 <?php if (!empty($tmp_cpf)){
+			if($periodoNome<>"ERRO"){
 			include 'FormEntrevista.php';
+			}
 }?>	
 
 </section>
