@@ -150,9 +150,8 @@ switch ($curso) {
 <section>
 
 	
-<?php if (empty($tmp_cpf)){
+<?php
 			include 'FormEntrevista.php';
-			}
 ?>	
 
 </section>
