@@ -46,7 +46,18 @@
     <label for="nome">Nome</label>
     <input class="form-control" name="nome" id="nome"></input>
   </div>
-		
+
+  <div class="form-group">
+    <label for="cpf">CPF</label>
+    <input class="form-control" name="cpf" id="cpf"></input>
+  </div>
+
+  <div class="form-group">
+    <label for="curso">Curso</label>
+    <input class="form-control" name="curso" id="curso"></input>
+  </div>
+
+
 <div class="form-group">
     <label for="P1">Cite sua maior facilidade e a sua maior dificuldade nos estudos e justifique.</label>
     <textarea class="form-control" name="P1" id="P1" rows="3"></textarea>
