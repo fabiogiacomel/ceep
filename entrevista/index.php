@@ -1,100 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "u224722929_ceep";
-$password = "UmhNWJ3AvJ4+H]Kr";
-$dbname = "u224722929_ceep";
-
-$tmp_cpf = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["cpf"])) {
-    $cpfErr = "Precisa digitar o CPF";
-  } else {
-    $tmp_cpf = test_input($_GET["cpf"]);
-	if (!preg_match("/^[0-9]+$/",$tmp_cpf)) {
-      $cpfErr = "Digite apenas numeros";
-    }
-  }
-
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-	try {
-                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE inscricoesValidas.valida=1 AND inscricoesValidas.cpf LIKE '%".$tmp_cpf."%'");
-                $stmt->execute();
-
-                // set the resulting array to associative
-                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                
-                foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    $idInscricao 	=  $v["id"];
-					$cpf 			=  $v["cpf"];
-					$nome 			=  $v["nome"];
-                	$curso  		=  $v["curso"];
-					$periodo		=  $v["periodo"];
-					$valida			=  $v["valida"];
-                }
-            } catch (PDOException $e) {
-                echo "Error: " . $e->getMessage();
-            }
-            
-
-	$conn = null;
-
-switch ($periodo) {
-  case '1':
-    $periodoNome = "Manhã";
-    break;
-  case '2':
-    $periodoNome = "Vespertino";
-    break;
-  case '3':
-    $periodoNome = "Noturno";
-    break;
-  default:
-		$periodoNome = "ERRO";
-}
-
-switch ($curso) {
-  case '1':
-    $cursoNome = "Admistração";
-    break;
-  case '2':
-    $cursoNome = "Eletrônica";
-    break;
-  case '3':
-    $cursoNome = "Eletromecânica";
-    break;
-  case '4':
-    $cursoNome = "Enfermagem";
-    break;
-  case '6':
-    $cursoNome = "Meio Ambiente";
-    break;
-  case '7':
-    $cursoNome = "Segurança do Trabalho";
-    break;		
-  case '9':
-    $cursoNome = "Edificações";
-    break;
-  case '19':
-    $cursoNome = "DESENVOLVIMENTO DE SISTEMAS";
-    break;
-	default:
-		$cursoNome = "Erro no CPF entre em contato pelo Whatapp 9 9862-0115";
-
-}
-
-?>
-
-
 <!doctype html>
 <html>
 <head>
@@ -129,19 +32,7 @@ switch ($curso) {
 	<section>
   <div class="jumbotron text-center">
     <h1><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
-
-		<?php 
-		if (empty($tmp_cpf)){
-			echo '<div class="container"><div class="alert alert-success">';
-		echo'<form action="https://www.ceepcascavel.com.br/entrevista/">
-  		<label for="cpf"><strong>Para começar a entrevista digite o CPF:</strong></label><br><br>
-  		<input class="form-control" type="number" id="cpf" name="cpf" placeholder="Digite o CPF"><br>
-  		<button type="submit" class="btn btn-primary">Começar</button>
-		</form>';
-
-		}
-  		?>
-	</div>
+  </div>
 	
 		
    	</div>
@@ -150,9 +41,94 @@ switch ($curso) {
 <section>
 
 	
-<?php
-			include 'FormEntrevista.php';
-?>	
+	<form action="salvarEntrevista.php" method="post">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Nome</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-plaintext" name="nome" id="nome">
+    </div>
+  </div>
+
+   <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">CPF</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-plaintext" name="cpf" id="cpf">
+    </div>
+  </div>
+
+   <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Curso</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-plaintext" name="curso" id="curso">
+    </div>
+  </div>
+	
+   <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Periodo</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control-plaintext" name="periodo" id="periodo">
+    </div>
+  </div>
+	
+<div class="form-group">
+    <label for="P1">Cite sua maior facilidade e a sua maior dificuldade nos estudos e justifique.</label>
+    <textarea class="form-control" name="P1" id="P1" rows="3"></textarea>
+  </div>
+<div class="form-group">
+    <label for="P2">Cite em ordem de preferência três profissões que você deseja exercer no futuro.</label>
+    <textarea class="form-control" name="P2" id="P2" rows="3"></textarea>
+  </div>
+	<div class="form-group">
+    <label for="P3">Cite o principal motivo de escolha deste curso.</label>
+    <textarea class="form-control" name="P3" id="P3" rows="3"></textarea>
+  </div>
+	
+		<div class="form-group">
+    <label for="P4">Comente se há campo de trabalho na sua região para atuação profissional de acordo com o curso escolhido.</label>
+    <textarea class="form-control" name="P4" id="P4" rows="3"></textarea>
+  </div>
+	
+		<div class="form-group">
+    <label for="P5">Cite uma empresa localizada na sua região/cidade que contrata profissionais formados na área do curso que você escolheu.</label>
+    <textarea class="form-control" name="P5" id="P5" rows="3"></textarea>
+  </div>
+	
+		<div class="form-group">
+    <label for="P6">Você já conversou com algum profissional que atua na área do curso que você escolheu para saber como são as atividades desenvolvidas no dia a dia?
+</label>
+    <textarea class="form-control" name="P6" id="P6" rows="3"></textarea>
+  </div>
+	
+		<div class="form-group">
+    <label for="P7">O que você espera do ensino técnico para a sua formação profissional?
+</label>
+    <textarea class="form-control" name="P7" id="P7" rows="3"></textarea>
+  </div>
+	
+	<div class="form-group">
+    <label for="P8">Cite três contribuições que o curso escolhido poderá trazer à sua comunidade/região/cidade.</label>
+    <textarea class="form-control" name="P8" id="P8" rows="3"></textarea>
+  </div>
+	
+		<div class="form-group">
+    <label for="P9">Cite as principais habilidades que você possui que poderão auxiliá-lo(a) ao longo do curso escolhido.</label>
+    <textarea class="form-control" name="P9" id="P9" rows="3"></textarea>
+  </div>
+	
+  <div class="form-group">
+    <label for="P10">Diga o que você pretende fazer após término do curso técnico.</label>
+    <textarea class="form-control" name="P10" id="P10" rows="3"></textarea>
+  </div>
+	
+	<div class="form-group">
+    <label for="P11">(SOMENTE PARA ENFERMAGEM) O curso de Enfermagem tem estágio obrigatório não remunerado. Você terá disponibilidade de horário no contra turno para realizá-lo?</label>
+    <textarea class="form-control" name="P11" id="P11" rows="3"></textarea>
+  </div>
+	<div class="form-group">
+	<button type="submit" class="btn btn-primary">SALVAR </button>
+		</div>
+</form>	
+
 
 </section>
 <script src="../js/jquery-3.4.1.min.js"></script>
