@@ -57,6 +57,11 @@
     <input class="form-control" name="curso" id="curso"></input>
   </div>
 
+  <div class="form-group">
+    <label for="periodo">Periodo</label>
+    <input class="form-control" name="periodo" id="periodo"></input>
+  </div>
+
 
 <div class="form-group">
     <label for="P1">Cite sua maior facilidade e a sua maior dificuldade nos estudos e justifique.</label>
