@@ -24,7 +24,6 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-if (!empty($tmp_cpf)){
 	try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -48,7 +47,7 @@ if (!empty($tmp_cpf)){
             
 
 	$conn = null;
-}
+
 switch ($periodo) {
   case '1':
     $periodoNome = "Manhã";
