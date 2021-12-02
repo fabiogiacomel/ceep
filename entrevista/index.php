@@ -28,7 +28,7 @@ if (!empty($tmp_cpf)){
 	try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE (valida=1) AND (cpf LIKE $tmp_cpf AND)");
+                $stmt = $conn->prepare("SELECT * FROM inscricoesValidas WHERE inscricoesValidas.valida=1 AND inscricoesValidas.cpf LIKE $tmp_cpf");
                 $stmt->execute();
 
                 // set the resulting array to associative
