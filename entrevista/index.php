@@ -151,7 +151,7 @@ switch ($curso) {
 <section>
 
 	
-<?php if (!empty($tmp_cpf)){
+<?php if (!empty($cpf)){
 			if($periodoNome<>"ERRO"){
 			include 'FormEntrevista.php';
 			}
