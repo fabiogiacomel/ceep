@@ -31,7 +31,11 @@
 
 	<section>
   <div class="jumbotron text-center">
-    <h1><span class="l3"> Entrevista </span><span class="l4">2022</span><span class="l3">!</span> </h1>
+    	<p> <strong>ATENÇÃO!</strong><br></p>
+  		<p>A entrevista on-line é para os candidatos que o curso teve mais de 40 inscritos. De cada curso foram classificados 80 candidatos. Para o curso de <strong>ADMINISTRAÇÃO</strong> do período da <strong>MANHÃ</strong> são 120 classificados. Por que temos 80 vagas, portanto até o candidato 120º deve fazer a entrevista.</p>
+  		<p>Os candidatos classificados devem fazer a entrevista através de um <strong>FORMULÁRIO (via site do CEEP) </strong>. O Formulário On-Line ficará disponível até o dia 05/12/2021 às 23h59 <br>
+  		  <br>
+	    <a href="https://www.ceepcascavel.com.br/classificados/" class="btn btn-danger" role="button">Lista de Classificados!!!</a> </p>
   </div>
 	
 		
