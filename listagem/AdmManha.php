@@ -6,6 +6,28 @@ $dbname = "u224722929_ceep";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["periodo"])) {
+    $periodoErr = "ERRO 1";
+  } else {
+    $periodo = test_input($_POST["periodo"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
+      $periodoErr = "ERRO 2";
+    }
+  }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["curso"])) {
+    $cursoErr = "ERRO 1";
+  } else {
+    $curso = test_input($_POST["curso"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
+      $cursoErr = "ERRO 2";
+    }
+  }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
   if (empty($_GET["s"])) {
     $sErr = "ERRO 1";
   } else {
@@ -60,7 +82,7 @@ function test_input($data) {
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao, cpf FROM inscricoesValidas WHERE valida=1 AND curso=1 AND periodo = 1 ORDER by pontuacao DESC");
+                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao, cpf FROM inscricoesValidas WHERE valida=1 AND curso=".$curso." AND periodo = ".$periodo." ORDER by pontuacao DESC");
                 $stmt->execute();
 
                 // set the resulting array to associative
