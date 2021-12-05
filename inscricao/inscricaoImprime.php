@@ -292,7 +292,7 @@ if ($a->__get('ensinofundamental') == 6) {
 
 $a->__set('pontuacao', $pontuacao);
 $a->__set('pontuacao_curso2', $pontuacao_curso2);
-$a->salvarPontuacao();
+//$a->salvarPontuacao(); Desativado em 05/12/2021 para que possa rodar o sistema de impressão
 ?>
 
 <!DOCTYPE html>
