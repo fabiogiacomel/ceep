@@ -46,7 +46,23 @@ function test_input($data) {
 }
 
 
-$vPeriodo = array("Sem Periodo","Matutino", "Vespertino", "Noturno");
+$vPeriodo 	=	 array("Sem Periodo","Matutino", "Vespertino", "Noturno");
+
+$vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enfermagem','Informática','Meio Ambiente',
+ 'Segurança do Trabalho',
+  'Guia de Turismo Regional',
+  'Edificações',
+  'Especialização Técnica em Enfermagem do Trabalho',
+  'Móveis',
+  'CELEM ALEMÃO',
+  'CELEM ESPANHOL',
+  'CELEM INGLÊS',
+  'CELEM ITELIANO',
+  'CELEM MANDARIN',
+  'TÉCNICO EM AGRONEGÓCIOS',
+  'TÉCNICO AGRÍCOLA',
+  'DESENVOLVIMENTO DE SISTEMAS');
+
 ?>
 
 <!DOCTYPE html>
@@ -68,8 +84,8 @@ $vPeriodo = array("Sem Periodo","Matutino", "Vespertino", "Noturno");
             </div>
             <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10">
                 <h3 class="text-left"> Lista de Classificados</h3>
-                <h4 class="text-left"> Curso: Técnico em Administração</h4>
-                <h4 class="text-left"> Periodo: <?php echo $vPeriodo[$periodo] ?> (Integrado)</h4>
+                <h4 class="text-left"> Curso: Técnico em <?php echo $vCursos[$curso] ?></h4>
+                <h4 class="text-left"> Periodo: <?php echo $vPeriodo[$periodo] ?></h4>
             </div>
         </div>
         </div>
