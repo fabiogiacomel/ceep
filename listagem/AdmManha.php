@@ -46,7 +46,7 @@ function test_input($data) {
 }
 
 
-$vPeriodo = array("Matutino", "Vespertino", "Noturno");
+$vPeriodo = array("Sem Periodo","Matutino", "Vespertino", "Noturno");
 ?>
 
 <!DOCTYPE html>
