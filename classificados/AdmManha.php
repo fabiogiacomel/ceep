@@ -3,6 +3,8 @@ $servername = "localhost";
 $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
+
+
 ?>
 
 <!DOCTYPE html>

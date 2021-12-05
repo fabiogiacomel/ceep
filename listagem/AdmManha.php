@@ -3,6 +3,24 @@ $servername = "localhost";
 $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
+
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["s"])) {
+    $sErr = "ERRO 1";
+  } else {
+    $s = test_input($_POST["s"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$s)) {
+      $sErr = "ERRO 2";
+    }
+  }
+	
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +54,7 @@ $dbname = "u224722929_ceep";
 
             <?php
             echo '<table class="table table-striped">';
-            echo "<thead> <tr> <th>Classificação</th><th>Nome</th><th>Pontuação</th></tr></thead><tbody>";
+            echo "<thead> <tr> <th>Classificação</th><th>Nome</th><th>Pontuação</th><th>Visualizar</th></tr></thead><tbody>";
 
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -48,7 +66,7 @@ $dbname = "u224722929_ceep";
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 1;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    echo "<tr><td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td><td>" . $v["pontuacao"] . "</td></tr>";
+                    echo "<tr><td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td><td>" . $v["pontuacao"] . "</td><td><a href=\"detalhes.php\">visualizar</a></td></tr>";
                     $i++;
                 }
             } catch (PDOException $e) {
