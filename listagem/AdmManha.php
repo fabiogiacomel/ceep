@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
       $sErr = "ERRO 2";
     }
   }
+}
 	
 function test_input($data) {
   $data = trim($data);
