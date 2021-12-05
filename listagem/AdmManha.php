@@ -44,6 +44,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -76,6 +77,7 @@ function test_input($data) {
         <div class="container mt-3">
 
             <?php
+			echo $curso.$periodo;
             echo '<table class="table table-striped">';
             echo "<thead> <tr> <th>Classificação</th><th>Nome</th><th>Pontuação</th><th>Visualizar</th></tr></thead><tbody>";
 
