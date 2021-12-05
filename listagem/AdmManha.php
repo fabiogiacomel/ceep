@@ -82,7 +82,9 @@ function test_input($data) {
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao, cpf FROM inscricoesValidas WHERE valida=1 AND curso=".$curso." AND periodo = ".$periodo." ORDER by pontuacao DESC");
+                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao, cpf FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
+				$stmt->bindParam(':curso', $curso);
+  				$stmt->bindParam(':periodo', $periodo);
                 $stmt->execute();
 
                 // set the resulting array to associative
