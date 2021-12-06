@@ -96,22 +96,12 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
 
             <?php
             echo '<table class="table table-striped">';
-            echo "<thead> <tr> 
-            				<th>Classificação</th>
-            				<th>Nome</th>
-            				<th>RG</th>
-            				<th>Fone Res.</th>
-            				<th>Celular</th>
-            				<th>E-mail</th>
-            				<th>CGM</th>
-            				<th>Pontuação</th>
-            				<th>Visualizar</th>
-            			</tr></thead><tbody>";
+            echo "<thead> <tr> <th>Classificação</th><th>Nome</th><th>Pontuação</th><th>Visualizar</th></tr></thead><tbody>";
 
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome,rg,cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecasa, fonecelular, email, cgm FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
+                $stmt = $conn->prepare("SELECT nome, cast(pontuacao as unsigned integer) as pontuacao, cpf FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
 				$stmt->bindParam(':curso', $curso);
   				$stmt->bindParam(':periodo', $periodo);
                 $stmt->execute();
@@ -120,16 +110,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 1;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    echo "<tr>
-                    			<td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["rg"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["fonecasa"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["fonecelular"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["email"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["cgm"] . "</td>
-                    			<td>" . $v["pontuacao"] . "</td>
-                    			<td><a href=\"https://www.ceepcascavel.com.br/inscricao/inscricaoImprime.php?cpf=". $v["cpf"]."\">visualizar</a></td>
-                    	</tr>";
+                    echo "<tr><td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td><td>" . $v["pontuacao"] . "</td><td><a href=\"https://www.ceepcascavel.com.br/inscricao/inscricaoImprime.php?cpf=". $v["cpf"]."\">visualizar</a></td></tr>";
                     $i++;
                 }
             } catch (PDOException $e) {
@@ -143,4 +124,3 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
 </body>
 
 </html>
-
