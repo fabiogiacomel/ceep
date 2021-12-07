@@ -37,7 +37,7 @@ function limpar($string){
                 $i = 0;
 				
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-					$cpf = limpa($v["cpf"]);
+					$cpf = limpar($v["cpf"]);
                     echo "UPDATE inscricoesValidas SET cpf".$cpf." WHERE id=".$v["id"].";<br>";
                 }
             } catch (PDOException $e) {
