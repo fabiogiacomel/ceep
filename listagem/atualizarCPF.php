@@ -21,9 +21,6 @@ function limpar($string){
 </head>
 <body>
 
-        
-        
-
             <?php
     
             try {
@@ -38,7 +35,7 @@ function limpar($string){
 				
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
 					$cpf = limpar($v["cpf"]);
-                    echo "UPDATE inscricoesValidas SET cpf=".$cpf." WHERE id=".$v["id"].";<br>";
+                    echo "UPDATE tbEntrevistaRespostas SET cpf=".$cpf." WHERE id=".$v["id"].";<br>";
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
