@@ -36,7 +36,7 @@ $dbname = "u224722929_ceep";
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
 					$r = $v["pontuacao"] + $v1[$i];
 					$i++;
-                    echo "UPDATE inscricoesValidas SET pontuacao=";
+                    echo "UPDATE inscricoesValidas SET pontuacao=$r WHERE id=".$v["id"].";";
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
