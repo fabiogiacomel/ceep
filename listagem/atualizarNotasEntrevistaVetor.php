@@ -17,14 +17,15 @@ $dbname = "u224722929_ceep";
 </head>
 <body>
         <?php
-			$v1 = array(1221,2780,449,2736,993,448,734,1727,136);
+			$v1 = array(1468,2422,1048,1185,572,1774,1898,434,590,281,29,1652,349,48,2654,696,43,713,44,115,1665,948,644,879,11,1260,1425,896,1234,438,2019,190,116,815,1883,963,2700,2287,2521,1005,2898,898,1194,2656,1627,291,906,2176,988,2749,1853,1437,1604,68,1740,1525);
+
 	
-			$v2 = array(244,237,227,205,258,256,257,246,189);
+			//$v2 = array(244,237,227,205,258,256,257,246,189);
 	
 			$arrlength = count($v1);
 
 			for($i = 0; $i < $arrlength; $i++) {
-				echo "UPDATE inscricoesValidas SET pontuacao=".$v2[$i]." WHERE id=".$v1[$i].";<br>";
+				//echo "UPDATE inscricoesValidas SET pontuacao=".$v2[$i]." WHERE id=".$v1[$i].";<br>";
 				echo "UPDATE inscricoesValidas SET entrevista=1 WHERE id=".$v1[$i].";<br>";
 
 			}
