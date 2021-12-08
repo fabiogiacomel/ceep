@@ -27,7 +27,7 @@ $dbname = "u224722929_ceep";
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT DISTINCT a.id, a.cpf, a.pontuacao FROM inscricoesValidas as a, tbEntrevistaRespostas as b WHERE a.cpf=b.cpf AND a.curso=9 AND a.periodo=1 AND a.valida=1 ORDER BY a.pontuacao DESC");
+                $stmt = $conn->prepare("SELECT DISTINCT a.id, a.cpf, a.pontuacao FROM inscricoesValidas as a, tbEntrevistaRespostas as b WHERE a.cpf=b.cpf AND a.curso=3 AND a.periodo=1 AND a.valida=1 ORDER BY a.pontuacao DESC");
                 $stmt->execute();
 
                 // set the resulting array to associative
