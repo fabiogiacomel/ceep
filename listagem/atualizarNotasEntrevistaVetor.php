@@ -24,7 +24,7 @@ $dbname = "u224722929_ceep";
 			$arrlength = count($v1);
 
 			for($i = 0; $i < $arrlength; $i++) {
-				echo "UPDATE inscricoesValidas SET pontuacao=$v2[$i] WHERE id=".$v1[$i].";<br>";
+				echo "UPDATE inscricoesValidas SET entrevista=1 WHERE id=".$v1[$i].";<br>";
 
 			}
 	        ?>
