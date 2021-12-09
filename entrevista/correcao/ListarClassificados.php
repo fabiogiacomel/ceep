@@ -137,9 +137,9 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             ?>
 			  <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">SALVAR</button>
-  </div>
+    </div>
 	</form>
-        </div>
+  </div>
 </body>
 
 </html>
