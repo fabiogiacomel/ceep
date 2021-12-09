@@ -136,6 +136,9 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
 			echo "<input class=\"form-control\" type=\"text\" value=\".$i.\" id=\"total\" readonly>
 "
             ?>
+			  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">SALVAR</button>
+  </div>
 	</form>
         </div>
 </body>
