@@ -10,6 +10,7 @@ $id = $_POST['id'];
 
 $json = file_get_contents('php://input');
 
+var_dump($json);
 $obj = json_decode($json);
 
 foreach($obj as $key => $value) {
