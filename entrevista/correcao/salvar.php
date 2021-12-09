@@ -5,23 +5,16 @@ $servername = "localhost";
 $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
-$nota = $_POST['nota1'];
-$id = $_POST['id'];
 
-$data = file_get_contents('php://input');
-echo $data;
+$nota = array("nota", "BMW", "Toyota");
+$nota1 = $_POST['nota1'];
+$id0 = $_POST['id0'];
 
-$json = file_get_contents("php://input");
 
-var_dump($json);
-$obj = json_decode($json);
-
-foreach($obj as $key => $value) {
-  echo $key . " => " . $value . "<br>";
+for($x = 0; $x < 99; $x++) {
+  echo "\"nota".$x."\"";
+  
 }
-// decode the json data
-$data = json_decode($json);
-
 
 echo "UPDATE inscricoesValidas SET pontuacao=".$nota." WHERE id=:".$id.";";
 
