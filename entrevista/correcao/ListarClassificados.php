@@ -100,7 +100,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             				<th>Classificação</th>
             				<th>Nome</th>
             				<th>CPF</th>
-            				<th>Fone Res.</th>
+            				<th>ID</th>
             				<th>Celular</th>
             				<th>E-mail</th>
             				<th>ENTREVISTA</th>
@@ -111,7 +111,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome,rg,cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecasa, fonecelular, email, entrevista FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
+                $stmt = $conn->prepare("SELECT nome, id, cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecelular, email, entrevista FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
 				$stmt->bindParam(':curso', $curso);
   				$stmt->bindParam(':periodo', $periodo);
                 $stmt->execute();
@@ -123,7 +123,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     echo "<tr>
                     			<td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["cpf"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["fonecasa"] . "</td>
+                    			<td class=\"text-uppercase\">" . $v["id"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["fonecelular"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["email"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
