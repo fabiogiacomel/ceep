@@ -111,7 +111,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome,rg,cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecasa, fonecelular, email, cgm FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
+                $stmt = $conn->prepare("SELECT nome,rg,cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecasa, fonecelular, email, entrevista FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
 				$stmt->bindParam(':curso', $curso);
   				$stmt->bindParam(':periodo', $periodo);
                 $stmt->execute();
