@@ -8,6 +8,17 @@ $dbname = "u224722929_ceep";
 $nota = $_POST['nota1'];
 $id = $_POST['id'];
 
+$json = file_get_contents('php://input');
+
+$obj = json_decode($json);
+
+foreach($obj as $key => $value) {
+  echo $key . " => " . $value . "<br>";
+}
+// decode the json data
+$data = json_decode($json);
+
+
 echo "UPDATE inscricoesValidas SET pontuacao=".$nota." WHERE id=:".$id.";";
 
 /*
