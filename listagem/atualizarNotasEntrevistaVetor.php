@@ -170,7 +170,7 @@ $v2 = array(
 
 			for($i = 0; $i < $arrlength; $i++) {
 				//echo "UPDATE inscricoesValidas SET pontuacao=".$v2[$i]." WHERE id=".$v1[$i].";<br>";
-				echo "UPDATE inscricoesValidas SET pontuacao=pontuacao+".$v2[$i]" WHERE id=".$v1[$i].";<br>";
+				echo "UPDATE inscricoesValidas SET pontuacao=pontuacao+".$v2[$i]." WHERE id=".$v1[$i].";<br>";
 
 			}
 	        ?>
