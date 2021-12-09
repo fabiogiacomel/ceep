@@ -126,7 +126,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     			<td class=\"text-uppercase\">" . $v["fonecasa"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["fonecelular"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["email"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["cgm"] . "</td>
+                    			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>
                     			<td><a href=\"https://www.ceepcascavel.com.br/inscricao/inscricaoImprime.php?cpf=". $v["cpf"]."\">visualizar</a></td>
                     	</tr>";
