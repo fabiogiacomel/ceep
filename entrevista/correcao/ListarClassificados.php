@@ -93,7 +93,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-
+		<form class="form-inline" action="ListarClassificados.php">
             <?php
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
@@ -134,7 +134,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             $conn = null;
             echo "</tbody></table>";
             ?>
-
+	</form>
         </div>
 </body>
 
