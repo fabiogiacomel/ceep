@@ -11,8 +11,15 @@ $nota1 = $_POST['nota1'];
 $id0 = $_POST['id0'];
 
 
-for($x = 0; $x < 99; $x++) {
+for($x = 1; $x < 80; $x++) {
   echo "\"nota".$x."\",";
+  
+}
+
+echo "<br>";
+
+for($x = 1; $x < 80; $x++) {
+  echo "\"id".$x."\",";
   
 }
 
