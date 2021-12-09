@@ -27,16 +27,16 @@ $dbname = "u224722929_ceep";
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT DISTINCT a.id, a.nome, cast(a.pontuacao as unsigned integer) as pontuacao, a.cpf FROM inscricoesValidas as a, tbEntrevistaRespostas as b WHERE a.cpf=b.cpf AND a.curso=19 AND a.periodo=1 AND a.valida=1 ORDER BY a.pontuacao DESC LIMIT 80");
+                $stmt = $conn->prepare("SELECT tbEntrevistaRespostas.id AS idEntrevista, inscricoesValidas.id FROM  inscricoesValidas, tbEntrevistaRespostas WHERE inscricoesValidas.cpf=tbEntrevistaRespostas.cpf AND inscricoesValidas.valida=1");
                 $stmt->execute();
 
                 // set the resulting array to associative
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 0;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-					$r = $v["pontuacao"] + $v1[$i];
+					$r = $v["idEntrevista"];
 					$i++;
-                    echo "UPDATE inscricoesValidas SET entrevista=0 WHERE id=".$v["id"].";<br>";
+                    echo "UPDATE inscricoesValidas SET entrevista=".$r." WHERE id=".$v["id"].";<br>";
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
