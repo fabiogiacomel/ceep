@@ -93,7 +93,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-		<form class="form-inline" action="ListarClassificados.php?curso=<?php echo $_GET["curso"]."&periodo=" .$_GET["periodo"];?>">
+		<form class="form-inline" action="salvar.php">
             <?php
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
@@ -124,7 +124,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     			<td class=\"text-uppercase\">" . $v["id"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>
-                    			<td> <input type=\"text\" class=\"form-control\" id=\"nota\"> <button type=\"submit\" class=\"btn btn-primary\">></button></td>
+                    			<td> <input type=\"text\" class=\"form-control\" name=\"nota\" id=\"nota\"> <button type=\"submit\" class=\"btn btn-primary\">></button></td>
                     	</tr>";
                     $i++;
                 }
