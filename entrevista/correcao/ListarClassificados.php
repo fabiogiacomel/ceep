@@ -93,7 +93,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-		<form class="form-inline" action="ListarClassificados.php">
+		<form class="form-inline" action="ListarClassificados.php?curso=<?php echo $_GET["curso"]."&periodo=" .$_GET["periodo"];?>">
             <?php
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
