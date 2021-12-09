@@ -12,21 +12,22 @@ $id=array("id1","id2","id3","id4","id5","id6","id7","id8","id9","id10","id11","i
 
 $nota = $_POST[$nota[0]];
 $id = $_POST[$id[0]];
+$total = $_POST["total"];
 
 
-for($x = 1; $x < 80; $x++) {
+for($x = 1; $x < $total; $x++) {
   echo "\"nota".$x."\",";
   
 }
 
 echo "<br>";
 
-for($x = 1; $x < 80; $x++) {
+for($x = 1; $x < $total; $x++) {
   echo "\"id".$x."\",";
   
 }
 
-echo "UPDATE inscricoesValidas SET pontuacao=".$nota." WHERE id=:".$id.";";
+echo "UPDATE inscricoesValidas SET pontuacao=".$nota." WHERE id=".$id.";";
 
 /*
 	try {
