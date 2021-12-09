@@ -27,7 +27,8 @@ $id=array("id1","id2","id3","id4","id5","id6","id7","id8","id9","id10","id11","i
 $total = $_POST["total"];
 
 for($x = 1; $x <= $total; $x++) {
-
+	
+	if (!empty($_POST[$nota[$x]])) {
 	echo "UPDATE inscricoesValidas SET pontuacao=".$_POST[$nota[$x]]." WHERE id=".$_POST[$id[$x]].";<br>";  
 }
 
