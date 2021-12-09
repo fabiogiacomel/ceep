@@ -93,7 +93,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-		<form class="form-inline" action="salvar.php" method="get">
+		<form class="form-inline" action="salvar.php" method="post">
             <?php
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
