@@ -93,7 +93,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-		<form class="form-inline" action="salvar.php">
+		<form class="form-inline" action="salvar.php" method="post">
             <?php
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
@@ -124,7 +124,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     			<td class=\"text-uppercase\">" . $v["id"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>
-                    			<td> <input type=\"text\" class=\"form-control\" name=\"nota".$i."\" id=\"nota".$i."\"> <button type=\"submit\" class=\"btn btn-primary\">></button></td>
+                    			<td> <input type=\"text\" class=\"form-control\" name=\"nota".$i."\" id=\"nota".$i."\"></td>
                     	</tr>";
                     $i++;
                 }
@@ -133,6 +133,8 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             }
             $conn = null;
             echo "</tbody></table>";
+			echo "<input class=\"form-control\" type=\"text\" value=\".$i.\" id=\"total\" readonly>
+"
             ?>
 	</form>
         </div>

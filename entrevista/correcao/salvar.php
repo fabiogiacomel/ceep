@@ -5,8 +5,8 @@ $servername = "localhost";
 $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
-$nota = $_GET['nota'];
-$id = $_GET['id'];
+$nota = $_POST['nota1'];
+$id = $_POST['id'];
 
 echo "UPDATE inscricoesValidas SET pontuacao=".$nota." WHERE id=:".$id.";";
 
