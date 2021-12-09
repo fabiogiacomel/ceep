@@ -12,7 +12,7 @@ $id0 = $_POST['id0'];
 
 
 for($x = 0; $x < 99; $x++) {
-  echo "\"nota".$x."\"";
+  echo "\"nota".$x.",\"";
   
 }
 
