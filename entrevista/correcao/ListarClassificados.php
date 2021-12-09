@@ -124,7 +124,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     			<td class=\"text-uppercase\">" . $v["id"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>
-                    			<td> <input type=\"text\" class=\"form-control\" id=\"nota\"></td>
+                    			<td> <input type=\"text\" class=\"form-control\" id=\"nota\"> <button type="submit" class="btn btn-primary">></button></td>
                     	</tr>";
                     $i++;
                 }
