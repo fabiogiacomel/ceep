@@ -29,7 +29,8 @@ $total = $_POST["total"];
 for($x = 1; $x <= $total; $x++) {
 	
 	if (!empty($_POST[$nota[$x]])) {
-	echo "UPDATE inscricoesValidas SET pontuacao=".$_POST[$nota[$x]]." WHERE id=".$_POST[$id[$x]].";<br>";  
+		echo "UPDATE inscricoesValidas SET pontuacao=".$_POST[$nota[$x]]." WHERE id=".$_POST[$id[$x]].";<br>";  
+	}
 }
 
 
