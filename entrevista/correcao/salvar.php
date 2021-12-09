@@ -8,6 +8,9 @@ $dbname = "u224722929_ceep";
 $nota = $_POST['nota1'];
 $id = $_POST['id'];
 
+$data = file_get_contents('php://input');
+echo $data;
+
 $json = file_get_contents("php://input");
 
 var_dump($json);
