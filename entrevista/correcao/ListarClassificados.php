@@ -99,11 +99,11 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             echo "<thead> <tr> 
             				<th>Classificação</th>
             				<th>Nome</th>
-            				<th>RG</th>
+            				<th>CPF</th>
             				<th>Fone Res.</th>
             				<th>Celular</th>
             				<th>E-mail</th>
-            				<th>CGM</th>
+            				<th>ENTREVISTA</th>
             				<th>Pontuação</th>
             				<th>Visualizar</th>
             			</tr></thead><tbody>";
@@ -122,7 +122,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
                     echo "<tr>
                     			<td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["rg"] . "</td>
+                    			<td class=\"text-uppercase\">" . $v["cpf"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["fonecasa"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["fonecelular"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["email"] . "</td>
