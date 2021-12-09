@@ -121,7 +121,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     echo "<tr>
                     			<td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["cpf"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["id"] . "</td>
+                    			<td class=\"text-uppercase\"> <input class=\"form-control\" type=\"text\" value=\"".$v["id"]."\" id=\"id".$i."\" readonly>  </td>
                     			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>
                     			<td> <input type=\"text\" class=\"form-control\" name=\"nota".$i."\" id=\"nota".$i."\"></td>
@@ -133,8 +133,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             }
             $conn = null;
             echo "</tbody></table>";
-			echo "<input class=\"form-control\" type=\"text\" value=\".$i.\" id=\"total\" readonly>
-"
+			echo "<input class=\"form-control\" type=\"text\" value=\".$i.\" id=\"total\" readonly>"
             ?>
 			  <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">SALVAR</button>
