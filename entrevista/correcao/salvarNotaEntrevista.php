@@ -60,4 +60,6 @@ echo $notaFinal;
             }
             $conn = null;
 
+header("Location: https://www.ceepcascavel.com.br/entrevista/correcao/ListarClassificados.php?curso=".$curso."&periodo=".$periodo."");
+
 ?>
