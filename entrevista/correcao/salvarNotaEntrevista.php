@@ -50,7 +50,7 @@ echo $notaFinal;
 	try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("UPDATE inscricoesValidas SET nota=:p WHERE id=:id");
+                $stmt = $conn->prepare("UPDATE inscricoesValidas SET nota=:n WHERE id=:id");
 				$stmt->bindParam(':n', $notaFinal);
   				$stmt->bindParam(':id', $idIns);
                 $stmt->execute();
