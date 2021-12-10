@@ -29,7 +29,27 @@ function test_input($data) {
 }
 
 
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["periodo"])) {
+    $periodoErr = "ERRO 1";
+  } else {
+    $periodo = test_input($_GET["periodo"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
+      $periodoErr = "ERRO 2";
+    }
+  }
+}
 
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["curso"])) {
+    $cursoErr = "ERRO 1";
+  } else {
+    $curso = test_input($_GET["curso"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
+      $cursoErr = "ERRO 2";
+    }
+  }
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["periodo"])) {
@@ -73,6 +93,8 @@ for($i = 0; $i <= 9; $i++) {
 }
 echo $idIns;
 echo $notaFinal;
+echo $curso;
+echo $periodo;
 
 
 	try {
@@ -88,6 +110,6 @@ echo $notaFinal;
             }
             $conn = null;
 
-header("Location: https://www.ceepcascavel.com.br/entrevista/correcao/ListarClassificados.php?curso=".$curso."&periodo=".$periodo."");
+//header("Location: https://www.ceepcascavel.com.br/entrevista/correcao/ListarClassificados.php?curso=".$curso."&periodo=".$periodo."");
 
 ?>
