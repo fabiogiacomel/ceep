@@ -60,7 +60,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
 <html lang="pt-br">
 
 <head>
-    <title>Lista de Classificados</title>
+    <title>Correção da Entrevista</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +74,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 <img src="https://www.ceepcascavel.com.br/img/ceep_menor.jpg" class="img-fluid rounded"> 
             </div>
             <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10">
-                <h3 class="text-left"> Lista de Classificados</h3>
+                <h3 class="text-left"> Correção da Entrevista</h3>
         </div>
         </div>
         </div>

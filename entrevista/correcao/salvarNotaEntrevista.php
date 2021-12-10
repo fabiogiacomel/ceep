@@ -46,27 +46,18 @@ for($i = 0; $i <= 9; $i++) {
 echo $idIns;
 echo $notaFinal;
 
-for($x = 1; $x <= 10; $x++) {
-	
-	if (!empty($_POST[$nota[$x]])) {
-		//echo "UPDATE inscricoesValidas SET pontuacao=".$_POST[$nota[$x]]."+inscricoesValidas.pontuacao WHERE id=".$_POST[$id[$x]].";<br>";  
-	}
-}
 
-
-/*
 	try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("UPDATE inscricoesValidas SET pontuacao=:p WHERE id=:id");
-				$stmt->bindParam(':p', $nota);
-  				$stmt->bindParam(':id', $id);
+                $stmt = $conn->prepare("UPDATE inscricoesValidas SET nota=:p WHERE id=:id");
+				$stmt->bindParam(':n', $notaFinal);
+  				$stmt->bindParam(':id', $idIns);
                 $stmt->execute();
             
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
             }
             $conn = null;
-*/
 
 ?>
