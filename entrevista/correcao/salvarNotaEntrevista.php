@@ -61,6 +61,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["curso"])) {
+    $cursoErr = "ERRO 1";
+  } else {
+    $curso = test_input($_POST["curso"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
+      $curso = "ERRO 2";
+    }
+  }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["periodo"])) {
+    $periodo = "ERRO 1";
+  } else {
+    $periodo = test_input($_POST["periodo"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
+      $periodo = "ERRO 2";
+    }
+  }
+}
+
+
 
 $nota = array("nota1","nota2","nota3","nota4","nota5","nota6","nota7","nota8","nota9","nota10");
 
