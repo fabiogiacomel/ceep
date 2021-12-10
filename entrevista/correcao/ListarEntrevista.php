@@ -104,7 +104,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-		<form class="form-inline" action="salvarNotaEntrevista.php?curso=<?php $curso ?>& <?php $periodo ?>" method="post">
+		<form class="form-inline" action="salvarNotaEntrevista.php?curso=<?php echo $curso; ?>&periodo<?php echo $periodo; ?>" method="post">
 			<?php echo "<input class=\"form-control\" type=\"text\" value=\"".$idIns."\" id=\"idInsc\" name=\"idIns\" readonly></br>" ?>
             <?php
             echo '<table class="table table-striped">';
