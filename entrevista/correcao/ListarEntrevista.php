@@ -6,38 +6,29 @@ $dbname = "u224722929_ceep";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["periodo"])) {
-    $periodoErr = "ERRO 1";
+  if (empty($_GET["idEnt"])) {
+    $idEntErr = "ERRO 1";
   } else {
-    $periodo = test_input($_GET["periodo"]);
-    if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
-      $periodoErr = "ERRO 2";
+    $idEnt = test_input($_GET["idEnt"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$idEnt)) {
+      $idEntErr = "ERRO 2";
     }
   }
 }
 
+
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["curso"])) {
-    $cursoErr = "ERRO 1";
+  if (empty($_GET["idIns"])) {
+    $idInsErr = "ERRO 1";
   } else {
-    $curso = test_input($_GET["curso"]);
-    if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
-      $cursoErr = "ERRO 2";
+    $idIns = test_input($_GET["idIns"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$idIns)) {
+      $idInsErr = "ERRO 2";
     }
   }
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["s"])) {
-    $sErr = "ERRO 1";
-  } else {
-    $s = test_input($_GET["s"]);
-    if (!preg_match("/^[1-9][0-9]*$/",$s)) {
-      $sErr = "ERRO 2";
-    }
-  }
-}
-	
+
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -84,9 +75,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             </div>
             <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10">
                 <h3 class="text-left"> Lista de Classificados</h3>
-                <h4 class="text-left"> Curso: Técnico em <?php echo $vCursos[$curso] ?></h4>
-                <h4 class="text-left"> Periodo: <?php echo $vPeriodo[$periodo] ?></h4>
-            </div>
+        </div>
         </div>
         </div>
         
