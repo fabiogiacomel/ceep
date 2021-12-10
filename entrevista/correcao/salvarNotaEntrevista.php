@@ -24,7 +24,7 @@ $nota = array("nota1","nota2","nota3","nota4","nota5","nota6","nota7","nota8","n
 for($i = 0; $i <= 9; $i++) {
 	$notaFinal = $_POST[$nota[$i]] + $notaFinal; 
 }
-echo "1.0";
+
 echo $notaFinal;
 
 for($x = 1; $x <= 10; $x++) {
