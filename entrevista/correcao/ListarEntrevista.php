@@ -94,7 +94,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $stmt = $conn->prepare("SELECT * FROM `tbEntrevistaRespostas` WHERE id= :id");
-				$stmt->bindParam(':id', $idEntrevista);
+				$stmt->bindParam(':id', $idEnt);
   				$stmt->execute();
 
                 // set the resulting array to associative
