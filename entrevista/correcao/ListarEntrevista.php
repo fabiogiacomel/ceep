@@ -101,16 +101,16 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 1;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    echo "<tr><td>".$v["p1"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p2"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p3"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p4"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p5"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p6"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p7"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p8"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p9"]."</td>  NOTA </tr>";
-                    echo "<tr><td>".$v["p10"]."</td>  NOTA </tr>";
+                    echo "<tr><td>".$v["p1"]."</td> <td> NOTA</td> </tr>";
+                    echo "<tr><td>".$v["p2"]."</td>  <td>NOTA </td></tr>";
+                    echo "<tr><td>".$v["p3"]."</td>  <td>NOTA </td></tr>";
+                    echo "<tr><td>".$v["p4"]."</td> <td> NOTA </td></tr>";
+                    echo "<tr><td>".$v["p5"]."</td> <td> NOTA </td></tr>";
+                    echo "<tr><td>".$v["p6"]."</td> <td> NOTA </td></tr>";
+                    echo "<tr><td>".$v["p7"]."</td> <td> NOTA </td></tr>";
+                    echo "<tr><td>".$v["p8"]."</td>  <td>NOTA </td></tr>";
+                    echo "<tr><td>".$v["p9"]."</td>  <td>NOTA </td></tr>";
+                    echo "<tr><td>".$v["p10"]."</td>  <td>NOTA </td></tr>";
                     $i++;
                 }
             } catch (PDOException $e) {
