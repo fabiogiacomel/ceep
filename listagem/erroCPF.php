@@ -30,12 +30,14 @@ function test_input($data) {
 
             <?php
 			$v1 = array(45,67,90,79,72,86,80,72,77,79,67,65,69,35,66,75,87,86,79,96,55,68);
-	
+			$p='0%';
     
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT *  FROM inscricoesValidas WHERE cpf LIKE \'0%\'");
+                $stmt = $conn->prepare("SELECT *  FROM inscricoesValidas WHERE cpf LIKE :p");
+				$stmt->bindParam(':p', $p);
+				
                 $stmt->execute();
 
                 // set the resulting array to associative
