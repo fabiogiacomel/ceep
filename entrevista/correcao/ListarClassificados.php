@@ -86,6 +86,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 <h3 class="text-left"> Lista de Classificados</h3>
                 <h4 class="text-left"> Curso: Técnico em <?php echo $vCursos[$curso] ?></h4>
                 <h4 class="text-left"> Periodo: <?php echo $vPeriodo[$periodo] ?></h4>
+				<?php echo $_SERVER["PHP_SELF"]; ?>
             </div>
         </div>
         </div>
