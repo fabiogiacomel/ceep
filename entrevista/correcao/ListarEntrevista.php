@@ -86,7 +86,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             <?php
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
-            				<th>Pergunta</th>
+            				<th>Resposta</th>
             				<th>Nota</th>
             			</tr></thead><tbody>";
 
@@ -118,7 +118,6 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             }
             $conn = null;
             echo "</tbody></table>";
-			echo "<input class=\"form-control\" type=\"text\" value=\"$i\" id=\"total\" name=\"total\" readonly>"
             ?>
 			  <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">SALVAR</button>
