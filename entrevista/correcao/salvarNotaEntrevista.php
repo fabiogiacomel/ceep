@@ -21,11 +21,11 @@ for($x = 1; $x <= 120; $x++) {
 
 
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["idIns"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["idIns"])) {
     $idInsErr = "ERRO 1";
   } else {
-    $idIns = test_input($_GET["idIns"]);
+    $idIns = test_input($_POST["idIns"]);
     if (!preg_match("/^[1-9][0-9]*$/",$idIns)) {
       $idInsErr = "ERRO 2";
     }
