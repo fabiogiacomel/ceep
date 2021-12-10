@@ -58,7 +58,7 @@ function test_input($data) {
 					
 					$r = substr($v["cpf"],1);
 					$i++;
-                    echo "UPDATE tbEntrevistaRespostas SET cpf=".$r." WHERE cpf=".$v["cpf"].";<br>";
+                  
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
