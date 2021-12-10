@@ -101,16 +101,16 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 1;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    echo "<tr><td>".$v["p1"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p2"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p3"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p4"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p5"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p6"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p7"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p8"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p9"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
-                    echo "<tr><td>".$v["p10"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
+                    echo "<tr><td>".$v["p1"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota1\" name=\"nota1\"> </td>";
+                    echo "<tr><td>".$v["p2"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota2\" name=\"nota2\"> </td>";
+                    echo "<tr><td>".$v["p3"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota3\" name=\"nota3\"> </td>";
+                    echo "<tr><td>".$v["p4"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota4\" name=\"nota4\"> </td>";
+                    echo "<tr><td>".$v["p5"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota5\" name=\"nota5\"> </td>";
+                    echo "<tr><td>".$v["p6"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota6\" name=\"nota6\"> </td>";
+                    echo "<tr><td>".$v["p7"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota7\" name=\"nota7\"> </td>";
+                    echo "<tr><td>".$v["p8"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota8\" name=\"nota8\"> </td>";
+                    echo "<tr><td>".$v["p9"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota9\" name=\"nota9\"> </td>";
+                    echo "<tr><td>".$v["p10"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota10\" name=\"nota10\"> </td>";
                     $i++;
                 }
             } catch (PDOException $e) {
