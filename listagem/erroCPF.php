@@ -35,7 +35,7 @@ function test_input($data) {
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT cpf FROM inscricoesValidas WHERE inscricoesValidas.cpf LIKE 0%;");
+                $stmt = $conn->prepare("SELECT *  FROM `inscricoesValidas` WHERE `cpf` LIKE \'0%\'");
                 $stmt->execute();
 
                 // set the resulting array to associative
