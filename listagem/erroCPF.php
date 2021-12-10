@@ -51,7 +51,7 @@ function test_input($data) {
 					foreach (new RecursiveArrayIterator($stmt1->fetchAll()) as $k1 => $v1) {
 							$stmt1 = $conn->prepare("UPDATE tbEntrevistaRespostas SET cpf = :cpfnovo WHERE tbEntrevistaRespostas.id = :id");
 							$stmt1->bindParam(':id', $v1["id"]);
-							$stmt1->bindParam(':cpfnovo', $r);
+							$stmt1->bindParam(':cpfnovo',$v["cpf"]);
                 			$stmt1->execute();
 					}
 					
