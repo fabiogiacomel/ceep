@@ -44,7 +44,7 @@ function test_input($data) {
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 0;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-					$r = test_input($v["cpf"]);
+					$r = substr($v["cpf"]);
 					$i++;
                     echo "UPDATE tbEntrevistaRespostas SET cpf=".$r." WHERE cpf=".$v["cpf"].";<br>";
                 }
