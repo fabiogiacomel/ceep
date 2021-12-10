@@ -37,13 +37,25 @@ function test_input($data) {
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $stmt = $conn->prepare("SELECT *  FROM inscricoesValidas WHERE cpf LIKE :p");
 				$stmt->bindParam(':p', $p);
-				
                 $stmt->execute();
 
                 // set the resulting array to associative
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 0;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
+					$r = substr($v["cpf"],1);
+					$stmt1 = $conn->prepare("SELECT id  FROM tbEntrevistaRespostas WHERE cpf=:r");
+					$stmt1->bindParam(':r', $r);
+                	$stmt1->execute();
+
+					foreach (new RecursiveArrayIterator($stmt1->fetchAll()) as $k1 => $v1) {
+							$stmt1 = $conn->prepare("UPDATE tbEntrevistaRespostas SET cpf = :cpfnovo WHERE tbEntrevistaRespostas.id = :id");
+							$stmt1->bindParam(':id', $v1["id"]);
+							$stmt1->bindParam(':cpfnovo', $r);
+                			$stmt1->execute();
+					}
+					
+					
 					$r = substr($v["cpf"],1);
 					$i++;
                     echo "UPDATE tbEntrevistaRespostas SET cpf=".$r." WHERE cpf=".$v["cpf"].";<br>";
