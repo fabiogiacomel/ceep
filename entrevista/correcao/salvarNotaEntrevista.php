@@ -31,22 +31,22 @@ function test_input($data) {
 
 
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["periodo"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["periodo"])) {
     $periodoErr = "ERRO 1";
   } else {
-    $periodo = test_input($_GET["periodo"]);
+    $periodo = test_input($_POST["periodo"]);
     if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
       $periodoErr = "ERRO 2";
     }
   }
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (empty($_GET["curso"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["curso"])) {
     $cursoErr = "ERRO 1";
   } else {
-    $curso = test_input($_GET["curso"]);
+    $curso = test_input($_POST["curso"]);
     if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
       $cursoErr = "ERRO 2";
     }
