@@ -109,7 +109,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             try {
                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $stmt = $conn->prepare("SELECT nome, id, cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecelular, email, entrevista FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
+                $stmt = $conn->prepare("SELECT nome, id, cpf, cast(pontuacao as unsigned integer) as pontuacao, fonecelular, email, entrevista, nota FROM inscricoesValidas WHERE valida=1 AND curso= :curso AND periodo = :periodo ORDER by pontuacao DESC");
 				$stmt->bindParam(':curso', $curso);
   				$stmt->bindParam(':periodo', $periodo);
                 $stmt->execute();
@@ -122,7 +122,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     			<td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["cpf"] . "</td>
                     			<td class=\"text-uppercase\"> <input class=\"form-control\" type=\"text\" value=\"".$v["id"]."\" id=\"id".$i."\" name=\"id".$i."\" readonly>  </td>
-                    			<td class=\"text-uppercase\">" . $v["entrevista"] . "</td>
+                    			<td class=\"text-uppercase\">" . $v["nota"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>
                     			<td> <a href=\"ListarEntrevista.php?periodo=".$periodo."&curso=".$curso."&idEnt=".$v["entrevista"]."&idIns=".$v["id"]."\" class=\"btn btn-info\" role=\"button\">Corrigir</a></td>
                     	</tr>";
