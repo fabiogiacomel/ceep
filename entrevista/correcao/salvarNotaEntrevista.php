@@ -5,6 +5,9 @@ $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
 
+
+
+
 /*
 for($x = 1; $x <= 120; $x++) {
   echo "\"nota".$x."\",";
@@ -23,6 +26,31 @@ function test_input($data) {
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
+}
+
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["periodo"])) {
+    $periodoErr = "ERRO 1";
+  } else {
+    $periodo = test_input($_GET["periodo"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
+      $periodoErr = "ERRO 2";
+    }
+  }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["curso"])) {
+    $cursoErr = "ERRO 1";
+  } else {
+    $curso = test_input($_GET["curso"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
+      $cursoErr = "ERRO 2";
+    }
+  }
 }
 
 
