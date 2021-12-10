@@ -4,6 +4,28 @@ $username = "u224722929_ceep";
 $password = "UmhNWJ3AvJ4+H]Kr";
 $dbname = "u224722929_ceep";
 
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["periodo"])) {
+    $periodoErr = "ERRO 1";
+  } else {
+    $periodo = test_input($_GET["periodo"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$periodo)) {
+      $periodoErr = "ERRO 2";
+    }
+  }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["curso"])) {
+    $cursoErr = "ERRO 1";
+  } else {
+    $curso = test_input($_GET["curso"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$curso)) {
+      $cursoErr = "ERRO 2";
+    }
+  }
+}
+
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
   if (empty($_GET["idEnt"])) {
@@ -82,7 +104,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
         
 
         <div class="container mt-3">
-		<form class="form-inline" action="salvarNotaEntrevista.php" method="post">
+		<form class="form-inline" action="salvarNotaEntrevista.php?curso=<?php $curso ?>& <?php $periodo ?>" method="post">
 			<?php echo "<input class=\"form-control\" type=\"text\" value=\"".$idIns."\" id=\"idInsc\" name=\"idIns\" readonly></br>" ?>
             <?php
             echo '<table class="table table-striped">';
