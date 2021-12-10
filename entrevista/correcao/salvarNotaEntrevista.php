@@ -19,12 +19,26 @@ for($x = 1; $x <= 120; $x++) {
 }
 */
 
+
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  if (empty($_GET["idIns"])) {
+    $idInsErr = "ERRO 1";
+  } else {
+    $idIns = test_input($_GET["idIns"]);
+    if (!preg_match("/^[1-9][0-9]*$/",$idIns)) {
+      $idInsErr = "ERRO 2";
+    }
+  }
+}
+
+
 $nota = array("nota1","nota2","nota3","nota4","nota5","nota6","nota7","nota8","nota9","nota10");
 
 for($i = 0; $i <= 9; $i++) {
 	$notaFinal = $_POST[$nota[$i]] + $notaFinal; 
 }
-
+echo $idIns;
 echo $notaFinal;
 
 for($x = 1; $x <= 10; $x++) {
