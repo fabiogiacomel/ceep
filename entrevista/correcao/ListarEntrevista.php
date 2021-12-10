@@ -88,7 +88,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             echo '<table class="table table-striped">';
             echo "<thead> <tr> 
             				<th>Resposta</th>
-            				<th>Nota</th>
+            				<th>Nota (0 à 10) não usar . ou ,</th>
             			</tr></thead><tbody>";
 
             try {
