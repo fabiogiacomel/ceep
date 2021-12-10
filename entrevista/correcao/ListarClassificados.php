@@ -103,7 +103,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
             				<th>ID</th>
             				<th>ENTREVISTA</th>
             				<th>Pontuação</th>
-            				<th>Visualizar</th>
+            				<th>Correção</th>
             			</tr></thead><tbody>";
 
             try {

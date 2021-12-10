@@ -101,7 +101,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 1;
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
-                    echo "<tr><td>".$v["p1"]."</td> <td> NOTA</td> </tr>";
+                    echo "<tr><td>".$v["p1"]."</td> <td> <input class=\"form-control\" type=\"text\" id=\"nota".$i."\" name=\"nota".$i."\"> </td>";
                     echo "<tr><td>".$v["p2"]."</td>  <td>NOTA </td></tr>";
                     echo "<tr><td>".$v["p3"]."</td>  <td>NOTA </td></tr>";
                     echo "<tr><td>".$v["p4"]."</td> <td> NOTA </td></tr>";
