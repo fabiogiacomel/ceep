@@ -46,7 +46,7 @@ function test_input($data) {
                 foreach (new RecursiveArrayIterator($stmt->fetchAll()) as $k => $v) {
 					$r = test_input($v["cpf"]);
 					$i++;
-                    echo "UPDATE tbEntrevistaRespostas SET cpf=".$v["cpf"]." WHERE cpf=".$v["id"].";<br>";
+                    echo "UPDATE tbEntrevistaRespostas SET cpf=".$v["cpf"]." WHERE cpf=".$v["cpf"].";<br>";
                 }
             } catch (PDOException $e) {
                 echo "Error: " . $e->getMessage();
