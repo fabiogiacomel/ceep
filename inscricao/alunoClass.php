@@ -111,7 +111,8 @@ class Aluno
     public function carregar()
     {
         try {
-            $sql = "select * from inscricoesnovas where cpf=:p1";
+           // $sql = "select * from inscricoesnovas where cpf=:p1";
+            $sql = "select * from inscricoesValidas where cpf=:p1 and valida=1";
             GeraLog::getInstance()->log($sql);
             $c = new Conexao();
             $con = $c->prepare($sql);
