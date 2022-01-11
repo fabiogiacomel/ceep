@@ -124,7 +124,7 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
                     			<td>$i</td><td class=\"text-uppercase\">" . $v["nome"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["rg"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["fonecasa"] . "</td>
-                    			<td class=\"text-uppercase\">" . $v["fonecelular"] . "</td>
+                    			<td class=\"text-uppercase\"><a href=\"https://wa.me/55" . $v["fonecelular"] . "</a></td>
                     			<td class=\"text-uppercase\">" . $v["email"] . "</td>
                     			<td class=\"text-uppercase\">" . $v["cgm"] . "</td>
                     			<td>" . $v["pontuacao"] . "</td>

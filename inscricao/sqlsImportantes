@@ -1,0 +1,4 @@
+SELECT i.nome, i.fonecasa, i.fonecelular , i.nota+i.pontuacao "Soma" 
+FROM inscricoesValidas i
+WHERE i.curso=4 AND i.periodo=3
+ORDER BY Soma DESC;
