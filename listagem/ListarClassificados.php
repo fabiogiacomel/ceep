@@ -115,7 +115,8 @@ $vCursos = array('0','Administração','Eletrônica', 'Eletromecânica','Enferma
 				$stmt->bindParam(':curso', $curso);
   				$stmt->bindParam(':periodo', $periodo);
                 $stmt->execute();
-
+				// LINK PARA ENVIAR UMA MENSAGEM DE WHATS SEM CADASTRO
+				// https://wa.me/55DDDxxxxxxxxx
                 // set the resulting array to associative
                 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $i = 1;
