@@ -13,8 +13,11 @@ Fone: <input type="text" name="fone"><br>
 
 	<?php
 	$nome = $_POST['nome'];
-	
+	$email = $_POST['email'];
 	echo $nome;
+	echo "<br>";
+	echo $email;
+	
 	?>
 </body>
 </html>
