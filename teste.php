@@ -33,8 +33,8 @@ try {
 
   // insert a row
   $nome = $_POST['nome'];
-  $email = $_POST['email'];
   $telefone = $_POST['telefone'];
+	$email = $_POST['email'];
   $stmt->execute();
 
   echo "New records created successfully";
