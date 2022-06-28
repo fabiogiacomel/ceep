@@ -48,7 +48,7 @@
    <div class="alert alert-warning">
   <table class="table">
     <thead>
-      <tr>
+      <tr class="table-primary">
         <th>CURSO</th>
         <th>PERÍODO</th>
         <th>CLASSIFICAÇÃO</th>
@@ -61,13 +61,26 @@
         <td></td>
       </tr>
 
+
+      <tr class="table-primary">
+        <td>Técnico em Edificações</td>
+        <td>Vespertino</td>
+        <td></td>
+      </tr>
+		
+	<tr class="table-primary">
+        <td>Técnico em Enfermagem</td>
+        <td>Vespertino</td>
+        <td></td>
+      </tr>
+
       <tr class="table-primary">
         <td>Técnico em Enfermagem</td>
         <td>Noturno</td>
         <td></td>
       </tr>
 
-      <tr class="table-primary">
+	<tr class="table-primary">
         <td>Técnico em Eletromecânica</td>
         <td>Noturno</td>
         <td></td>
