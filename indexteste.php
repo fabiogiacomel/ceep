@@ -45,7 +45,6 @@
 <div class="jumbotron">
 	
 <div class="container text-center">
-   <div class="alert alert-warning">
   <table class="table">
     <thead>
       <tr class="table-primary">
@@ -107,7 +106,6 @@
 
 	
 	</div>
-</div>
 <br><br>
 	
   <div class="alert alert-success text-center">
