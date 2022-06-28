@@ -32,7 +32,7 @@ $dbname = "u224722929_projetofinal";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT nome, telefone, email FROM tbClientes");
+    $stmt = $conn->prepare("SELECT id, nome, telefone, email FROM tbClientes");
     $stmt->execute();
 
     // set the resulting array to associative
