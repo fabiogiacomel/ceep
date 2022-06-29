@@ -45,7 +45,7 @@
 <div class="jumbotron">
 	
 <div class="container text-center">
-  <table class="table table-dark">
+  <table class="table table-success table-striped">
     <thead>
       <tr>
         <th>CURSO</th>
