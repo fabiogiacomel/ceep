@@ -45,54 +45,54 @@
 <div class="jumbotron">
 	
 <div class="container text-center">
-  <table class="table">
+  <table class="table table-dark">
     <thead>
-      <tr class="table-primary">
+      <tr>
         <th>CURSO</th>
         <th>PERÍODO</th>
         <th>CLASSIFICAÇÃO</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="table-primary">
+      <tr>
         <td>Técnico em Administração</td>
         <td>Noturno</td>
         <td></td>
       </tr>
 
 
-      <tr class="table-primary">
+      <tr>
         <td>Técnico em Edificações</td>
         <td>Vespertino</td>
         <td></td>
       </tr>
 		
-	<tr class="table-primary">
+      <tr>
         <td>Técnico em Enfermagem</td>
         <td>Vespertino</td>
         <td></td>
       </tr>
 
-      <tr class="table-primary">
+      <tr>
         <td>Técnico em Enfermagem</td>
         <td>Noturno</td>
         <td></td>
       </tr>
 
-	<tr class="table-primary">
+      <tr>
         <td>Técnico em Eletromecânica</td>
         <td>Noturno</td>
         <td></td>
       </tr>
  
  
-      <tr class="table-primary">
+      <tr>
         <td>Técnico em Informática</td>
         <td>Noturno</td>
         <td></td>
       </tr>
  
-      <tr class="table-primary">
+      <tr>
         <td>Técnico em Segurança do Trabalho</td>
         <td>Noturno</td>
         <td></td>
