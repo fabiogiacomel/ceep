@@ -57,7 +57,7 @@
       <tr>
         <td>Técnico em Administração</td>
         <td>Noturno</td>
-        <td><a href="/listas/ADM.PDF" class="btn btn-success" role="button">Acessar</a></td>
+        <td><a href="https://www.ceepcascavel.com.br/listas/ADM.pdf" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
 
 
