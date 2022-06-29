@@ -57,45 +57,45 @@
       <tr>
         <td>Técnico em Administração</td>
         <td>Noturno</td>
-        <td><a href="#" class="btn btn-success" role="button">acessar</a></td>
+        <td><a href="\listas\ADM.PDF" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
 
 
       <tr>
         <td>Técnico em Edificações</td>
         <td>Vespertino</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
 		
       <tr>
         <td>Técnico em Enfermagem</td>
         <td>Vespertino</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
 
       <tr>
         <td>Técnico em Enfermagem</td>
         <td>Noturno</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
 
       <tr>
         <td>Técnico em Eletromecânica</td>
         <td>Noturno</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
  
  
       <tr>
         <td>Técnico em Informática</td>
         <td>Noturno</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
  
       <tr>
         <td>Técnico em Segurança do Trabalho</td>
         <td>Noturno</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">Acessar</a></td>
       </tr>
  
  
