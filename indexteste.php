@@ -57,7 +57,7 @@
       <tr>
         <td>Técnico em Administração</td>
         <td>Noturno</td>
-        <td></td>
+        <td><a href="#" class="btn btn-success" role="button">acessar</a></td>
       </tr>
 
 
