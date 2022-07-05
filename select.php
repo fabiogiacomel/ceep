@@ -49,11 +49,6 @@ try {
 	$i=0;
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
         echo $v;
-			if($i==3){
-				echo $v;
-				$i=0;
-			}
-		$i++;
     } 
 }
 catch(PDOException $e) {
