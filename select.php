@@ -54,7 +54,6 @@ try {
 				$i=0;
 			}
 		$i++;
-		echo $i;
     }
 }
 catch(PDOException $e) {
