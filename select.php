@@ -54,7 +54,7 @@ try {
 				$i=0;
 			}
 		$i++;
-    }
+    } 
 }
 catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
