@@ -50,7 +50,7 @@ try {
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
         echo $v;
 		
-		if(mod(4)==$i){
+		if($i==4){
 			echo $v;
 			$i==0;
 		}
