@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
   echo "<table><tr><th>ID</th><th>Nome</th><th>AÇÕES</th></tr>";
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<tr><td>" . $row["id"]. "</td><td>" . $row["nome"]. "</td><td> " . $row["id"]. "</td></tr>";
+    echo "<tr><td>" . $row["id"]. "</td><td>" . $row["nome"]. "</td><td>DELETE FROM MyGuests WHERE id=" . $row["id"]. "</td></tr>";
   }
   echo "</table>";
 } else {
