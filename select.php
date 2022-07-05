@@ -49,10 +49,17 @@ try {
 	$i=0;
 	$r = $stmt->fetchAll();
 	echo $r[1]["id"];
-	/*
+	$i=0;
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-        echo var_dump($v);
-    } */
+		if($i==3){
+			echo "teste";
+			$i=0;
+		}else{
+			echo $v;
+			$i++;
+
+		}
+    }
 }
 catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
