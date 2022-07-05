@@ -48,7 +48,7 @@ try {
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 	$i=0;
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-        echo $v;
+        echo vardump($v);
     } 
 }
 catch(PDOException $e) {
