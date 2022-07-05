@@ -13,7 +13,7 @@
 
 <?php
 echo '<table class="table table-dark">';
- echo "<tr><th>ID</th><th>Nome</th><th>Telefone</th><th>Email</th><th>AÇÕES</th></tr>";
+ echo "<tr><th>ID</th><th>Nome</th><th>Telefone</th><th>Email</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
@@ -46,15 +46,9 @@ try {
 
     // set the resulting array to associative
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-	$i=0;
+
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
         echo $v;
-		
-		if(mod(4)==$i){
-			echo $v;
-			$i==0;
-		}
-		$i++;
     }
 }
 catch(PDOException $e) {
