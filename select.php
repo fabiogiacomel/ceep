@@ -51,6 +51,7 @@ try {
         echo $v;
 			if($i==3){
 				echo $v;
+				$i==0;
 			}
 		$i++;
 		
