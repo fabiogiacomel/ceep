@@ -48,7 +48,7 @@ try {
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 	$i=0;
 	$r = $stmt->fetchAll();
-	echo $r[1]["id"];
+	//echo $r[1]["id"];
 	$i=0;
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
 		if($i==3){
