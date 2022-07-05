@@ -51,11 +51,12 @@ try {
 	//echo $r[1]["id"];
 	$i=0;
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+			echo $v;
+	
 		if($i==3){
 			echo "teste";
 			$i=0;
 		}else{
-			echo $v;
 			$i++;
 
 		}
