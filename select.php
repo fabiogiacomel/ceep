@@ -47,7 +47,7 @@ try {
     // set the resulting array to associative
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 	$i=0;
-	var_dump($result);
+	var_dump($stmt->fetchAll());
 	/*
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
         echo var_dump($v);
